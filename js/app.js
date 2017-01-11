@@ -30,5 +30,5 @@ angular.module('cv', ['ui.router'])
         })
 
         $urlRouterProvider.otherwise('/');
-        prova2
+        prova23
     });
