@@ -1,0 +1,23 @@
+{
+  "name": "IDP_FairBnb",
+  "homepage": "https://github.com/pmusce/IDP_FairBnb",
+  "authors": [
+    "Pasquale Muscettola <pasquale.muscettola@gmail.com>"
+  ],
+  "description": "FairBnB platform",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui": "^0.4.0",
+    "angular": "~1.6.1",
+    "bootstrap": "3"
+  }
+}
