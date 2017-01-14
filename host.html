@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html ng-app="fairBnB">
-<head>
-	<title>FairBnB</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">FairBnB</a>
-	    </div>
-	    <div class="collapse navbar-collapse">
-	    	 <ul class="nav navbar-nav">
-	    	 	<li class="active"><a href="#">Home</a></li>
-		        <li><a href="#">My projects</a></li>
-		        <li><a href="#">Calendar</a></li>
-        	</ul>
-		    <ul class="nav navbar-nav navbar-right">
+    <head>
+        <title>FairBnB</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
 
-	    		<li>
-	    			<a href="admin.html" class="profile-image">
-	    			<span>Logged in as:
-							<!-- Non va <img src="img/sito.png" class="img-circle"> -->
-	    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp<b>Host</b> (Sito Verahost)</span> &nbsp&nbsp
-					</a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
 
-	    		</li>
-<li>								<div class="dropdown">
-								<button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								Dropdown
-								<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								</ul>
-								</div>
-</li>
-	      	</ul>
-      	</div>
-	  </div>
-	</nav>
 
-	<div class="container">
-		<uib-tabset active="active">
-    		<uib-tab index="0" heading="Static title">
-    			<uib-tab-heading>News & Announcements <span class="badge">2</span></uib-tab-heading>
-				<news-list></news-list>
-    		</uib-tab>
-    		<uib-tab index="1">
-    			<uib-tab-heading>Coop discussions</uib-tab-heading>
-					<discussion-list></discussion-list>
-    		</uib-tab>
-    		<uib-tab index="2">
-    			<uib-tab-heading>Explore projects</uib-tab-heading>
-    			Test
-    		</uib-tab>
-		</uib-tabset>
-	</div>
+												<ul class="nav navbar-nav navbar-right">
+													<li>
+														<a href="#" class="profile-image">
+														<span>Logged in as:
+															<!-- Non va <img src="img/sito.png" class="img-circle"> -->
+														<span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp<b>Host</b> (Sito Verahost)</span> &nbsp&nbsp
+													</a>
+													</li>
 
-	<script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-	<!-- <script src="bower_components/angular-ui/build/angular-ui.js"></script>
+													</ul>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+															<li class="dropdown-header">User roles</li>
+
+                                <li>
+                                    <a href="admin.html">Switch To Admin</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <uib-tabset active="active">
+                <uib-tab index="0" heading="Static title">
+                    <uib-tab-heading>News & Announcements
+                        <span class="badge">2</span>
+                    </uib-tab-heading>
+                    <news-list></news-list>
+                </uib-tab>
+                <uib-tab index="1">
+                    <uib-tab-heading>Coop discussions</uib-tab-heading>
+                    <discussion-list></discussion-list>
+                </uib-tab>
+                <uib-tab index="2">
+                    <uib-tab-heading>Explore projects</uib-tab-heading>
+                    Test
+                </uib-tab>
+            </uib-tabset>
+        </div>
+
+        <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- <script src="bower_components/angular-ui/build/angular-ui.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
  -->
- 	<script src="news-list/news-list.module.js"></script>
- 	<script src="news-list/news-list.component.js"></script>
-	<script src="coop-disc/coop-disc.module.js"></script>
-	<script src="coop-disc/coop-disc.component.js"></script>
- 	<script src="tabs-ctrl/tabs-ctrl.module.js"></script>
- 	<script src="tabs-ctrl/tabs-ctrl.component.js"></script>
-	<script src="js/app.js"></script>
-	<script type="text/javascript">
-		$('.dropdown-toggle').dropdown()
-	</script>
-</body>
+        <script src="news-list/news-list.module.js"></script>
+        <script src="news-list/news-list.component.js"></script>
+        <script src="coop-disc/coop-disc.module.js"></script>
+        <script src="coop-disc/coop-disc.component.js"></script>
+        <script src="tabs-ctrl/tabs-ctrl.module.js"></script>
+        <script src="tabs-ctrl/tabs-ctrl.component.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+            $('.dropdown-toggle').dropdown()
+            $().dropdown('toggle')
+        </script>
+    </body>
 </html>
