@@ -21,3 +21,8 @@
 .news-list{
 	margin-top: 20px;
 }
+
+#filterSelect {
+    width: 100px;
+    text-align: right;
+}

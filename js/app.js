@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cv', ['ui.router'])
+angular.module('FairBnB', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
 
