@@ -7,7 +7,7 @@
 	</select>
 </form>
 
-<ul class="media-list discussionList">
+<ul class="media-list liste">
 	<li class="media" ng-repeat="discussion in $ctrl.discussions | filter:$ctrl.query">
 	  <div class="media-left">
 	    <a href="#">
@@ -15,11 +15,11 @@
 	    </a>
 	  </div>
 	  <div class="media-body">
-	    <h4 class="media-heading">{{discussion.title}}</h4>
-	   	{{new.body}}
+	    <h4 class="media-heading">
+				{{discussion.title}}</h4>
+	   	{{discussion.body}}
 	  </div>
 	  <div class="media-right">
-  		<p><span class="label label-info">{{discussion.type}}</span></p>
 	  </div>
 	</li>
 </ul>
