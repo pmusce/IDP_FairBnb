@@ -1,9 +1,11 @@
 [
 	{
+		"image": "http://placehold.it/64x64",
         "title": "Some new announcement",
         "body": "Lorem ipsum dolor sit amet, consec"	
     },
 	{
+		"image": "http://placehold.it/64x64",
         "title": "Something else",
         "body": "Lorem ipsum dolor sit amet, consectetur"
     }

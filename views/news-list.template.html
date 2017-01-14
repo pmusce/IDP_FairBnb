@@ -10,9 +10,10 @@
 </form>
 
 <ul class="media-list news-list">
-	<li class="media" ng-repeat="new in news">
+	<li class="media" ng-repeat="new in $ctrl.news">
 	  <div class="media-left">
 	    <a href="#"> 
+	    	<img ng-src="{{new.image}}">
 	    </a>
 	  </div>
 	  <div class="media-body">
