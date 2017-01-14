@@ -4,10 +4,11 @@
 }
 
 .img-circle {
-  position: fixed; ;
-  width: 20px;
-  top: 20px;
-  height: auto;
+
+}
+
+.form-inline {
+  margin-top: 20px;
 
 }
 
@@ -20,7 +21,7 @@
 }
 
 .elem {
-	border-style: solid;
+	  border-style: solid;
     border-color: #ddd;
     border-width: 1px;
     padding: 10px;
