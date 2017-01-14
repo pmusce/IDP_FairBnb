@@ -1,0 +1,27 @@
+<form class="form-inline">
+	<label for="filterSelect">Filter:</label>
+	<select id="filterSelect" class="form-control">
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+</form>
+
+<ul class="media-list news-list">
+	<li class="media" ng-repeat="new in news">
+	  <div class="media-left">
+	    <a href="#"> 
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">{{new.title}}</h4>
+	   	{{new.body}}
+	  </div>
+	  <div class="media-right">
+	  		<p>Test</p>
+	  		<p>Test</p>
+	  </div>
+	</li>
+</ul>
