@@ -30,3 +30,11 @@
 .media-object {
   padding-top: 30px;
 }
+
+.media-right {
+    padding-left: 100px;
+}
+
+.media:not(:last-child) {
+    border-bottom: 1px #ddd solid;
+}
