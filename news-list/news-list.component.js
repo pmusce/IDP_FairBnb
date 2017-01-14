@@ -1,7 +1,7 @@
 angular.
-  module('fairBnB').
+	module('newsList').
   component('newsList', {
-    templateUrl: '../views/news-list.template.html',
+    templateUrl: 'news-list/news-list.template.html',
     controller: function NewsListController($http) {
       var self = this;
 
