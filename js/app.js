@@ -1,6 +1,1 @@
-angular.module('fairBnB', [
-	'ui.bootstrap',
-	'newsList',
-	'discussionList',
-	'tabsCtrle'
-]);
+angular.module('fairBnB', ['ui.bootstrap', 'newsList', 'discussionList', 'projectsList', 'tabsCtrle']);

@@ -1,14 +1,11 @@
 <form class="form-inline">
 	<label for="filterSelect">Filter:</label>
 	<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
-	  <option value="">All</option>
-	  <option value="coop">Coop</option>
-	  <option value="general">General</option>
 	</select>
 </form>
 
 <ul class="media-list liste">
-	<li class="media" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
+	<li class="media" ng-repeat="new in $ctrl.projects | filter:$ctrl.query">
 	  <div class="media-left">
 	    <a href="#">
 	    	<img ng-src="{{new.image}}">
