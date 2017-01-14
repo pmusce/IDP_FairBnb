@@ -20,14 +20,29 @@
 		        <li><a href="#">Calendar</a></li>
         	</ul>
 		    <ul class="nav navbar-nav navbar-right">
+
 	    		<li>
 	    			<a href="admin.html" class="profile-image">
 	    			<span>Logged in as:
 							<!-- Non va <img src="img/sito.png" class="img-circle"> -->
 	    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp<b>Host</b> (Sito Verahost)</span> &nbsp&nbsp
 					</a>
-	    		</li>
 
+	    		</li>
+<li>								<div class="dropdown">
+								<button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Dropdown
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								</ul>
+								</div>
+</li>
 	      	</ul>
       	</div>
 	  </div>
@@ -63,5 +78,8 @@
  	<script src="tabs-ctrl/tabs-ctrl.module.js"></script>
  	<script src="tabs-ctrl/tabs-ctrl.component.js"></script>
 	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		$('.dropdown-toggle').dropdown()
+	</script>
 </body>
 </html>
