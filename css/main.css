@@ -1,0 +1,23 @@
+.navbar-nav>li>a.profile-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main {
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 4px 4px;
+    padding: 35px 55px 55px;
+}
+
+.elem {
+	border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.news-list{
+	margin-top: 20px;
+}
