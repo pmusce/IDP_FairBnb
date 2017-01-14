@@ -7,6 +7,13 @@ angular.
 
       $http.get('../data/news.json').then(function(response) {
         self.news = response.data;
+
+        self.categories = self.news.reduce(function (acc, curr) {
+          if(acc.indexOf(curr.type) === -1) {
+            return acc.concat(curr.type);
+          }
+          return acc
+        }, []);
       });
       
     }

@@ -2,8 +2,7 @@
 	<label for="filterSelect">Filter:</label>
 	<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
 	  <option value="">All</option>
-	  <option value="coop">Coop</option>
-	  <option value="general">General</option>
+	  <option ng-repeat="cat in $ctrl.categories" value="{{cat}}">{{cat}}</option>
 	</select>
 </form>
 
