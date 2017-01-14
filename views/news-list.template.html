@@ -1,0 +1,25 @@
+<form class="form-inline">
+	<label for="filterSelect">Filter:</label>
+	<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
+	  <option value="">All</option>
+	  <option value="coop">Coop</option>
+	  <option value="general">General</option>
+	</select>
+</form>
+
+<ul class="media-list news-list">
+	<li class="media" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
+	  <div class="media-left">
+	    <a href="#">
+	    	<img ng-src="{{new.image}}">
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">{{new.title}}</h4>
+	   	{{new.body}}
+	  </div>
+	  <div class="media-right">
+  		<p><span class="label label-info">{{new.type}}</span></p>
+	  </div>
+	</li>
+</ul>
