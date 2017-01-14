@@ -1,20 +1,23 @@
 [
 	{
 		"image": "http://placehold.it/64x64",
-        "title": "Project Amsterdam Noord",
+        "title": "Some news announcement (unread)",
         "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    	"type": "coop",
     	"read": false
     },
 	{
 		"image": "http://placehold.it/64x64",
-        "title": "Project Zeedijk",
+        "title": "This has been read",
         "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    	"type": "general",
     	"read": false
     },
 		{
 			"image": "http://placehold.it/64x64",
-					"title": "Project Kebab-Shop Utterdijk",
+					"title": "This is a 'read' news",
 					"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+				"type": "general",
 				"read": true
 			}
 ]

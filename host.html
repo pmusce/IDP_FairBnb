@@ -23,8 +23,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                    </ul>
+                    <ul class="nav navbar-nav"></ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
@@ -33,73 +32,78 @@
                     </form>
                     <ul class="nav navbar-nav navbar-right">
 
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="profile-image">
+                                    <span>Logged in as:
+                                        <!-- Non va <img src="img/sito.png" class="img-circle"> -->
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp<b>Host</b>
+                                        (Sito Verahost)</span>
+                                    &nbsp&nbsp
+                                </a>
+                            </li>
 
-												<ul class="nav navbar-nav navbar-right">
-													<li>
-														<a href="#" class="profile-image">
-														<span>Logged in as:
-															<!-- Non va <img src="img/sito.png" class="img-circle"> -->
-														<span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp<b>Host</b> (Sito Verahost)</span> &nbsp&nbsp
-													</a>
-													</li>
+                        </ul>
 
-													</ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">User roles</li>
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-															<li class="dropdown-header">User roles</li>
-
-                                <li>
-                                    <a href="admin.html">Switch To Admin</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+                            <li>
+                                <a href="admin.html">Switch To Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-
-        <div class="container">
-            <uib-tabset active="active">
-                <uib-tab index="0" heading="Static title">
-                    <uib-tab-heading>News & Announcements
-                        <span class="badge">2</span>
-                    </uib-tab-heading>
-                    <news-list></news-list>
-                </uib-tab>
-                <uib-tab index="1">
-                    <uib-tab-heading>Coop discussions</uib-tab-heading>
-                    <discussion-list></discussion-list>
-                </uib-tab>
-                <uib-tab index="2">
-                    <uib-tab-heading>Explore projects</uib-tab-heading>
-                    Test
-                </uib-tab>
-            </uib-tabset>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-        <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- <script src="bower_components/angular-ui/build/angular-ui.js"></script>
+    <div class="container">
+        <uib-tabset active="active">
+            <uib-tab index="0" heading="Static title">
+                <uib-tab-heading>News & Announcements
+                    <span class="badge">2</span>
+                </uib-tab-heading>
+                <news-list></news-list>
+            </uib-tab>
+            <uib-tab index="1">
+                <uib-tab-heading>Coop discussions</uib-tab-heading>
+                <discussion-list></discussion-list>
+            </uib-tab>
+            <uib-tab index="2">
+                <uib-tab-heading>Explore projects</uib-tab-heading>
+                <projects-list></projects-list>
+
+            </uib-tab>
+        </uib-tabset>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="bower_components/angular-ui/build/angular-ui.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
  -->
-        <script src="news-list/news-list.module.js"></script>
-        <script src="news-list/news-list.component.js"></script>
-        <script src="coop-disc/coop-disc.module.js"></script>
-        <script src="coop-disc/coop-disc.component.js"></script>
-        <script src="tabs-ctrl/tabs-ctrl.module.js"></script>
-        <script src="tabs-ctrl/tabs-ctrl.component.js"></script>
-        <script src="js/app.js"></script>
-        <script type="text/javascript">
-            $('.dropdown-toggle').dropdown()
-            $().dropdown('toggle')
-        </script>
-    </body>
+    <script src="news-list/news-list.module.js"></script>
+    <script src="news-list/news-list.component.js"></script>
+    <script src="projects-list/projects-list.module.js"></script>
+    <script src="projects-list/projects-list.component.js"></script>
+
+    <script src="coop-disc/coop-disc.module.js"></script>
+    <script src="coop-disc/coop-disc.component.js"></script>
+    <script src="tabs-ctrl/tabs-ctrl.module.js"></script>
+    <script src="tabs-ctrl/tabs-ctrl.component.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        $('.dropdown-toggle').dropdown()
+        $().dropdown('toggle')
+    </script>
+</body>
 </html>
