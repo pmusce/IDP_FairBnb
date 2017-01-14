@@ -10,7 +10,7 @@
 <ul class="media-list news-list">
 	<li class="media" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
 	  <div class="media-left">
-	    <a href="#"> 
+	    <a href="#">
 	    	<img ng-src="{{new.image}}">
 	    </a>
 	  </div>
@@ -19,7 +19,7 @@
 	   	{{new.body}}
 	  </div>
 	  <div class="media-right">
-  		<p>{{new.type}}</p>
+  		<p><span class="label label-info">{{new.type}}</span></p>
 	  </div>
 	</li>
 </ul>
