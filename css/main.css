@@ -4,7 +4,7 @@
 }
 
 .img-circle {
-  position: relative;
+  position: fixed; ;
   width: 20px;
   top: 20px;
   height: auto;
