@@ -5,16 +5,16 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
-                  <a ui-sref="home">Home</a>
+                <li >
+                      <a ui-sref="home">Home</a>
                 </li>
-                <li ng-if="!user.isAdmin()">
+                <li  ng-if="!user.isAdmin()">
                   <a ui-sref="bookings">My Bookings</a>
                 </li>
                 <li ng-if="!user.isAdmin()">
                   <a ui-sref="project">My projects</a>
                 </li>
-                <li>
+                <li class="active">
                   <a ui-sref="calendar">Calendar</a>
                 </li>
             </ul>
@@ -42,47 +42,4 @@
     </nav>
 
     <div class="container">
-        <uib-tabset active="active">
-
-          <uib-tab index="0" ng-if="!user.isGuest()">
-              <uib-tab-heading>Coop discussions
-                  <span class="badge">1</span>
-              </uib-tab-heading>
-              <discussion-list></discussion-list>
-          </uib-tab>
-
-          <uib-tab index="1">
-            <uib-tab-heading>News & Announcements
-                <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
-            </uib-tab-heading>
-            <news-list></news-list>
-        </uib-tab>
-
-
-        <uib-tab index="2" ng-if="user.isAdmin()">
-            <uib-tab-heading>
-                <b>Review</b>
-                Projects
-                <span class="badge">1</span>
-            </uib-tab-heading>
-            Test
-        </uib-tab>
-
-        <uib-tab index="3" ng-if="user.isAdmin()">
-            <uib-tab-heading>
-                <b>Review</b>
-                New Members
-                <span class="badge">1</span>
-            </uib-tab-heading>
-            Test
-        </uib-tab>
-        <uib-tab index="4" ng-if="!user.isAdmin()">
-            <uib-tab-heading>Explore Projects
-                <span class="badge">5</span>
-            </uib-tab-heading>
-
-            <projects-list></projects-list>
-        </uib-tab>
-
-    </uib-tabset>
 </div>

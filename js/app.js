@@ -28,8 +28,8 @@ fairBnB.factory('user', [function() {
 }]);
 
 fairBnB.run(function($rootScope, $location, $state, LoginService) {
-	$rootScope.$on('$stateChangeStart', 
-		function(event, toState, toParams, fromState, fromParams){ 
+	$rootScope.$on('$stateChangeStart',
+		function(event, toState, toParams, fromState, fromParams){
 			console.log('Changed state to: ' + toState);
 		});
 
@@ -51,7 +51,23 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		url : '/home',
 		templateUrl : 'home.html',
 		controller : 'HomeController'
-	});
+	})
+  .state('bookings', {
+    url : '/booking',
+    templateUrl : 'booking.html',
+    controller : 'HomeController'
+  })
+  .state('calendar', {
+    url : '/calendar',
+    templateUrl : 'calendar.html',
+    controller : 'HomeController'
+  })
+  .state('project', {
+    url : '/project',
+    templateUrl : 'project.html',
+    controller : 'HomeController'
+
+  });
 }]);
 
 fairBnB.controller('LoginController', function($scope, $rootScope, $stateParams, $state, LoginService) {
@@ -94,4 +110,3 @@ fairBnB.factory('LoginService', function() {
 	};
 
 });
-  
