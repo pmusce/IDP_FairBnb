@@ -1,23 +1,14 @@
-[
-	{
-		"image": "http://placehold.it/64x64",
-        "title": "Project Kijkdaam",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    	"type": "coop",
-    	"read": false
-    },
-	{
-		"image": "http://placehold.it/64x64",
-        "title": "Project Boredomdaam",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    	"type": "general",
-    	"read": false
-    },
-		{
-			"image": "http://placehold.it/64x64",
-					"title": "Existing Approved Communitydaam Project",
-					"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-				"type": "general",
-				"read": true
-			}
+[{
+    "image": "img/ams.jpg",
+    "title": "Kijkdam Project",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "status": "approved",
+    "read": false
+}, {
+    "image": "img/ams2.jpg",
+    "title": "Improbable Project",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "status": "pending",
+    "read": false
+}
 ]

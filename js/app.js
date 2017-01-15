@@ -1,5 +1,5 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'tabsCtrle']);
+var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectList', 'tabsCtrle']);
 
 
 
@@ -28,8 +28,8 @@ fairBnB.factory('user', [function() {
 }]);
 
 fairBnB.run(function($rootScope, $location, $state, LoginService) {
-	$rootScope.$on('$stateChangeStart', 
-		function(event, toState, toParams, fromState, fromParams){ 
+	$rootScope.$on('$stateChangeStart',
+		function(event, toState, toParams, fromState, fromParams){
 			console.log('Changed state to: ' + toState);
 		});
 
@@ -112,9 +112,8 @@ fairBnB.factory('LoginService', function() {
 		}
 	};
 
-});  
+});
 
 fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
 });
-  

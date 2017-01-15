@@ -12,6 +12,10 @@
 
 }
 
+img {
+  height: 80px;
+}
+
 .main {
     border-style: solid;
     border-color: #ddd;
@@ -24,12 +28,14 @@
     text-transform: capitalize;
 }
 
-.well-sm {
-  background-color: #ddd;
-
+.well {
+  margin-top: 15px;
 }
 
-
+.form-inline {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .elem {
  border-style: solid;
