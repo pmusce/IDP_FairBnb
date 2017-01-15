@@ -33,9 +33,9 @@ fairBnB.run(function($rootScope, $location, $state, LoginService) {
 			console.log('Changed state to: ' + toState);
 		});
 
-	if(!LoginService.isAuthenticated()) {
-		$state.transitionTo('login');
-	}
+	// if(!LoginService.isAuthenticated()) {
+	// 	$state.transitionTo('login');
+	// }
 });
 
 fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -54,29 +54,35 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 	});
 }]);
 
-fairBnB.controller('LoginController', function($scope, $rootScope, $stateParams, $state, LoginService) {
-	$rootScope.title = "AngularJS Login Sample";
+fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, LoginService) {
+	$scope.modalInstance = $uibModal.open({
+	  animation: true,
+      templateUrl: 'login-modal.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl'
+    });
 
+
+});
+
+fairBnB.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, $state, LoginService) {
 	$scope.formSubmit = function() {
 		console.log("YEAH");
 		if(LoginService.login($scope.username, $scope.password)) {
 			$scope.error = '';
 			$scope.username = '';
 			$scope.password = '';
-			$('#loginModal').modal('toggle');
-
+			$uibModalInstance.close();
 			$state.transitionTo('home');
 		} else {
 			$scope.error = "Incorrect username/password !";
 		}
 	};
 
+	$scope.cancel = function () {
+		$uibModalInstance.dismiss('cancel');
+	};
 });
-
-fairBnB.controller('HomeController', function($scope, $rootScope, $stateParams, $state, user, LoginService) {
-	$scope.user = user;
-});
-
 
 fairBnB.factory('LoginService', function() {
 	var admin = 'admin';
@@ -93,5 +99,8 @@ fairBnB.factory('LoginService', function() {
 		}
 	};
 
+});  
+
+fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
+	$scope.user = user;
 });
-  
