@@ -6,16 +6,16 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li >
-                  <a ui-sref="home">Home</a>
+                    <a ui-sref="home">Home</a>
                 </li>
                 <li ng-if="!user.isAdmin()">
-                  <a ui-sref="bookings">My Bookings</a>
+                    <a ui-sref="bookings">My Bookings</a>
                 </li>
                 <li class="active" ng-if="!user.isAdmin()">
-                  <a ui-sref="project">My projects</a>
+                    <a ui-sref="project">My projects</a>
                 </li>
                 <li>
-                  <a ui-sref="calendar">Calendar</a>
+                    <a ui-sref="calendar">Calendar</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -33,24 +33,34 @@
                         <li ng-if="!user.isGuest()">
                             <a href="#" ng-click="user.switchRole()">Switch To
                                 {{user.oppositeRole()}}</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container container-fluid">
+    <h3>Hi
+        {{user.name}}</h3>
+    <a href="#">
+        <strong>
+            <i class="glyphicon glyphicon-dashboard"></i>
+            My Projects</strong>
+    </a>
+    <hr>
+
+    <div class="row">
+        <!-- center left-->
+        <div class="well-sm" data-toggle="collapse" href="#collapseExample">Inbox Messages
+            <span class="badge pull-right">3</span>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div id="well1" class="well-sm">
+                <b>From:</b>
+                Admin
             </div>
         </div>
-    </nav>
-
-    <div class="container container-fluid">
-      <h2>Hi {{user.name}}</h2>
-      <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
-            <hr>
-
-            <div class="row">
-                <!-- center left-->
-                    <div class="well-sm" data-toggle="collapse" href="#collapseExample">Inbox Messages <span class="badge pull-right">3</span></div>
-                    <div class="collapse" id="collapseExample">
-  <div id="well1" class="well-sm">
-<b>From:</b> Admin  </div>
-</div>
+    </div>
 </div>
