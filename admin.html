@@ -54,6 +54,12 @@
                     <uib-tab-heading>News & Announcements
                         <span class="badge">2</span>
                     </uib-tab-heading>
+                    <div class="addNews">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" id="bottoneModale">
+                            Add News Annoucement
+                        </button>
+
+                    </div>
                     <news-list></news-list>
                 </uib-tab>
                 <uib-tab index="1" ng-if="!user.isGuest()">
@@ -119,12 +125,14 @@
                             <div class="form-group">
                                 <label class="col-sm-3 control-label" for="inputAnnoucement">Annoucement</label>
                                 <div class="col-sm-9">
-                                  ​<textarea id="txtArea" rows="10" cols="70" placeholder="Write here your annoucement..."></textarea>
+                                    ​<textarea id="txtArea" rows="10" cols="70" placeholder="Write here your annoucement..."></textarea>
                                 </div>
                             </div>
+
+                            <div class="form-group"></div>
+
                         </form>
                     </div>
-
                     <!-- Modal Footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
