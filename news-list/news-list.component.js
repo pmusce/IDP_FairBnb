@@ -8,6 +8,12 @@ angular.
 
       $http.get('../data/news.json').then(function(response) {
         self.news = response.data;
+        self.user.unread = self.news.reduce(function (total, current) {
+          if (!current.read) {
+            return total + 1;
+          }
+          return total;
+        }, 0);
 
         self.categories = self.news.reduce(function (acc, curr) {
           if(acc.indexOf(curr.type) === -1) {

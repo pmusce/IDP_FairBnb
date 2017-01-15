@@ -13,19 +13,19 @@
 </form>
 
 <ul class="media-list liste">
-	<li class="media" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
-	  <div class="media-left">
-	    <a href="#">
-	    	<img ng-src="{{new.image}}">
-	    </a>
-	  </div>
-	  <div class="media-body">
-	    <h4 class="media-heading">{{new.title}}</h4>
+	<li class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
+		<div class="media-left">
+			<a href="#">
+				<img ng-src="{{new.image}}">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">{{new.title}}</h4>
 			{{new.body}}
-	  </div>
-<div class="media-right">
-	<p><span class="label label-info">{{new.type}}</span></p>
-  	  </div>
+		</div>
+		<div class="media-right">
+			<p><span class="label label-info">{{new.type}}</span></p>
+		</div>
 	</li>
 </ul>
 
