@@ -28,8 +28,8 @@ fairBnB.factory('user', [function() {
 }]);
 
 fairBnB.run(function($rootScope, $location, $state, LoginService) {
-	$rootScope.$on('$stateChangeStart', 
-		function(event, toState, toParams, fromState, fromParams){ 
+	$rootScope.$on('$stateChangeStart',
+		function(event, toState, toParams, fromState, fromParams){
 			console.log('Changed state to: ' + toState);
 		});
 
@@ -71,28 +71,17 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 }]);
 
 fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, LoginService) {
-	
+	$scope.modalInstance = $uibModal.open({
+	  animation: true,
+      templateUrl: 'login-modal.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: '$ctrl'
+    });
 
-	$scope.login = function() {
-		$uibModal.open({
-		  animation: true,
-	      templateUrl: 'login-modal.html',
-	      controller: 'LoginModalInstanceCtrl',
-	      controllerAs: '$ctrl'
-	    });
-	};
 
-	$scope.signup = function() {
-		$uibModal.open({
-		  animation: true,
-	      templateUrl: 'signup-modal.html',
-	      controller: 'LoginModalInstanceCtrl',
-	      controllerAs: '$ctrl'
-	    });
-	};
 });
 
-fairBnB.controller('LoginModalInstanceCtrl', function ($scope, $uibModalInstance, $state, LoginService) {
+fairBnB.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, $state, LoginService) {
 	$scope.formSubmit = function() {
 		console.log("YEAH");
 		if(LoginService.login($scope.username, $scope.password)) {
@@ -106,6 +95,9 @@ fairBnB.controller('LoginModalInstanceCtrl', function ($scope, $uibModalInstance
 		}
 	};
 
+	$scope.cancel = function () {
+		$uibModalInstance.dismiss('cancel');
+	};
 });
 
 fairBnB.factory('LoginService', function() {
@@ -123,9 +115,12 @@ fairBnB.factory('LoginService', function() {
 		}
 	};
 
+<<<<<<< HEAD
 });  
 
 fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
 });
-  
+=======
+});
+>>>>>>> de1afbbe0f2a1e83e9fd32daa119b9e753f6206d
