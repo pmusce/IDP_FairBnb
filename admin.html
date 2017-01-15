@@ -54,12 +54,6 @@
                     <uib-tab-heading>News & Announcements
                         <span class="badge">2</span>
                     </uib-tab-heading>
-                    <div class="addNews">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" id="bottoneModale">
-                            Add News Annoucement
-                        </button>
-
-                    </div>
                     <news-list></news-list>
                 </uib-tab>
                 <uib-tab index="1" ng-if="!user.isGuest()">
@@ -97,77 +91,6 @@
             </uib-tabset>
         </div>
 
-        <!-- Modal -->
-
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                            <span class="sr-only">Close</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            Add New Annoucement
-                        </h4>
-                    </div>
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label" for="inputTitle">Title</label>
-                                <div class="col-sm-9">
-                                    <input type="textarea" class="form-control" id="inputEmail3" placeholder=""/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label" for="inputAnnoucement">Announcement</label>
-                                <div class="col-sm-9">
-                                    ​<textarea id="txtArea" rows="8" cols="30" placeholder="Write here your annoucement..."></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label" for="sel1">Type of Annoucement</label>
-                                <div class="col-sm-9">
-
-                                <select class="form-control" id="audience">
-                                    <option>Coop</option>
-                                    <option>General</option>
-                                </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                              <label class="col-sm-3 control-label" for="sel1">Who can see the announcement</label>
-                              <div class="col-sm-9">
-                                <input type="checkbox" value="all"> All <br>
-                                <input type="checkbox" value="coopStaff">Coop Staff <br>
-                                <input type="checkbox" value="coopStaff">Hosts <br>
-                                <input type="checkbox" value="coopStaff">Community Members
-
-
-                              </div>
-                            </div>
-
-
-
-                        </form>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                            Publish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
         <script src="bower_components/angular/angular.js"></script>
