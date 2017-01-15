@@ -32,8 +32,8 @@
                         </a>
                         <ul class="dropdown-menu">
 							<li class="dropdown-header">User roles</li>
-                            <li>
-                                <a href="host.html">Switch To Host</a>
+                            <li ng-if="!user.isGuest()">
+                                <a href="#" ng-click="user.switchRole()">Switch To {{user.oppositeRole()}}</a>
                             </li>
                         </ul>
                     </li>
