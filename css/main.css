@@ -24,6 +24,13 @@
     text-transform: capitalize;
 }
 
+.well-sm {
+  background-color: #ddd;
+
+}
+
+
+
 .elem {
  border-style: solid;
  border-color: #ddd;

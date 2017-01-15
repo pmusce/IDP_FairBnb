@@ -51,7 +51,23 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		url : '/home',
 		templateUrl : 'home.html',
 		controller : 'HomeController'
-	});
+	})
+  .state('bookings', {
+    url : '/booking',
+    templateUrl : 'booking.html',
+    controller : 'HomeController'
+  })
+  .state('calendar', {
+    url : '/calendar',
+    templateUrl : 'calendar.html',
+    controller : 'HomeController'
+  })
+  .state('project', {
+    url : '/project',
+    templateUrl : 'project.html',
+    controller : 'HomeController'
+
+  });
 }]);
 
 fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, LoginService) {
@@ -79,9 +95,6 @@ fairBnB.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, $st
 		}
 	};
 
-	$scope.cancel = function () {
-		$uibModalInstance.dismiss('cancel');
-	};
 });
 
 fairBnB.factory('LoginService', function() {
@@ -104,3 +117,4 @@ fairBnB.factory('LoginService', function() {
 fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
 });
+  
