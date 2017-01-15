@@ -8,40 +8,45 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body ng-controller="PageController">
-    	<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">FairBnB</a>
-		    </div>
-		    <div class="collapse navbar-collapse">
-		    	 <ul class="nav navbar-nav">
-		    	 	<li class="active"><a href="#">Home</a></li>
-			        <li ng-if="!user.isAdmin()"><a href="#">My projects</a></li>
-			        <li><a href="#">Calendar</a></li>
-	        	</ul>
-			    <ul class="nav navbar-nav navbar-right">
-		    		<li class="dropdown">
-                        <a href="#" class="dropdown-toggle"
-	                        data-toggle="dropdown"
-	                        role="button" aria-haspopup="true" aria-expanded="false">
-                        	<span>
-								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-								<b class="user-role">{{user.role}}</b> ({{user.name}})
-							</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-							<li class="dropdown-header">User roles</li>
-                            <li ng-if="!user.isGuest()">
-                                <a href="#" ng-click="user.switchRole()">Switch To {{user.oppositeRole()}}</a>
-                            </li>
-                        </ul>
-                    </li>
-		      	</ul>
-	      	</div>
-		  </div>
-		</nav>
-
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">FairBnB</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li ng-if="!user.isAdmin()">
+                            <a href="#">My projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Calendar</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span>
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    <b class="user-role">{{user.role}}</b>
+                                    ({{user.name}})
+                                </span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">User roles</li>
+                                <li ng-if="!user.isGuest()">
+                                    <a href="#" ng-click="user.switchRole()">Switch To
+                                        {{user.oppositeRole()}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <div class="container">
             <uib-tabset active="active">
@@ -50,7 +55,8 @@
                         <span class="badge">2</span>
                     </uib-tab-heading>
                     <div class="addNews">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" id="bottoneModale">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"
+                        data-target="#myModal" id="bottoneModale">
                             Add News Annoucement
                         </button>
 
@@ -94,16 +100,14 @@
 
         <!-- Modal -->
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-             aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <button type="button" class="close"
-                           data-dismiss="modal">
-                               <span aria-hidden="true">&times;</span>
-                               <span class="sr-only">Close</span>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
                         </button>
                         <h4 class="modal-title" id="myModalLabel">
                             Add New Annoucement
@@ -113,44 +117,40 @@
                     <div class="modal-body">
 
                         <form class="form-horizontal" role="form">
-                          <div class="form-group">
-                            <label  class="col-sm-2 control-label"
-                                      for="inputEmail3">Title</label>
-                            <div class="col-sm-10">
-                                <input type="textarea" class="form-control"
-                                id="inputEmail3" placeholder=""/>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="inputEmail3">Title</label>
+                                <div class="col-sm-10">
+                                    <input type="textarea" class="form-control" id="inputEmail3" placeholder=""/>
+                                </div>
                             </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="col-sm-2 control-label"
-                                  for="inputPassword3" >Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control"
-                                    id="inputPassword3" placeholder="Password"/>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="inputPassword3">Annoucement</label>
+                                <div class="col-sm-10">
+                                    <input type="textarea" class="form-control" id="inputPassword3" placeholder="Password"/>
+                                </div>
                             </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"/> Remember me
-                                </label>
-                              </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"/>
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-default">Sign in</button>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                </div>
                             </div>
-                          </div>
                         </form>
                     </div>
 
                     <!-- Modal Footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">
-                                    Close
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
                         </button>
                         <button type="button" class="btn btn-primary">
                             Save changes
@@ -159,7 +159,6 @@
                 </div>
             </div>
         </div>
-
 
         <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
         <script src="bower_components/angular/angular.js"></script>
