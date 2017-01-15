@@ -36,6 +36,7 @@
 }
 
 
+
 #filterSelect {
     width: 100px;
     text-align: right;
@@ -49,6 +50,21 @@
     padding-left: 100px;
 }
 
+
+.media-list {
+    border: 1px #ddd solid;
+    border-radius: 5px;
+}
+
+.media {
+    margin-top: 0;
+    padding: 20px;
+}
+
 .media:not(:last-child) {
     border-bottom: 1px #ddd solid;
+}
+
+.unread {
+    background-color: #eee;
 }
