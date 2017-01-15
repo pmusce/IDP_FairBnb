@@ -2,7 +2,8 @@ angular.
 	module('newsList').
   component('newsList', {
     templateUrl: 'news-list/news-list.template.html',
-    controller: function NewsListController($http) {
+    controller: function NewsListController($http, user) {
+      this.user = user;
       var self = this;
 
       $http.get('../data/news.json').then(function(response) {
