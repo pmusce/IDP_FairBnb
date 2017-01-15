@@ -56,6 +56,28 @@
         </uib-tabset>
     </div>
 
+    <!-- Button trigger modal -->
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -73,9 +95,6 @@
     <script src="tabs-ctrl/tabs-ctrl.module.js"></script>
     <script src="tabs-ctrl/tabs-ctrl.component.js"></script>
     <script src="js/app.js"></script>
-    <script type="text/javascript">
-        $('.dropdown-toggle').dropdown()
-        $().dropdown('toggle')
-    </script>
+
 </body>
 </html>
