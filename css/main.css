@@ -20,6 +20,10 @@
     padding: 35px 55px 55px;
 }
 
+.user-role {
+    text-transform: capitalize;
+}
+
 .elem {
 	  border-style: solid;
     border-color: #ddd;
