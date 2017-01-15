@@ -1,13 +1,15 @@
-<form class="form-inline">
+<form class="form-inline clearfix">
 	<button ng-if="$ctrl.user.isAdmin()" type="button" class="btn btn-primary" data-toggle="modal"
         		data-target="#myModal" id="bottoneModale">
         Add News Annoucement
 	</button>
-	<label for="filterSelect">Filter:</label>
-	<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
-	  <option value="">All</option>
-	  <option ng-repeat="cat in $ctrl.categories" value="{{cat}}">{{cat}}</option>
-	</select>
+	<span class="pull-right">
+		<label for="filterSelect">Filter:</label>
+		<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
+		  <option value="">All</option>
+		  <option ng-repeat="cat in $ctrl.categories" value="{{cat}}">{{cat}}</option>
+		</select>
+	</span>
 </form>
 
 <ul class="media-list liste">
