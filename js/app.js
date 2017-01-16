@@ -30,16 +30,16 @@ fairBnB.factory('user', [function() {
 fairBnB.run(function($rootScope, $location, $state, LoginService) {
 	$rootScope.$on('$stateChangeStart',
 		function(event, toState, toParams, fromState, fromParams){
-			console.log('Changed state to: ' + toState);
+			console.log(toState);
 		});
 
-	// if(!LoginService.isAuthenticated()) {
-	// 	$state.transitionTo('login');
-	// }
+	if(!$state.name == "login" && !LoginService.isAuthenticated()) {
+		$state.transitionTo('login');
+	}
 });
 
 fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	//$urlRouterProvider.otherwise('/home');
+	//$urlRouterProvider.otherwise('/login');
 
 	$stateProvider
 	.state('login', {
