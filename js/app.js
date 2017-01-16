@@ -1,5 +1,5 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectList', 'tabsCtrle']);
+var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectList', 'memberList', 'tabsCtrle']);
 
 
 

@@ -67,7 +67,7 @@
                 Projects
                 <span class="badge">1</span>
             </uib-tab-heading>
-            Test
+            <project-list></project-list>
         </uib-tab>
 
         <uib-tab index="3" ng-if="user.isAdmin()">
@@ -76,11 +76,12 @@
                 New Members
                 <span class="badge">1</span>
             </uib-tab-heading>
-            Test
+            <member-list></member-list>
+
         </uib-tab>
         <uib-tab index="4" ng-if="!user.isAdmin()">
             <uib-tab-heading>Explore Projects
-                <span class="badge">5</span>
+              <span class="badge" ng-if='user.projectunread'>{{user.projectunread}}</span>
             </uib-tab-heading>
             <project-list></project-list>
         </uib-tab>

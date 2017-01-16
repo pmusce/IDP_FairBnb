@@ -8,7 +8,7 @@ angular.
 
       $http.get('../data/projects.json').then(function(response) {
         self.projects = response.data;
-        self.user.unread = self.projects.reduce(function (total, current) {
+        self.user.projectunread = self.projects.reduce(function (total, current) {
           if (!current.read) {
             return total + 1;
           }

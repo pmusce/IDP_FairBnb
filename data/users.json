@@ -3,6 +3,30 @@
 		"username": "admin",
 		"password": "password",
 		"name": "Pasquale Muscettola",
-		"role": "admin"
+		"role": "admin",
+	},
+	{
+		"username": "admin",
+		"password": "password",
+		"name": "Pauline Sia",
+		"role": "admin",
+	},
+	{
+		"username": "admin",
+		"password": "password",
+		"name": "Willem Duijvelshoff",
+		"role": "admin",
+	},
+	{
+		"username": "admin",
+		"password": "password",
+		"name": "Cindy Van Den Berg",
+		"role": "admin",
+	},
+	{
+		"username": "admin",
+		"password": "password",
+		"name": "Axel De Jong",
+		"role": "admin",
 	}
 ]

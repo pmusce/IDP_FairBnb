@@ -1,0 +1,15 @@
+<ul class="media-list liste">
+	<li class="media" ng-class="{unread: !new.read}" ng-repeat="member in $ctrl.members | filter:$ctrl.query">
+		<div class="media-left">
+			<a href="#">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">{{member.name}}</h4>
+			{{member.role}}
+		</div>
+		<div class="media-right">
+			<p><span class="label label-primary">{{member.username}}</span></p>
+		</div>
+	</li>
+</ul>
