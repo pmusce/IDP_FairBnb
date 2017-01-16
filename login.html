@@ -6,12 +6,10 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#" data-toggle="modal"
-          data-target="#signupModal">Sign Up</a>
+          <a class="btn" ng-click="signup()"">Sign Up</a>
         </li>
         <li>
-          <a href="#" data-toggle="modal"
-          data-target="#loginModal">Log in</a>
+          <a class="btn" ng-click="login()"">Log in</a>
         </li>
       </ul>
     </div>
@@ -27,7 +25,7 @@
 <!-- Modal -->
 <script type="text/ng-template" id="login-modal.html">
     <div class="modal-body loginmodal-container" id="modal-body">
-      <h1>Login to Your Account</h1><br>
+      <h1>Login</h1><br>
       <form ng-submit="formSubmit()">
         <input type="text" ng-model="username" name="user" placeholder="Username">
         <input type="password" ng-model="password" name="pass" placeholder="Password">
@@ -35,28 +33,20 @@
       </form>
 
       <div class="login-help">
-        <a href="#" data-target="#registerModal">Register</a> - <a href="#">Forgot Password</a>
+        <a class="btn">Register</a> - <a class="btn">Forgot Password</a>
       </div>
     </div>
 </script>
 <!-- End Modal -->
 
 <!-- Register Modal -->
-
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
-aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-<div class="modal-dialog">
+<script type="text/ng-template" id="signup-modal.html">
   <div class="loginmodal-container">
-    <h1>Login to Your Account</h1><br>
+    <h1>Register</h1><br>
     <form>
       <input type="text" name="user"  placeholder="Username">
       <input type="password" name="pass" placeholder="Password">
-      <button type="submit" name="login" class="login loginmodal-submit" value="Login">
+      <input type="submit" name="login" class="login loginmodal-submit" value="Sign Up">
       </form>
-
-      <div class="login-help">
-        <a href="#">Register</a> - <a href="#">Forgot Password</a>
-      </div>
     </div>
-  </div>
-</div>
+</script>
