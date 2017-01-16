@@ -10,4 +10,15 @@ angular.
       });
 
     }
-  })NaN;
+  })
+	.component('myProjectsList', {
+		templateUrl: 'projects-list/my-projects-list.template.html',
+		controller: function MyProjectsListController($http) {
+			var self = this;
+
+			$http.get('../data/projects.json').then(function(response) {
+				self.projects = response.data;
+			});
+
+		}
+	});
