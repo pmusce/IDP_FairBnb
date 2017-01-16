@@ -46,22 +46,31 @@
     <div class="container">
         <uib-tabset active="active">
 
-          <uib-tab index="0" ng-if="!user.isGuest()">
-              <uib-tab-heading>Coop discussions
+          <uib-tab index="0" ng-if="!user.isAdmin()">
+              <uib-tab-heading>Projects
+                <span class="badge" ng-if='user.projectunread'>{{user.projectunread}}</span>
+              </uib-tab-heading>
+              <projects-list></projects-list>
+          </uib-tab>
+
+          <uib-tab index="1" ng-if="!user.isGuest()">
+              <uib-tab-heading>Discussions
                   <span class="badge">1</span>
               </uib-tab-heading>
               <discussion-list></discussion-list>
           </uib-tab>
 
-          <uib-tab index="1">
-            <uib-tab-heading>News & Announcements
+
+
+          <uib-tab index="2">
+            <uib-tab-heading>News
                 <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
             </uib-tab-heading>
             <news-list></news-list>
         </uib-tab>
 
 
-        <uib-tab index="2" ng-if="user.isAdmin()">
+        <uib-tab index="3" ng-if="user.isAdmin()">
             <uib-tab-heading>
                 <b>Review</b>
                 Projects
@@ -70,7 +79,7 @@
             <projects-list></projects-list>
         </uib-tab>
 
-        <uib-tab index="3" ng-if="user.isAdmin()">
+        <uib-tab index="4" ng-if="user.isAdmin()">
             <uib-tab-heading>
                 <b>Review</b>
                 New Members
@@ -79,12 +88,7 @@
             <member-list></member-list>
 
         </uib-tab>
-        <uib-tab index="4" ng-if="!user.isAdmin()">
-            <uib-tab-heading>Explore Projects
-              <span class="badge" ng-if='user.projectunread'>{{user.projectunread}}</span>
-            </uib-tab-heading>
-            <projects-list></projects-list>
-        </uib-tab>
+
 
     </uib-tabset>
 </div>
