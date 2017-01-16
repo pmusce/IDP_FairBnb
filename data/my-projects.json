@@ -1,0 +1,16 @@
+[{
+    "image": "img/ams.jpg",
+    "date": 2017,
+    "title": "Kijkdam Project",
+    "body": "Ahaha ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "status": "approved",
+    "read": false
+}, {
+    "image": "img/ams2.jpg",
+    "date": 2017,
+    "title": "Improbable Project",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "status": "refused",
+    "read": false
+}
+]
