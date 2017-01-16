@@ -1,9 +1,7 @@
 <ul class="media-list liste">
 	<li class="media" ng-class="{unread: !project.read}" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
 		<div class="media-left">
-			<a href="#">
 				<img ng-src="{{project.image}}">
-			</a>
 		</div>
 		<div class="media-body">
 			{{project.body}}
@@ -13,3 +11,13 @@
 		</div>
 	</li>
 </ul>
+
+<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip top" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    Some tooltip text!
+  </div>
+</div>
