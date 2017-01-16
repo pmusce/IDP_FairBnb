@@ -2,26 +2,14 @@
 	<form class="form-inline">
 		<label for="filterSelect">Filter by:</label>
 		<div class="btn-group">
-					<label class="btn btn-xs btn-default" >Need Funding</label>
-					<label class="btn btn-xs btn-default">Funded</label>
-					<label class="btn btn-xs btn-default">My Projects</label>
-
-			</div>
+	        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'not-funded'">Need Funding</label>
+	        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'funded'">Funded</label>
+	        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'my-projects'">My Projects</label>
+	    </div>
 	</form>
-</div>
-<ul class="media-list liste">
-	<li class="media" ng-class="{unread: !project.read}"
-	ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
-		<div class="media-left">
 
-				<img ng-src="{{project.image}}">
-		</div>
-		<div class="media-body">
-			<h4 class = "media-heading">{{project.title}}</h4>
-			{{project.body}}
-		</div>
-		<div class="media-right">
-			<p><span class="label label-info">{{project.status}}</span></p>
-		</div>
-	</li>
-</ul>
+</div>
+<not-funded ng-if="projectType=='not-funded'"></not-funded>
+<funded ng-if="projectType=='funded'"></funded>
+<my-projects ng-if="projectType=='my-projects'"></my-projects>
+

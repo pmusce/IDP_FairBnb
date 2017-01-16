@@ -1,24 +1,30 @@
 angular.
-	module('projectsList').
-  component('projectsList', {
-    templateUrl: 'projects-list/projects-list.template.html',
-    controller: function ProjectListController($http) {
-      var self = this;
+module('projectsList')
+.component('projectsList', {
+	templateUrl: 'projects-list/projects-list.template.html',
+	controller: function ProjectListController($scope) {
+		$scope.projectType="my-projects";
+	}
+})
+.component('funded', {
+	templateUrl: 'projects-list/funded-projects.template.html',
+	controller: function FundedController($http) {
+		var self = this;
 
-      $http.get('../data/projects.json').then(function(response) {
-        self.projects = response.data;
-      });
+		$http.get('../data/projects.json').then(function(response) {
+			self.projects = response.data;
+		});
 
-    }
-  })
-	.component('myProjectsList', {
-		templateUrl: 'projects-list/my-projects-list.template.html',
-		controller: function MyProjectsListController($http) {
-			var self = this;
+	}
+})
+.component('myProjects', {
+	templateUrl: 'projects-list/my-projects-list.template.html',
+	controller: function MyProjectsController($http) {
+		var self = this;
 
-			$http.get('../data/my-projects.json').then(function(response) {
-				self.projects = response.data;
-			});
+		$http.get('../data/my-projects.json').then(function(response) {
+			self.projects = response.data;
+		});
 
-		}
-	});
+	}
+});
