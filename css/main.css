@@ -25,10 +25,6 @@ img {
     padding: 35px 55px 55px;
 }
 
-.btn {
-  margin-top: 10px;
-}
-
 .user-role {
     text-transform: capitalize;
 }
@@ -112,7 +108,7 @@ img {
     background-color: #eee;
 }
 
-.loginmodal-container {
+.loginmodal-container, .signupmodal-container {
   padding: 30px;
   /*max-width: 350px;*/
   width: 100% !important;
@@ -123,7 +119,8 @@ img {
   overflow: hidden;
 }
 
-.loginmodal-container h1 {
+.loginmodal-container h1,
+.signupmodal-container h1 {
   text-align: center;
   font-size: 1.8em;
 }
@@ -135,7 +132,9 @@ img {
   position: relative;
 }
 
-.loginmodal-container input[type=text], input[type=password] {
+.loginmodal-container input[type=text], 
+.loginmodal-container input[type=password], 
+.loginmodal-container input[type=email] {
   height: 44px;
   font-size: 16px;
   width: 100%;
@@ -150,7 +149,9 @@ img {
   -moz-box-sizing: border-box;
 }
 
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+.loginmodal-container input[type=text]:hover,
+.loginmodal-container input[type=password]:hover,
+.loginmodal-container input[type=email]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -158,7 +159,7 @@ img {
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.loginmodal {
+.loginmodal{
   text-align: center;
   font-size: 14px;
   font-weight: 700;
