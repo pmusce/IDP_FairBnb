@@ -56,15 +56,12 @@
               <discussion-list></discussion-list>
           </uib-tab>
 
-
-
           <uib-tab index="2">
             <uib-tab-heading>News
                 <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
             </uib-tab-heading>
             <news-list></news-list>
         </uib-tab>
-
 
         <uib-tab index="3" ng-if="user.isAdmin()">
             <uib-tab-heading>
@@ -82,9 +79,6 @@
                 <span class="badge">1</span>
             </uib-tab-heading>
             <member-list></member-list>
-
         </uib-tab>
-
-
     </uib-tabset>
 </div>
