@@ -1,5 +1,5 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectList', 'memberList', 'tabsCtrle']);
+var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList', 'tabsCtrle']);
 
 
 
@@ -67,11 +67,16 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     templateUrl : 'project.html',
     controller : 'HomeController'
 
+  })
+  .state('detailproject', {
+    url : '/detailproject',
+    templateUrl : 'detailproject.html',
+    controller : 'HomeController'
   });
 }]);
 
 fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, LoginService) {
-	
+
 
 	$scope.login = function() {
 		$uibModal.open({

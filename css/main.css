@@ -25,6 +25,10 @@ img {
     padding: 35px 55px 55px;
 }
 
+.btn {
+  margin-top: 10px;
+}
+
 .user-role {
     text-transform: capitalize;
 }
