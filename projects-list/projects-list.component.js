@@ -16,7 +16,7 @@ angular.
 		controller: function MyProjectsListController($http) {
 			var self = this;
 
-			$http.get('../data/projects.json').then(function(response) {
+			$http.get('../data/my-projects.json').then(function(response) {
 				self.projects = response.data;
 			});
 
