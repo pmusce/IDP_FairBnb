@@ -47,16 +47,12 @@
         <uib-tabset active="active">
 
           <uib-tab index="0" ng-if="!user.isAdmin()">
-              <uib-tab-heading>Projects
-                <span class="badge" ng-if='user.projectunread'>{{user.projectunread}}</span>
-              </uib-tab-heading>
+              <uib-tab-heading>Projects</uib-tab-heading>
               <projects-list></projects-list>
           </uib-tab>
 
           <uib-tab index="1" ng-if="!user.isGuest()">
-              <uib-tab-heading>Discussions
-                  <span class="badge">1</span>
-              </uib-tab-heading>
+              <uib-tab-heading>Discussions</uib-tab-heading>
               <discussion-list></discussion-list>
           </uib-tab>
 
