@@ -7,7 +7,7 @@ fairBnB.factory('user', [function() {
   	return {
         name: 'Pasquale Muscettola',
         username: 'polenta',
-        role: 'admin',
+        role: 'guest',
         isAdmin: function() {
             return this.role == 'admin';
         },
