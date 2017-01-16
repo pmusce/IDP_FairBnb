@@ -6,23 +6,22 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                  <a ui-sref="home">Home</a>
+                    <a ui-sref="home">Home</a>
                 </li>
                 <li ng-if="!user.isAdmin()">
-                  <a ui-sref="bookings">My Bookings</a>
+                    <a ui-sref="bookings">My Bookings</a>
                 </li>
                 <li ng-if="!user.isAdmin()">
-                  <a ui-sref="project">My projects</a>
+                    <a ui-sref="project">My projects</a>
                 </li>
                 <li>
-                  <a ui-sref="calendar">Calendar</a>
+                    <a ui-sref="calendar">Calendar</a>
                 </li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span>
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             <b class="user-role">{{user.role}}</b>
@@ -35,40 +34,37 @@
                         <li ng-if="!user.isGuest()">
                             <a href="#" ng-click="user.switchRole()">Switch To
                                 {{user.oppositeRole()}}</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="container">
-        <uib-tabset active="active">
+<div class="container">
+    <uib-tabset active="active">
 
-          <uib-tab index="0" ng-if="!user.isAdmin()">
-              <uib-tab-heading>Projects
+        <uib-tab index="0" ng-if="!user.isAdmin()">
+            <uib-tab-heading>Projects
                 <span class="badge" ng-if='user.projectunread'>{{user.projectunread}}</span>
-              </uib-tab-heading>
-              <projects-list></projects-list>
-          </uib-tab>
+            </uib-tab-heading>
+            <projects-list></projects-list>
+        </uib-tab>
 
-          <uib-tab index="1" ng-if="!user.isGuest()">
-              <uib-tab-heading>Discussions
-                  <span class="badge">1</span>
-              </uib-tab-heading>
-              <discussion-list></discussion-list>
-          </uib-tab>
+        <uib-tab index="1" ng-if="!user.isGuest()">
+            <uib-tab-heading>Discussions
+                <span class="badge">1</span>
+            </uib-tab-heading>
+            <discussion-list></discussion-list>
+        </uib-tab>
 
-
-
-          <uib-tab index="2">
+        <uib-tab index="2">
             <uib-tab-heading>News
                 <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
             </uib-tab-heading>
             <news-list></news-list>
         </uib-tab>
-
 
         <uib-tab index="3" ng-if="user.isAdmin()">
             <uib-tab-heading>
@@ -86,9 +82,6 @@
                 <span class="badge">1</span>
             </uib-tab-heading>
             <member-list></member-list>
-
         </uib-tab>
-
-
     </uib-tabset>
 </div>
