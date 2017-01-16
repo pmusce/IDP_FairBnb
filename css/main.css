@@ -14,6 +14,7 @@
 
 img {
   height: 80px;
+  width: 100px;
 }
 
 .main {
@@ -28,6 +29,31 @@ img {
     text-transform: capitalize;
 }
 
+.label {
+    padding: 1px 3px 2px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 1px;
+}
+.label-warning {
+    padding: 1px 3px 2px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 1px;
+}
+.label-danger {
+    color: black;
+}
 .well {
   margin-top: 15px;
 }

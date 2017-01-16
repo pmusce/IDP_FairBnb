@@ -1,5 +1,5 @@
 [{
-    "image": "http://placehold.it/64x64",
+    "image": "img/coop.jpg",
     "title": "Some primary announcement",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "coop",
@@ -11,7 +11,7 @@
     "type": "general",
     "read": false
 }, {
-    "image": "http://placehold.it/64x64",
+  "image": "img/coop.jpg",
     "title": "This is an important secondary news",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",
@@ -23,7 +23,7 @@
     "type": "general",
     "read": true
 }, {
-    "image": "http://placehold.it/64x64",
+  "image": "img/coop.jpg",
     "title": "This is a very very very old news",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",

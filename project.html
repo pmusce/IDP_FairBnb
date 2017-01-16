@@ -42,44 +42,38 @@
 </nav>
 
 <div class="container container-fluid">
-  <div class="row">
-  <a class="btn-sm btn-primary " role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  <button class="btn btn-primary" role="button" data-toggle="collapse"
+  href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+  style="display: block; margin: 0 auto; text-align: center;">
     Propose Project
-  </a>
-  <div  class="collapse" id="collapseExample">
+  </button>
+  <div class="collapse row" id="collapseExample">
+  <div class="col-md-8" >
     <div class="well">
       <form>
         <fieldset class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          <small class="text-muted">We'll never share your email with anyone else.</small>
+          <label for="exampleInputEmail1">Project title</label>
+          <input type="text" class="form-control" id="projectTitle" placeholder="">
+          <small class="text-muted">Find a captivating title</small>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="exampleInputPassword1">Short description (max. 100 characters)</label>
+          <textarea maxlength="100" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
+          <small class="text-muted">This description needs to summarize your project</small>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleSelect1">Example select</label>
+          <label for="exampleSelect1">Minimum Budget</label>
           <select class="form-control" id="exampleSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>500$</option>
+            <option>1000$</option>
+            <option>2000$</option>
+            <option>5000$</option>
+            <option>>5000$</option>
           </select>
         </fieldset>
+
         <fieldset class="form-group">
-          <label for="exampleSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="exampleTextarea">Example textarea</label>
+          <label for="exampleTextarea">Full Description</label>
           <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
         </fieldset>
         <fieldset class="form-group">
@@ -114,14 +108,22 @@
       </form>
     </div>
   </div>
-    <hr>
+    <div class="well col-md-4">
+      <h4>Projects Guidelines</h4>
+      <b>Navigation:</b> When creating links that open new browser windows, ensure that the <span id="back" class="label label-primary">Back</span> button is still available, and that the new window is setup to return the user to the original browser window. Disabling navigation is confusing and frustrating to users, and can negatively impact user satisfaction and task completion.
+      <br><br><b>Iterative:</b> Iterative design consists of creating paper or computer prototypes, testing the <span id="back" class="label label-success">prototypes</span>, and then making changes based on the test results. The ’test and make changes’ process is repeated until the website meets performance benchmarks (usability goals). When these goals are met, the iterative process ends. The iterative design process helps to substantially improve the usability of websites, improve task completion rates, and improve user satisfaction.
+      <br><br><b>Frequency/Severity</b> The number of users affected determines the frequency of a problem. To be most useful, the severity of a problem should be defined by analyzing difficulties encountered by individual users. Both <span class="label label-warning">frequency</span> and <span style="font-color:black;" class="label label-danger">severity</span> data can be used to prioritize usability issues that need to be changed. For example, designers should focus first on fixing those usability issues that were shown to be most severe. Those usability issues that were encountered by many participants, but had a severity rating of 'nuisance', should be given much less priority.
+
+
+    </div>
+  </div>
 
     <div class="row">
         <!-- center left-->
         <div class="container">
 
           <div>
-            <h1>Supported projects</h1>
+            <h3>Supported projects</h3>
             <form class="form-inline">
               <label for="filterSelect">Filter by:</label>
               <div class="btn-group">
@@ -129,11 +131,8 @@
                     <label class="btn btn-xs btn-success">Accepted</label>
                 </div>
             </form>
-
             <project-list></project-list>
-
           </div>
         </div>
     </div>
-</div>
 </div>

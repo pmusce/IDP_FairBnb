@@ -1,20 +1,20 @@
 [
 	{
-		"image": "http://placehold.it/64x64",
+		"image": "img/disc.jpg",
         "title": "Cooperative discussion about legal framework (unread)",
         "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     	"type": "coop",
     	"read": false
     },
 	{
-		"image": "http://placehold.it/64x64",
+		"image": "img/disc.jpg",
         "title": "Another interesting discussion",
         "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     	"type": "general",
     	"read": false
     },
 		{
-			"image": "http://placehold.it/64x64",
+			"image": "img/disc.jpg",
 					"title": "Yet another read discussion about the coop",
 					"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
 				"type": "general",
