@@ -10,6 +10,12 @@
 
 <ul class="media-list liste">
 	<li class="media" ng-repeat="discussion in $ctrl.discussions | filter:$ctrl.query">
+		<div class="media-left">
+			<a href="#">
+				<img ng-src="{{discussion.image}}">
+			</a>
+		</div>
+
 	  <div class="media-body">
 	    <h4 class="media-heading">
 				{{discussion.title}}</h4>
