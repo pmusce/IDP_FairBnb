@@ -3,29 +3,34 @@
     "title": "Some primary announcement",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "coop",
-    "read": false
+    "read": false,
+    "date": 1
 }, {
     "image": "http://placehold.it/64x64",
     "title": "This has not been read",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",
-    "read": false
+    "read": false,
+    "date": 2
 }, {
   "image": "img/coop.jpg",
     "title": "This is an important secondary news",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",
-    "read": false
+    "read": false,
+    "date": 3
 }, {
     "image": "http://placehold.it/64x64",
     "title": "This is an old news",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",
-    "read": true
+    "read": true,
+    "date": 4
 }, {
   "image": "img/coop.jpg",
     "title": "This is a very very very old news",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
     "type": "general",
-    "read": true
+    "read": true,
+    "date": 5
 }]

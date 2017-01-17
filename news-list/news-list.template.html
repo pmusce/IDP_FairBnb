@@ -4,7 +4,7 @@
         Add News Annoucement
 	</button>
 	<span class="pull-right">
-		<label for="filterSelect">Filter:</label>
+		<label for="filterSelect">Filter</label>
 		<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
 		  <option value="">All</option>
 		  <option ng-repeat="cat in $ctrl.categories" value="{{cat}}">{{cat}}</option>
@@ -13,7 +13,7 @@
 </form>
 
 <ul class="media-list liste">
-	<li class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:$ctrl.query">
+	<li ng-click="new.read=true" class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
 		<div class="media-left">
 			<a href="#">
 				<img ng-src="{{new.image}}">

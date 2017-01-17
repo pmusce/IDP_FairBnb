@@ -109,6 +109,7 @@ img {
 
 .unread {
     background-color: #eee;
+    cursor: pointer;
 }
 
 .loginmodal-container, .signupmodal-container {
