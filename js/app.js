@@ -3,7 +3,7 @@ var fairBnB = angular.module('fairBnB', [
 	'ui.bootstrap',
 	'ui.router',
 	'newsList',
-	'discussionList', 
+	'discussionList',
 	'projectsList',
 	'memberList',
 	'navbar'
@@ -16,11 +16,13 @@ fairBnB.factory('user', [function() {
         name: '',
         username: '',
         role: '',
+				funds: '',
         isAuth: false,
         setUser: function(usr) {
         	this.name = usr.name;
         	this.username = usr.username;
         	this.role = usr.role;
+					this.funds = usr.funds;
         },
         isAdmin: function() {
             return this.role == 'admin';
@@ -88,7 +90,7 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     controller : 'HomeController'
   });
 }]);
-	
+
 
 fairBnB.factory('LoginService', function($http, user, $state) {
 	self = this;
@@ -109,7 +111,7 @@ fairBnB.factory('LoginService', function($http, user, $state) {
 				isAuthenticated = false;
 				err_callback();
 		    });
-			
+
 		},
 		isAuthenticated : function() {
 			return isAuthenticated;

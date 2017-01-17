@@ -33,6 +33,7 @@
 		"username": "alessandro",
 		"password": "password",
 		"name": "Alessandro Latella",
-		"role": "host"
+		"role": "host",
+		"funds": 2500
 	}
 ]
