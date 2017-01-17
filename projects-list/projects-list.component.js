@@ -38,4 +38,15 @@ module('projectsList')
 		});
 
 	}
+})
+.component('newProject', {
+	templateUrl: 'projects-list/newProject.template.html',
+	controller: function MyProjectsController($http) {
+		var self = this;
+
+		$http.get('../data/projects.json').then(function(response) {	// Randomly GET projects. Not necessary
+			self.projects = response.data;
+		});
+
+	}
 });

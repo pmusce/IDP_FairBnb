@@ -1,25 +1,25 @@
 <div>
-	<button type="button" class="btn btn-primary">
-	        New project
-	</button>
-	<form class="form-inline">
-		<div class="form-group">
-			<label>Filter by</label>
-			<div class="btn-group">
-		        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'not-funded'">Need Funding</label>
-		        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'funded'">Funded</label>
-		        <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'my-projects'">My Projects</label>
-		    </div>
-	    </div>
 
-		<span class="pull-right">
-			<label for="filterSelect">Sort on</label>
-			<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
-			  <option value="">All</option>
-			</select>
-		</span>
-	</form>
+    <form class="form-inline">
+        <div class="form-group">
+            <label>Filter by:</label>
+            <div class="btn-group">
+                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'not-funded'">Need Funding</label>
+                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'funded'">Funded</label>
+                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'my-projects'">My Projects</label>
+                <label class="btn btn-success btn-sm" ng-model="projectType" uib-btn-radio="'new-project'"><span class="glyphicon glyphicon-plus" aria-hidden="true"> </span> New Project</label>
+            </div>
+        </div>
+
+        <span class="pull-right">
+            <label for="filterSelect">Sort on</label>
+            <select ng-model="$ctrl.query" id="filterSelect" class="form-control">
+                <option value="">All</option>
+            </select>
+        </span>
+    </form>
 </div>
 <need-funding ng-if="projectType=='not-funded'"></need-funding>
 <funded ng-if="projectType=='funded'"></funded>
 <my-projects ng-if="projectType=='my-projects'"></my-projects>
+<new-project ng-if="projectType=='new-project'"></new-project>
