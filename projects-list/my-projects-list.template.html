@@ -1,3 +1,7 @@
+<div class="btn-group" >
+		<label class="btn btn-xs btn-default">Proposals</label>
+		<label class="btn btn-xs btn-default">Approved</label>
+</div>
 <ul class="media-list liste">
 	<li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
 		<div class="media-left">
@@ -12,8 +16,6 @@
 			{{project.body}}
 		</div>
 		<div class="media-right media-middle">
-			<button type="button" class="btn btn-success btn-xs">
-				<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> <b>Support</b></button>
 				<button type="button" class="btn btn-primary btn-xs">
 				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> <b>Discuss</b> !</button><br>
 
