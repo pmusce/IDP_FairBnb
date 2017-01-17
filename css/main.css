@@ -222,21 +222,22 @@ user-select: none; */
 .login-help{
   font-size: 12px;
 }
-
 #status {
   margin-left: 5px;
 }
-
 .btn-xs {
   margin-bottom: 4px;
   width: 120px;
 }
-
 .btn-sm {
 }
-
 .btn-warning {
   color: black;
   background: #E6DF03;
+
+}
+.img.disc {
+  height: 100px;
+  width: 136px;
 
 }
