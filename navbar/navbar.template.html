@@ -31,16 +31,17 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class='btn dropdown-toggle'>
+          <a class='dropdown-toggle' data-toggle="dropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">
             <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>
           </a>
           <ul class="dropdown-menu">
             <li class="dropdown-header">User roles</li>
-            <li ng-if="!user.isGuest()">
-              <a href="#" ng-click="user.switchRole()">Switch To
-                {{user.oppositeRole()}}</a>
-              </li>
-            </ul>
+            <li>
+              <a href="#">
+                Switch To</a>
+            </li>
+          </ul>
           </li>
 
           <li class="dropdown">
