@@ -1,13 +1,18 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList', 'tabsCtrle']);
+var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList']);
 
 
 
 fairBnB.factory('user', [function() {
   	return {
-        name: 'Pasquale Muscettola',
-        username: 'polenta',
-        role: 'guest',
+        name: '',
+        username: '',
+        role: '',
+        setUser: function(usr) {
+        	this.name = usr.name;
+        	this.username = usr.username;
+        	this.role = usr.role;
+        },
         isAdmin: function() {
             return this.role == 'admin';
         },
@@ -33,9 +38,9 @@ fairBnB.run(function($rootScope, $location, $state, LoginService) {
 			console.log(toState);
 		});
 
-	if(!$state.name == "login" && !LoginService.isAuthenticated()) {
-		$state.transitionTo('login');
-	}
+	// if($state.name != "login" && !LoginService.isAuthenticated()) {
+	// 	$state.transitionTo('login');
+	// }
 });
 
 fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -99,29 +104,40 @@ fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, 
 
 fairBnB.controller('LoginModalInstanceCtrl', function ($scope, $uibModalInstance, $state, LoginService) {
 	$scope.formSubmit = function() {
-		console.log("YEAH");
-		if(LoginService.login($scope.username, $scope.password)) {
-			$scope.error = '';
-			$scope.username = '';
-			$scope.password = '';
-			$uibModalInstance.close();
-			$state.transitionTo('home');
-		} else {
-			$scope.error = "Incorrect username/password !";
-		}
+		LoginService.login($scope.username, $scope.password,
+			function() {
+				$scope.error = '';
+				$scope.username = '';
+				$scope.password = '';
+				$uibModalInstance.close();
+				$state.transitionTo('home');
+			}, function() {
+				$scope.error = "Incorrect username/password !";
+			});
 	};
 
 });
 
-fairBnB.factory('LoginService', function() {
-	var admin = 'admin';
-	var pass = 'pass';
+fairBnB.factory('LoginService', function($http, user) {
+	self = this;
 	var isAuthenticated = false;
+	
 
 	return {
-		login : function(username, password) {
-			isAuthenticated = username === admin && password === pass;
-			return isAuthenticated;
+		login : function(username, password, callback, err_callback) {
+			$http.get('../data/users.json').then(function(response) {
+		        userList = response.data;
+				for (i=0; i< userList.length; i++) {
+					if (username === userList[i].username && password === userList[i].password) {
+						isAuthenticated = true;
+						user.setUser(userList[i]);
+						callback();
+					}
+				}
+				isAuthenticated = false;
+				err_callback();
+		    });
+			
 		},
 		isAuthenticated : function() {
 			return isAuthenticated;

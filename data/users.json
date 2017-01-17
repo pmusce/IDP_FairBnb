@@ -1,38 +1,38 @@
 [
 	{
-		"username": "admin",
+		"username": "pasquale",
 		"password": "password",
 		"name": "Pasquale Muscettola",
-		"role": "Team Member"
+		"role": "admin"
 	},
 	{
-		"username": "admin",
+		"username": "pauline",
 		"password": "password",
 		"name": "Pauline Sia",
-		"role": "Team Member"
+		"role": "guest"
 	},
 	{
-		"username": "admin",
+		"username": "willem",
 		"password": "password",
 		"name": "Willem Duijvelshoff",
-		"role": "Team Member"
+		"role": "admin"
 	},
 	{
-		"username": "admin",
+		"username": "cindy",
 		"password": "password",
 		"name": "Cindy Van Den Berg",
-		"role": "Team Member"
+		"role": "guest"
 	},
 	{
 		"username": "admin",
 		"password": "password",
 		"name": "Axel De Jong",
-		"role": "Team Member"
+		"role": "host"
 	},
 	{
-		"username": "admin",
+		"username": "alessandro",
 		"password": "password",
 		"name": "Alessandro Latella",
-		"role": "Team Member"
+		"role": "host"
 	}
 ]
