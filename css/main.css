@@ -58,7 +58,8 @@ img {
     color: black;
 }
 .well {
-  margin-top: 15px;
+  position: relative;
+  left: -30px;
 }
 
 .form-inline {
