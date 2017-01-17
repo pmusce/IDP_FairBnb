@@ -1,6 +1,5 @@
 <ul class="media-list liste">
-	<li class="media" ng-class="{unread: !project.read}"
-	ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
+	<li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
 		<div class="media-left">
 
 				<img ng-src="{{project.image}}">

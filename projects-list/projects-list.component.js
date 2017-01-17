@@ -6,6 +6,17 @@ module('projectsList')
 		$scope.projectType="my-projects";
 	}
 })
+.component('needFunding', {
+	templateUrl: 'projects-list/need-funding-projects.template.html',
+	controller: function NeedFundingController($http) {
+		var self = this;
+
+		$http.get('../data/projects.json').then(function(response) {
+			self.projects = response.data;
+		});
+
+	}
+})
 .component('funded', {
 	templateUrl: 'projects-list/funded-projects.template.html',
 	controller: function FundedController($http) {

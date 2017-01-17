@@ -1,5 +1,5 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList', 'tabsCtrle']);
+var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList']);
 
 
 
@@ -38,9 +38,9 @@ fairBnB.run(function($rootScope, $location, $state, LoginService) {
 			console.log(toState);
 		});
 
-	if(!$state.name == "login" && !LoginService.isAuthenticated()) {
-		$state.transitionTo('login');
-	}
+	// if($state.name != "login" && !LoginService.isAuthenticated()) {
+	// 	$state.transitionTo('login');
+	// }
 });
 
 fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -138,7 +138,6 @@ fairBnB.factory('LoginService', function($http, user) {
 				err_callback();
 		    });
 			
-			return isAuthenticated;
 		},
 		isAuthenticated : function() {
 			return isAuthenticated;
