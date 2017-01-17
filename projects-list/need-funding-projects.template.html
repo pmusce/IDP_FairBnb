@@ -12,7 +12,7 @@
 			{{project.body}}
 		</div>
 		<div class="media-right media-middle">
-			<button type="button" class="btn btn-success btn-xs">
+			<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">
 				<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> <b>Support</b></button>
 				<button type="button" class="btn btn-primary btn-xs">
 				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> <b>Discuss !</b></button><br>
@@ -20,3 +20,14 @@
 		</div>
 	</li>
 </ul>
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
