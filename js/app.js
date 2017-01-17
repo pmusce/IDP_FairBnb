@@ -1,5 +1,13 @@
 // Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', ['ui.bootstrap', 'ui.router', 'newsList', 'discussionList', 'projectsList', 'memberList']);
+var fairBnB = angular.module('fairBnB', [
+	'ui.bootstrap',
+	'ui.router',
+	'newsList',
+	'discussionList', 
+	'projectsList',
+	'memberList',
+	'navbar'
+]);
 
 
 
@@ -8,6 +16,7 @@ fairBnB.factory('user', [function() {
         name: '',
         username: '',
         role: '',
+        isAuth: false,
         setUser: function(usr) {
         	this.name = usr.name;
         	this.username = usr.username;
@@ -50,7 +59,7 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 	.state('login', {
 		url : '/login',
 		templateUrl : 'login.html',
-		controller : 'LoginController'
+		controller : 'HomeController'
 	})
 	.state('home', {
 		url : '/home',
@@ -79,49 +88,11 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     controller : 'HomeController'
   });
 }]);
+	
 
-fairBnB.controller('LoginController', function($scope, $uibModal, $stateParams, LoginService) {
-
-
-	$scope.login = function() {
-		$uibModal.open({
-		  animation: true,
-	      templateUrl: 'login-modal.html',
-	      controller: 'LoginModalInstanceCtrl',
-	      controllerAs: '$ctrl'
-	    });
-	};
-
-	$scope.signup = function() {
-		$uibModal.open({
-		  animation: true,
-	      templateUrl: 'signup-modal.html',
-	      controller: 'LoginModalInstanceCtrl',
-	      controllerAs: '$ctrl'
-	    });
-	};
-});
-
-fairBnB.controller('LoginModalInstanceCtrl', function ($scope, $uibModalInstance, $state, LoginService) {
-	$scope.formSubmit = function() {
-		LoginService.login($scope.username, $scope.password,
-			function() {
-				$scope.error = '';
-				$scope.username = '';
-				$scope.password = '';
-				$uibModalInstance.close();
-				$state.transitionTo('home');
-			}, function() {
-				$scope.error = "Incorrect username/password !";
-			});
-	};
-
-});
-
-fairBnB.factory('LoginService', function($http, user) {
+fairBnB.factory('LoginService', function($http, user, $state) {
 	self = this;
 	var isAuthenticated = false;
-	
 
 	return {
 		login : function(username, password, callback, err_callback) {
@@ -131,6 +102,7 @@ fairBnB.factory('LoginService', function($http, user) {
 					if (username === userList[i].username && password === userList[i].password) {
 						isAuthenticated = true;
 						user.setUser(userList[i]);
+						user.isAuth = true;
 						callback();
 					}
 				}
@@ -141,6 +113,11 @@ fairBnB.factory('LoginService', function($http, user) {
 		},
 		isAuthenticated : function() {
 			return isAuthenticated;
+		},
+		logout: function() {
+			isAuthenticated = false;
+			user.isAuth = false;
+			$state.transitionTo('login');
 		}
 	};
 
@@ -148,4 +125,8 @@ fairBnB.factory('LoginService', function($http, user) {
 
 fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
+
+	$scope.logout = function() {
+		LoginService.logout();
+	}
 });
