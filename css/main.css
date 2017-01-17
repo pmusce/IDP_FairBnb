@@ -211,3 +211,12 @@ user-select: none; */
 .login-help{
   font-size: 12px;
 }
+
+#status {
+  margin-left: 5px;
+}
+
+.btn-xs {
+  margin-bottom: 4px;
+  width: 120px;
+}
