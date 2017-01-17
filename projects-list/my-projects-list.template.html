@@ -5,16 +5,16 @@
 				<img ng-src="{{project.image}}">
 		</div>
 		<div class="media-body">
-			<h4 class = "media-heading">{{project.title}}</h4>
+			<h4 class = "media-heading"><b>{{project.title}}</b></h4>
+			<button type="button" class="btn btn-success btn-xs">
+				<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Support</button>
+				<button type="button" class="btn btn-secondary btn-xs">
+				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Discuss</button><br>
+				<br>
 			{{project.body}}
 		</div>
 		<div class="media-right">
 			<p><span class="label label-info">{{project.status}}</span></p>
-			<button style="margin-bottom:10px;" type="btn btn-primary" name="button">Support</button>
-			<button type="btn-primary" name="button">Discuss</button>
-
-
 		</div>
-
 	</li>
 </ul>
