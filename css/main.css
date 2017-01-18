@@ -90,15 +90,8 @@ img.none {
     border-radius: 3px;
 }
 .label-warning {
-    padding: 1px 3px 2px;
-    font-size: 9.75px;
     font-weight: bold;
     color: black;
-    text-transform: uppercase;
-    white-space: nowrap;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 1px;
 }
 .label-danger {
     color: black;
@@ -352,4 +345,12 @@ user-select: none; */
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .projectinfo {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    margin-bottom: 10px;
+
   }

@@ -2,19 +2,30 @@
     <li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
         <div class="media-left">
 
-            <img ng-src="{{project.image}}" style="height: 100px; width: 136px;">
+            <img ng-src="{{project.image}}" style="height: 100px; width: 136px; margin-top:11px;">
         </div>
         <div class="media-body">
             <div class="media-heading">
                 <h4 >
                     <b>{{project.title}}</b>
                 </h4>
-                <b>Status:
-                </b>
-                <span id="status" class="label label-primary">{{project.status}}</span>
-            </div>
-            {{project.body}}
-        </div>
+                <div class="projectinfo">
+                    <b>Status:
+                    </b>
+                    <span class="label label-primary">{{project.status}}</span>
+                    <b>Total Costs:
+                    </b>
+                    <span class="label label-primary">{{project.costs}}</span>
+                    <b>Total Donated:
+                    </b>
+                    <span class="label label-warning">{{project.totdonated}}</span>
+                    <b>Duration:
+                    </b>
+                    <span class="label label-primary">{{project.duration}}</span>
+                    Months</div>
+                    <div><uib-progressbar class="progress-striped" max="200" value="100" type="success"><i>{{project.totdonated}} / {{project.costs}}</i></uib-progressbar></div>
+            </div>{{project.body}}</div>
+
         <div class="media-right media-middle">
             <button type="button" data-tooltip="Support financially!" class="btn btn-success btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">
                 <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
@@ -44,7 +55,9 @@
                 Do you wish to support this project with your entire personal fund?
                 <br>
                 <br>
-								<b>You currently manage :</b> <span class="label label-primary">{{user.funds}} €</span><br><br>
+                <b>You currently manage :</b>
+                <span class="label label-primary">{{user.funds}}
+                    €</span><br><br>
                 <div class="input-group">
                     <span class="input-group-addon" id="sizing-addon2">€</span>
                     <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
