@@ -2,8 +2,18 @@ angular.
 module('projectsList')
 .component('projectsList', {
 	templateUrl: 'projects-list/projects-list.template.html',
-	controller: function ProjectListController($scope) {
+	controller: function ProjectListController($scope, $uibModal) {
 		$scope.projectType="my-projects";
+		$scope.createProject = function() {
+	        $uibModal.open({
+		        animation: true,
+		        templateUrl: 'projects-list/newProject.template.html',
+		        controller: 'NewProjectModalInstanceCtrl',
+		        controllerAs: '$ctrl',
+		        size: 'lg',
+		        windowClass: 'new-project-modal'
+	        });
+	    };
 	}
 })
 .component('needFunding', {
@@ -49,4 +59,9 @@ module('projectsList')
 		});
 
 	}
+})
+.controller('NewProjectModalInstanceCtrl', function ($scope, $uibModalInstance, $state) {
+	$scope.cancel = function () {
+	    $uibModalInstance.dismiss('cancel');
+	};
 });

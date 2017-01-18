@@ -14,8 +14,20 @@ a[ng-click]{
     cursor: pointer;
 }
 
+.guidelines {
+  padding: 10px 15px 15px 0;
+}
+
 .green-bg {
   background-color: #62C462;
+}
+
+.new-project-modal .modal-lg {
+  width: 1170px;
+}
+
+.new-project-modal .well {
+      margin: 0;
 }
 
 .tab-content {
