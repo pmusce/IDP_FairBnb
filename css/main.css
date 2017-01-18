@@ -51,6 +51,10 @@ img.none {
 
 }
 
+.news-img {
+  width: 100%;
+}
+
 .main {
     border-style: solid;
     border-color: #ddd;
@@ -137,7 +141,6 @@ img.none {
 
 .unread {
     background-color: #eee;
-    cursor: pointer;
 }
 
 .loginmodal-container, .signupmodal-container {

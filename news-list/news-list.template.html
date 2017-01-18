@@ -1,3 +1,4 @@
+<div ng-if="!newsOpened">
 <form class="form-inline clearfix">
 	<button ng-if="$ctrl.user.isAdmin()" type="button" class="btn btn-primary" data-toggle="modal"
         		data-target="#myModal" id="bottoneModale">
@@ -13,7 +14,7 @@
 </form>
 
 <ul class="media-list liste">
-	<li ng-click="new.read=true; countUnread()" class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
+	<li class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
 		<div class="media-left">
 			<a href="#">
 				<img ng-src="{{new.image}}" style="height: 100px; width: 136px;">
@@ -25,7 +26,7 @@
 		</div>
 		<div class="media-right">
 			<p><span class="label label-primary">{{new.type}}</span></p>
-            <button ng-click="" type="button" class="btn btn-primary">Read More</button>
+            <button ng-click="openNews(new)" type="button" class="btn btn-primary">Read More</button>
 		</div>
 	</li>
 </ul>
@@ -103,4 +104,25 @@
             </div>
         </div>
     </div>
+</div>
+</div>
+
+<div ng-if="newsOpened">
+    <p>
+        <button ng-click="closeNews()" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+        </button>
+    </p>
+    <div>
+        <div class="col-sm-3">
+            <a href="#">
+                <img class="news-img" ng-src="{{currentNews.image}}">
+            </a>
+        </div>
+        <div class="col-sm-9">
+            <h4 class="media-heading">{{currentNews.title}}</h4>
+            {{currentNews.body}}
+        </div>
+    </div>
+
 </div>

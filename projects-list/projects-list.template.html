@@ -1,15 +1,13 @@
 <div>
-
+    <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
+    </button>
     <form class="form-inline">
         <div class="form-group">
             <div class="btn-group">
-                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
-                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'funded'"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>  Funded</label>
-                <label class="btn btn-primary btn-sm" ng-model="projectType" uib-btn-radio="'my-projects'"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  My Projects</label>
-                <label class="btn btn-success btn-sm" ng-model="projectType" uib-btn-radio="'new-project'"><span class="glyphicon glyphicon-plus" aria-hidden="true"> </span>  New Project</label>
-
-
-
+                <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
+                <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'funded'"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>  Funded</label>
+                <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'my-projects'"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  My Projects</label>
             </div>
         </div>
 
@@ -21,6 +19,7 @@
         </span>
     </form>
 </div>
+
 <need-funding ng-if="projectType=='not-funded'"></need-funding>
 <funded ng-if="projectType=='funded'"></funded>
 <my-projects ng-if="projectType=='my-projects'"></my-projects>
