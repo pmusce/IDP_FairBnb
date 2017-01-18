@@ -77,7 +77,7 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
   .state('calendar', {
     url : '/calendar',
     templateUrl : 'calendar.html',
-    controller : 'HomeController'
+    controller : 'CalendarController'
   })
   .state('project', {
     url : '/project',
@@ -133,4 +133,3 @@ fairBnB.controller('HomeController', function($scope, $stateParams, $state, user
 		LoginService.logout();
 	}
 });
-

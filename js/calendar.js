@@ -1,9 +1,11 @@
 
-function CalendarCtrl($scope,$compile,uiCalendarConfig) {
+fairBnB.controller('CalendarController', function($scope,$compile,uiCalendarConfig) {
     var date = new Date();
     var d = date.getDate();
     var m = date.getMonth();
     var y = date.getFullYear();
+
+    $scope.currentEvent = {title: 'All Day Event',start: new Date(y, m, 1)};
     
     $scope.changeTo = 'Hungarian';
     /* event source that pulls from google.com */
@@ -41,7 +43,7 @@ function CalendarCtrl($scope,$compile,uiCalendarConfig) {
     };
     /* alert on eventClick */
     $scope.alertOnEventClick = function( date, jsEvent, view){
-        $scope.alertMessage = (date.title + ' was clicked ');
+        $scope.currentEvent = date;
     };
     /* alert on Drop */
      $scope.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view){
@@ -124,4 +126,4 @@ function CalendarCtrl($scope,$compile,uiCalendarConfig) {
     /* event sources array*/
     $scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
     $scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
-}
+});
