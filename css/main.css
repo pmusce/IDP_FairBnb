@@ -1,3 +1,6 @@
+.navbar {
+}
+
 .navbar-nav>li>a.profile-image {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -24,8 +27,6 @@ a[ng-click]{
   right: -15px;
 }
 
-
-
 .form-inline {
   margin-top: 20px;
 
@@ -43,8 +44,11 @@ a[ng-click]{
 }
 
 img {
-  height: 100px;
-  width: 136px;
+
+}
+
+img.none {
+
 }
 
 .main {
@@ -326,4 +330,11 @@ user-select: none; */
       -moz-border-radius-topright: 5px;
        border-top-left-radius: 5px;
        border-top-right-radius: 5px;
+}s
+
+.my-fluid-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }

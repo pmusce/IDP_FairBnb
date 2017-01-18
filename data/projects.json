@@ -1,37 +1,52 @@
 [{
-    "image": "img/ams.jpg",
+    "image": "img/proj1.png",
     "date": 2017,
-    "title": "Kijkdam Project",
-    "body": "Ahaha ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "title": "Rebuilding Orphanage Amsterdam",
+    "body": "A cult building in the 1960s, Van Eyck's orphanage brought to the surface an idiosyncratic interpretation of modern architectural ideas enriched by pattern and forms and by balancing repetitive pavilions. Constructed in reinforced concrete panels and glass bricks, it has undoubtedly worn badly. This project aim to restore of parts of the 57 year-old building in Amsterdam as orphanage. We have drawn a new architecture plan to restore this historical building. ",
     "status": "approved",
+    "costs": 100000,
+    "totdonated": 65000,
+    "duration": 21,
     "read": false
 }, {
-    "image": "img/ams2.jpg",
+    "image": "img/proj2.png",
     "date": 2017,
-    "title": "Improbable Project",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "title": "Renewable Energy Houses",
+    "body": "This project will sponsor our hosts to contribute to clean and renewable energy. Our target is to provide clean solar panels for 100 eligible households in Amsterdam area. All of Fairbed hosts will be invited to join and benefit from this sponsored projects. ",
     "status": "pending",
+    "costs": 22000,
+    "totdonated": 9000,
+    "duration": 6,
     "read": false
 }, {
-    "image": "img/ams2.jpg",
+    "image": "img/proj3.png",
     "date": 2016,
-    "title": "Improbable Project",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "title": "Save our old bridge",
+    "body": "Restoration of parts of the 500 year-old bridge near Zuidpark in Amsterdam. There are about 399 bricks need to be replaced to make it safe again to pedestrians. This has over 900 pedestrians crossing daily and each of them has 11% chance of tripping over a loose brick and fall. Over the last year, over 99 reported cases of people tripping over this unsafe bridge. Currently, it has been closed until it is made safe again. If no one comes forward to help, this bridge will remain close and create inconvenience to pedestrians travelling from Zuidpark towards city center.",
     "status": "pending",
+    "costs": 8000,
+    "totdonated": 7700,
+    "duration": 8,
     "read": false
 }, {
-    "image": "img/ams2.jpg",
+    "image": "img/proj4.png",
     "date": 2015,
-    "title": "Improbable Project",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "title": "New hanging bridge for kids in Vondelpark",
+    "body": "Vondelpark has beautiful parkland, wonderful wooden play equipment, rope bridges, zip wires, an open-air theatre, huge paddling pool, skate hire, a Picasso sculpture and a cracking café, too. Families can grab coffee and pancakes from the Groot Melkhuis, this is the place to relax and let kids run wild. There is a large lake in the middle of the lake which we feel needs a hanging bridge so that children can walk across and enjoy the lovely green lush of fresh water views, plants, birds and other reptiles. They can enjoy a nice nature walk across this bridge.",
     "status": "pending",
+    "costs": 4300,
+    "totdonated": 3700,
+    "duration": 1,
     "read": false
 }, {
-    "image": "img/ams2.jpg",
+    "image": "img/proj5.png",
     "date": 2015,
-    "title": "Improbable Project",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla. ",
+    "title": "Youths hang out area at Oud-West",
+    "body": "There are over 844,000 inhabitants in Amsterdam and 45% of them are below 21.  These youths need a safe and relaxing place to hangout and take a break during their school holidays. These kids have nowhere to go and we would like to create a safe place for them. We have identified a house owner who is willing to offer the place during weekends for this hangout place. We just need to perform paintings, purchase new games, equipments and furniture to make this place conducive to hangout.",
     "status": "pending",
+    "costs": 5300,
+    "totdonated": 5200,
+    "duration": 1,
     "read": false
 }
 ]

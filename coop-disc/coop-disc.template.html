@@ -11,8 +11,7 @@
 <ul class="media-list liste">
 	<li class="media" ng-repeat="discussion in $ctrl.discussions | filter:$ctrl.query">
 	  <div class="media-body">
-	    <h4 class="media-heading">
-				{{discussion.title}}</h4>
+	    <h4 ><b>{{discussion.title}}</b></h4>
 	   	{{discussion.body}}
 	  </div>
 	  <div class="media-right">
