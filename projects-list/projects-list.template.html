@@ -1,7 +1,4 @@
 <div>
-    <button ng-click="createProject()" type="button" class="btn btn-success">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
-    </button>
     <form class="form-inline">
         <div class="form-group">
             <div class="btn-group">
@@ -9,6 +6,9 @@
                 <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'funded'"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>  Funded</label>
                 <label class="btn btn-primary" ng-model="projectType" uib-btn-radio="'my-projects'"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  My Projects</label>
             </div>
+            <button ng-click="createProject()" type="button" class="btn btn-success">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
+            </button>
         </div>
 
         <span class="pull-right">

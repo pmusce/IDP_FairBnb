@@ -18,8 +18,12 @@ module('projectsList')
 })
 .component('needFunding', {
 	templateUrl: 'projects-list/need-funding-projects.template.html',
-	controller: function NeedFundingController($http) {
+	controller: function NeedFundingController($http, $scope) {
 		var self = this;
+
+		$scope.openSupport = function(project) {
+			$scope.currentProject = project;
+		}
 
 		$http.get('../data/projects.json').then(function(response) {
 			self.projects = response.data;

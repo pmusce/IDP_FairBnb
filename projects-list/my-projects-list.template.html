@@ -5,9 +5,12 @@
 		</div>
 		<div class="media-body">
 			<div class="media-heading">
+
 				<h4 ><b>{{project.title}}</b></h4>
-				<b>Status: </b><span id="status" class="label label-primary">{{project.status}}</span>
+				<div class="projectinfo">
+				<b>Status: </b><span id="status" class="label label-warning">{{project.status}}</span>
 			</div>
+		</div>
 			{{project.body}}
 		</div>
 		<div class="media-right media-middle">
