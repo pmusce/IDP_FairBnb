@@ -6,6 +6,9 @@ component('newsList', {
     var self = this;
     this.user = user;
     this.news = [];
+
+    $scope.newsOpened = false;
+
     $scope.countUnread = function() {
       self.user.unread = self.news.reduce(function (total, current) {
         if (!current.read) {
@@ -28,5 +31,15 @@ component('newsList', {
       }, []);
     });
 
+    $scope.openNews = function(news) {
+      $scope.newsOpened = true;
+      news.read=true; 
+      $scope.countUnread();
+      $scope.currentNews = news;
+    }
+
+    $scope.closeNews = function() {
+      $scope.newsOpened = false;
+    }
   }
 });
