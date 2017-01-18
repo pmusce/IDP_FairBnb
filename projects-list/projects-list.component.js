@@ -22,7 +22,7 @@ module('projectsList')
 	controller: function FundedController($http) {
 		var self = this;
 
-		$http.get('../data/projects.json').then(function(response) {
+		$http.get('../data/funded.json').then(function(response) {
 			self.projects = response.data;
 		});
 
