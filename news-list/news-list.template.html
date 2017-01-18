@@ -14,7 +14,7 @@
 </form>
 
 <ul class="media-list liste">
-	<li ng-click="new.read=true; countUnread()" class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
+	<li class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
 		<div class="media-left">
 			<a href="#">
 				<img ng-src="{{new.image}}" style="height: 100px; width: 136px;">
@@ -116,7 +116,7 @@
     <div>
         <div class="col-sm-3">
             <a href="#">
-                <img ng-src="{{currentNews.image}}">
+                <img class="news-img" ng-src="{{currentNews.image}}">
             </a>
         </div>
         <div class="col-sm-9">
