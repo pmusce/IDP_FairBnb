@@ -11,6 +11,10 @@ a[ng-click]{
     cursor: pointer;
 }
 
+.green-bg {
+  background-color: #62C462;
+}
+
 .tab-content {
   padding: 20px;
 }

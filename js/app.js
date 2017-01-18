@@ -2,6 +2,7 @@
 var fairBnB = angular.module('fairBnB', [
 	'ui.bootstrap',
 	'ui.router',
+	'ui.calendar',
 	'newsList',
 	'discussionList',
 	'projectsList',
@@ -132,3 +133,4 @@ fairBnB.controller('HomeController', function($scope, $stateParams, $state, user
 		LoginService.logout();
 	}
 });
+
