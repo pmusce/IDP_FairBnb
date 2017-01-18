@@ -24,6 +24,7 @@
     "angular-ui-calendar": "latest"
   },
   "resolutions": {
-    "angular": "~1.6.1"
+    "angular": "~1.6.1",
+    "moment": "~2.10.3"
   }
 }

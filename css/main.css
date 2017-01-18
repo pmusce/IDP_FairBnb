@@ -45,8 +45,11 @@ a[ng-click]{
 }
 
 img {
-  height: 100px;
-  width: 136px;
+
+}
+
+img.none {
+
 }
 
 .main {
@@ -329,3 +332,8 @@ user-select: none; */
        border-top-left-radius: 5px;
        border-top-right-radius: 5px;
   }
+
+  .container-fluid {
+     padding-left: 15px;
+     padding-right: 15px;
+}

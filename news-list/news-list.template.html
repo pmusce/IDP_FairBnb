@@ -16,11 +16,11 @@
 	<li ng-click="new.read=true; countUnread()" class="media" ng-class="{unread: !new.read}" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['read','date']">
 		<div class="media-left">
 			<a href="#">
-				<img ng-src="{{new.image}}">
+				<img ng-src="{{new.image}}" style="height: 100px; width: 136px;">
 			</a>
 		</div>
 		<div class="media-body">
-			<h4 class="media-heading">{{new.title}}</h4>
+			<h4 ><b>{{new.title}}</b></h4>
 			{{new.body}}
 		</div>
 		<div class="media-right">
