@@ -2,7 +2,7 @@ angular.
 module('projectsList')
 .component('projectsList', {
 	templateUrl: 'projects-list/projects-list.template.html',
-	controller: function ProjectListController($scope, $uibModal) {
+	controller: function ProjectListController($scope, $uibModal, projectDetailService) {
 		$scope.projectType="my-projects";
 		$scope.createProject = function() {
 	        $uibModal.open({
@@ -14,11 +14,13 @@ module('projectsList')
 		        windowClass: 'new-project-modal'
 	        });
 	    };
+
+	    $scope.status = projectDetailService;
 	}
 })
 .component('needFunding', {
 	templateUrl: 'projects-list/need-funding-projects.template.html',
-	controller: function NeedFundingController($http, $scope) {
+	controller: function NeedFundingController($http, $scope, projectDetailService) {
 		var self = this;
 
 		$scope.openSupport = function(project) {
@@ -33,18 +35,22 @@ module('projectsList')
 })
 .component('funded', {
 	templateUrl: 'projects-list/funded-projects.template.html',
-	controller: function FundedController($http) {
+	controller: function FundedController($http, $scope, projectDetailService) {
 		var self = this;
 
 		$http.get('../data/funded.json').then(function(response) {
 			self.projects = response.data;
 		});
 
+		self.openDetail = function(project) {
+			projectDetailService.project = project;
+			projectDetailService.layout = 'detailFunded';
+		};
 	}
 })
 .component('myProjects', {
 	templateUrl: 'projects-list/my-projects-list.template.html',
-	controller: function MyProjectsController($http) {
+	controller: function MyProjectsController($http, $scope, projectDetailService) {
 		var self = this;
 
 		$http.get('../data/my-projects.json').then(function(response) {
@@ -68,4 +74,26 @@ module('projectsList')
 	$scope.cancel = function () {
 	    $uibModalInstance.dismiss('cancel');
 	};
-});
+})
+.component('detailFunded', {
+	templateUrl: 'projects-list/detail-funded.template.html',
+	controller: function DetailFundedController($scope, projectDetailService) {
+		$scope.project = projectDetailService.project;
+		$scope.back = function() {
+			projectDetailService.goToList();
+		}
+	}
+})
+.factory('projectDetailService', function() {
+	self = this;
+
+	return {
+		project: undefined,
+		layout: 'explore',
+		goToList: function() {
+			this.project = undefined;
+			this.layout = 'explore';
+		}
+	};
+
+});;
