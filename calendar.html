@@ -1,44 +1,18 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">FairBnB</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li >
-                      <a ui-sref="home">Home</a>
-                </li>
-                <li  ng-if="!user.isAdmin()">
-                  <a ui-sref="bookings">My Bookings</a>
-                </li>
-                <li ng-if="!user.isAdmin()">
-                  <a ui-sref="project">My projects</a>
-                </li>
-                <li class="active">
-                  <a ui-sref="calendar">Calendar</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <span>
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <b class="user-role">{{user.role}}</b>
-                            ({{user.name}})
-                        </span>
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header">User roles</li>
-                        <li ng-if="!user.isGuest()">
-                            <a href="#" ng-click="user.switchRole()">Switch To
-                                {{user.oppositeRole()}}</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-      <div data-provide="calendar"></div>
+<navbar></navbar>
+<div class="container">
+  <div>
+    <h1>Calendar</h1>
+    <div ui-calendar="uiConfig.calendar" class="span8 calendar col-sm-8" ng-model="eventSources"></div> 
+  </div>
+  <div class="col-sm-4">
+    <h2>{{currentEvent.title}}</h2>
+    <p>{{currentEvent.start.toString()}}</p>
+    <p>Location</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>

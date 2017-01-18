@@ -2,6 +2,7 @@
 var fairBnB = angular.module('fairBnB', [
 	'ui.bootstrap',
 	'ui.router',
+	'ui.calendar',
 	'newsList',
 	'discussionList',
 	'projectsList',
@@ -76,7 +77,7 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
   .state('calendar', {
     url : '/calendar',
     templateUrl : 'calendar.html',
-    controller : 'HomeController'
+    controller : 'CalendarController'
   })
   .state('project', {
     url : '/project',
