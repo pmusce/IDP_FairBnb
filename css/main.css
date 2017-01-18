@@ -1,5 +1,4 @@
 .navbar {
-    color: white;
 }
 
 .navbar-nav>li>a.profile-image {
@@ -331,9 +330,11 @@ user-select: none; */
       -moz-border-radius-topright: 5px;
        border-top-left-radius: 5px;
        border-top-right-radius: 5px;
-  }
+}s
 
-  .container-fluid {
-     padding-left: 15px;
-     padding-right: 15px;
-}
+.my-fluid-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
