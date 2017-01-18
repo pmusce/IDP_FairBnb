@@ -1,43 +1,73 @@
 <ul class="media-list liste">
-	<li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
-		<div class="media-left">
+    <li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
+        <div class="media-left">
 
-				<img ng-src="{{project.image}}">
-		</div>
-		<div class="media-body">
-			<div class="media-heading">
-				<h4 ><b>{{project.title}}</b></h4>
-				<b>Status: </b><span id="status" class="label label-primary">{{project.status}}</span>
-			</div>
-			{{project.body}}
-		</div>
-		<div class="media-right media-middle">
-			<button type="button" data-tooltip="Support financially!" class="btn btn-success btn-xs" data-toggle="modal"
-			data-target=".bs-example-modal-lg">
-				<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> <b>Support</b></button>
-				<button type="button" class="btn btn-primary btn-xs">
-				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> <b>Discuss !</b></button><br>
+            <img ng-src="{{project.image}}">
+        </div>
+        <div class="media-body">
+            <div class="media-heading">
+                <h4 >
+                    <b>{{project.title}}</b>
+                </h4>
+                <b>Status:
+                </b>
+                <span id="status" class="label label-primary">{{project.status}}</span>
+            </div>
+            {{project.body}}
+        </div>
+        <div class="media-right media-middle">
+            <button type="button" data-tooltip="Support financially!" class="btn btn-success btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                <b>Support</b>
+            </button>
+            <button type="button" class="btn btn-primary btn-xs">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                <b>Discuss !</b>
+            </button><br>
 
-		</div>
-	</li>
+        </div>
+    </li>
 </ul>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-			<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"><b>Support Project</b></h4>
-				<div class="modal-body">
-        Do you wish to support this project with your entire personal fund?
+<div ng-controller="HomeController" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-header-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" id="myModalLabel">
+                    <img alt="logo" src="img/logo2.png" style="height:25px; width:27px;">
+                    <b>Support Project</b>
+                </h3>
+            </div>
+            <div class="modal-body">
+                Do you wish to support this project with your entire personal fund?
+                <br>
+                <br>
+								<b>You currently manage :</b> <span class="label label-primary">{{user.funds}} €</span><br><br>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">€</span>
+                    <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                </div>
+                <br>
+                <br>
 
-      </div>
-      <div class="modal-footer pull-left">
-				No, give : <input type="text" name="amount" value="{{1000}}">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-      </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                        <span class="sr-only">45% Complete</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
+                    <b>Close</b>
+                </button>
+                <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
+                    <b>Support</b>
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

@@ -15,9 +15,21 @@ a[ng-click]{
   padding: 20px;
 }
 
+.modal-title {
+  position: relative;
+  right: -15px;
+}
+
+
+
 .form-inline {
   margin-top: 20px;
 
+}
+
+.funds {
+  position: relative;
+  right: -20px;
 }
 
 .navbar-brand>img.navbar-logo {
@@ -88,8 +100,6 @@ img {
 	margin-top: 20px;
 }
 
-
-
 #filterSelect {
     width: 100px;
     text-align: right;
@@ -102,7 +112,6 @@ img {
 .media-right {
     padding-left: 100px;
 }
-
 
 .media-list {
     border: 1px #ddd solid;
@@ -226,20 +235,18 @@ user-select: none; */
   margin-left: 5px;
 }
 .btn-xs {
-  margin-bottom: 4px;
+  margin-bottom: 1px;
   width: 120px;
 }
-.btn-sm {
-}
+
 .btn-warning {
   color: black;
   background: #E6DF03;
-
 }
+
 .img.disc {
   height: 100px;
   width: 136px;
-
 }
 
 [data-tooltip] {
@@ -303,3 +310,16 @@ user-select: none; */
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.modal-header-success {
+      color:#fff;
+      padding:9px 15px;
+      border-bottom:1px solid #eee;
+      background-color: #5cb85c;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+       border-top-left-radius: 5px;
+       border-top-right-radius: 5px;
+  }

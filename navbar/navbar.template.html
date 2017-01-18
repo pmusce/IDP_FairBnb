@@ -28,6 +28,7 @@
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
           </span>
         </div>
+
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -50,7 +51,7 @@
             <span>
               <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
               <b class="user-role">{{user.role}}</b>
-              ({{user.name}}: <span class="label label-primary">{{user.funds}} €</span>)
+              ({{user.name}})
             </span>
             <span class="caret"></span>
           </a>
@@ -58,6 +59,8 @@
             <li>
               <a ui-sref="calendar">Update Profile</a>
             </li>
+            <li role="separator" class="divider"></li>
+            <li><b class="funds">Current funds: <span class="label label-primary">{{user.funds}} €</span></b></li>
             <li role="separator" class="divider"></li>
             <li>
               <a ui-sref="calendar">Connect your company</a>
