@@ -1,3 +1,7 @@
+.navbar {
+    color: white;
+}
+
 .navbar-nav>li>a.profile-image {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -19,8 +23,6 @@ a[ng-click]{
   position: relative;
   right: -15px;
 }
-
-
 
 .form-inline {
   margin-top: 20px;
