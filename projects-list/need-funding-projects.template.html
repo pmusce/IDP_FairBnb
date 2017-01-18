@@ -12,10 +12,12 @@
                 <div class="projectinfo">
                     <b>Total Costs:
                     </b>
-                    <span class="label label-primary">{{project.costs}} €</span>
+                    <span class="label label-primary">{{project.costs}}
+                        €</span>
                     <b>Total Donated:
                     </b>
-                    <span class="label label-warning">{{project.totdonated}} €</span>
+                    <span class="label label-warning">{{project.totdonated}}
+                        €</span>
                     <b>Duration:
                     </b>
                     <span class="label label-primary">{{project.duration}}</span>
@@ -23,7 +25,14 @@
             </div>{{project.body}}</div>
 
         <div class="media-right media-middle">
-          <div><uib-progressbar class="progress-striped" max="200" value="100" type="success"><i>{{project.totdonated}} / {{project.costs}}</i></uib-progressbar></div>
+            <div>
+                <uib-progressbar class="progress-striped" max="200" value="100" type="success">
+                    <i>{{project.totdonated}}
+                        € /
+                        {{project.costs}}
+                        €</i>
+                </uib-progressbar>
+            </div>
 
             <button type="button" ng-click="openSupport(project)" data-tooltip="Support financially!" class="btn btn-success btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">
                 <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
@@ -38,7 +47,9 @@
     </li>
 </ul>
 
-<div  class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" >
+<!-- Modal -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header modal-header-success">
@@ -51,34 +62,56 @@
 
                 </h3>
             </div>
-            <b>Project title:</b>{{currentProject.title}}
-            <div class="modal-body" >
-                Do you wish to support this project with your entire personal fund?
-                <br>
-                <br>
-                <b>You currently manage :</b>
-                <div class="input-group">
-                    <span class="input-group-addon" id="sizing-addon2">€</span>
-                    <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                </div>
-                <br>
-                <br>
 
-                <div class="progress">
-                  <div><uib-progressbar class="progress-striped" max="200" value="100" type="success"><i><b>{{currentProject.totdonated}} / {{currentProject.costs}}</b></i></uib-progressbar></div>
+            <div class="modal-body">
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img ng-src="{{currentProject.image}}" style="height: 140px; width: 140px; margin-top:-26px;" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <b>{{currentProject.title}}</b>
+                        </h4>
+                        {{currentProject.body}}
+                    </div>
+
+                    <div>
+                        <b>You currently manage :</b>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">
+                            <b>€</b>
+                        </span>
+                        <input type="text" class="form-control" placeholder="{{user.funds}}" aria-describedby="sizing-addon2">
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="progress">
+                        <div>
+                            <uib-progressbar class="progress-striped" max="100" value="65" type="success">
+                                <i>
+                                    <b>{{currentProject.totdonated}}
+                                        /
+                                        {{currentProject.costs}}</b>
+                                </i>
+                            </uib-progressbar>
+                        </div>
                         <span class="sr-only">45% Complete</span>
                     </div>
                 </div>
+              </div>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
-                    <b>Close</b>
-                </button>
-                <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
-                    <b>Support</b>
-                </button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
+                        <b>Close</b>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
+                        <b>Support</b>
+                    </button>
+                </div>
         </div>
     </div>
-</div>
