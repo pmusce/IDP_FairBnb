@@ -1,4 +1,11 @@
-.navbar {
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+}
+
+div#jumbo {
+  background: #CDE9FF;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-nav>li>a.profile-image {
@@ -53,14 +60,6 @@ a[ng-click]{
   width: 20px;
   height: 20px;
   display: inline-block;
-}
-
-img {
-
-}
-
-img.none {
-
 }
 
 .news-img {
