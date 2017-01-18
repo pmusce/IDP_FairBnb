@@ -2,7 +2,7 @@
     <li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
         <div class="media-left">
 
-            <img ng-src="{{project.image}}" style="height: 100px; width: 136px;">
+            <img ng-src="{{project.image}}" style="height: 100px; width: 136px; margin-top:11px;">
         </div>
         <div class="media-body">
             <div class="media-heading">
@@ -16,10 +16,14 @@
                     <b>Total Costs:
                     </b>
                     <span class="label label-primary">{{project.costs}}</span>
+                    <b>Total Donated:
+                    </b>
+                    <span class="label label-warning">{{project.totdonated}}</span>
                     <b>Duration:
                     </b>
                     <span class="label label-primary">{{project.duration}}</span>
                     Months</div>
+                    <div><uib-progressbar class="progress-striped" max="200" value="100" type="success"><i>{{project.totdonated}} / {{project.costs}}</i></uib-progressbar></div>
             </div>{{project.body}}</div>
 
         <div class="media-right media-middle">
