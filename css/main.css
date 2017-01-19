@@ -4,9 +4,18 @@ div.col-lg-4 {
     margin-left: 45px;
 }
 
+#cata {
+  margin-top: 10px;
+}
+
 div.carousel.slide.col-lg-6 {
   background: white;
   height: 290px;
+}
+
+#linea {
+  height: 90px;
+  background-color: lightgrey;
 }
 
 .display-3 {
@@ -35,6 +44,11 @@ div#jumbo {
     text-shadow: true;
     margin-top: -20px;
     margin-bottom: inherit;
+}
+
+.row-fluid {
+margin-left: auto;
+margin-right: auto;
 }
 
 .navbar-nav>li>a.profile-image {

@@ -26,11 +26,8 @@
 
         <div class="media-right media-middle">
             <div>
-                <uib-progressbar class="progress-striped" max="200" value="100" type="success">
-                    <i>{{project.totdonated}}
-                        € /
-                        {{project.costs}}
-                        €</i>
+                <uib-progressbar class="progress-striped" max="project.costs" value="project.totdonated" type="success">
+                    <i>{{project.totdonated}} € /{{project.costs}} €</i>
                 </uib-progressbar>
             </div>
 
@@ -59,7 +56,6 @@
                 <h3 class="modal-title" id="myModalLabel">
                     <img alt="logo" src="img/logo2.png" style="height:25px; width:27px;">
                     <b>Support Project</b>
-
                 </h3>
             </div>
 
@@ -76,40 +72,52 @@
                             <b>{{currentProject.title}}</b>
                         </h4>
                         {{currentProject.body}}
-                    </div>
+                    </div><br>
 
-                    <div>
-                        <b>You currently manage :</b>
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="sizing-addon2">
-                            <b>€</b>
-                        </span>
-                        <input type="text" class="form-control" placeholder="{{user.funds}}" aria-describedby="sizing-addon2">
-                    </div>
-                    <br>
-                    <br>
+                    <!-- row -->
 
-                    <div class="progress">
-                        <div>
-                            <uib-progressbar class="progress-striped" max="100" value="65" type="success">
-                                <i>
-                                    <b>{{currentProject.totdonated}}  /  {{currentProject.costs}}</b>
-                                </i>
-                            </uib-progressbar>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <b>How much would you like to support? </b><br><br>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">€</span>
+                                <input type="text" ng-value="{{user.funds}}" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
                         </div>
-                        <span class="sr-only">45% Complete</span>
+                        <div class="col-md-6">
+                            <b>Your contribution will have a nice impact!</b><br><br>
+                            <div class="progress">
+                                <div>
+
+                                    <uib-progressbar class="progress-striped" max="currentProject.costs" value="currentProject.totdonated" type="success">
+                                        <i>
+                                            <b>{{currentProject.totdonated+user.funds}} € (+{{user.funds}})
+                                                -
+                                                Targeted : {{currentProject.costs}} €</b>
+                                        </i>
+                                    </uib-progressbar>
+                                </div>
+                                <span class="sr-only">45% Complete</span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-              </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
-                        <b>Close</b>
-                    </button>
-                    <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
-                        <b>Support</b>
-                    </button>
-                </div>
+                <!-- row -->
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
+                <b>Close</b>
+            </button>
+            <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
+                <b>Support</b>
+            </button>
         </div>
+      </div>
     </div>
+
+</div>

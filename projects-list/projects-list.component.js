@@ -20,8 +20,9 @@ module('projectsList')
 })
 .component('needFunding', {
 	templateUrl: 'projects-list/need-funding-projects.template.html',
-	controller: function NeedFundingController($http, $scope, projectDetailService) {
+	controller: function NeedFundingController($http, $scope, user, projectDetailService) {
 		var self = this;
+		$scope.user = user;
 
 		$scope.openSupport = function(project) {
 			$scope.currentProject = project;
@@ -35,8 +36,9 @@ module('projectsList')
 })
 .component('funded', {
 	templateUrl: 'projects-list/funded-projects.template.html',
-	controller: function FundedController($http, $scope, projectDetailService) {
+	controller: function FundedController($http, $scope, user, projectDetailService) {
 		var self = this;
+		$scope.user = user;
 
 		$http.get('../data/funded.json').then(function(response) {
 			self.projects = response.data;

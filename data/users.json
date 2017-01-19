@@ -9,7 +9,8 @@
 		"username": "pauline",
 		"password": "password",
 		"name": "Pauline Sia",
-		"role": "guest"
+		"role": "guest",
+		"funds": 2500
 	},
 	{
 		"username": "willem",
