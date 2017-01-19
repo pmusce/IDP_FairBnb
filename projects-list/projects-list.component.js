@@ -3,7 +3,6 @@ module('projectsList')
 .component('projectsList', {
 	templateUrl: 'projects-list/projects-list.template.html',
 	controller: function ProjectListController($scope, $uibModal, projectDetailService) {
-		$scope.projectType="my-projects";
 		$scope.createProject = function() {
 	        $uibModal.open({
 		        animation: true,
@@ -80,10 +79,15 @@ module('projectsList')
 .component('detailFunded', {
 	templateUrl: 'projects-list/detail-funded.template.html',
 	controller: function DetailFundedController($scope, projectDetailService) {
+		$scope.myInterval = 5000;
+		$scope.noWrapSlides = false;
+		$scope.active = 0;
+
 		$scope.project = projectDetailService.project;
 		$scope.back = function() {
-			projectDetailService.goToList();
+			projectDetailService.goToList('funded');
 		}
+
 	}
 })
 .factory('projectDetailService', function() {
@@ -92,10 +96,12 @@ module('projectsList')
 	return {
 		project: undefined,
 		layout: 'explore',
-		goToList: function() {
+		type: "my-projects",
+		goToList: function(type) {
+			this.type = type;
 			this.project = undefined;
 			this.layout = 'explore';
-		}
+		},
 	};
 
 });;

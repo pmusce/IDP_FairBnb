@@ -32,7 +32,13 @@ div.col-lg-2 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 12.5px;
+}
+
+
+.carousel-img {
+   width: 535px;
+   height: 356px;
+  object-fit: fill;
 }
 
 
@@ -166,25 +172,69 @@ a[ng-click] {
     text-align: right;
 }
 
-.media-object {
+.proj-updates .media {
+    overflow: visible;
+}
+
+.proj-updates .media-left {
+  position: relative;
+}
+
+.proj-updates .media:not(:last-child) .media-left::before {
+    width: 1px;
+    background: lightgrey;
+    height: 60px;
+    display: block;
+    position: absolute;
+    content: '';
+    left: 30px;
+    top: 32px;
+    z-index: -1;
+}
+
+.proj-updates .media-body {
+  vertical-align: middle;
+}
+
+.proj-update-date {
+    width: 60px; 
+    height: 60px;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.detail-bottom {
+    margin-top: 40px;
+}
+
+div[uib-carousel] {
+    margin-top: 20px;
+}
+
+
+.liste .media-object {
     padding-top: 30px;
 }
 
-.media-right {
+.liste .media-right {
     padding-left: 100px;
 }
 
-.media-list {
+.liste.media-list {
     border: 1px #ddd solid;
     border-radius: 5px;
 }
 
-.media {
+.liste .media {
     margin-top: 0;
     padding: 20px;
 }
 
-.media:not(:last-child) {
+.liste .media:not(:last-child) {
     border-bottom: 1px #ddd solid;
 }
 
