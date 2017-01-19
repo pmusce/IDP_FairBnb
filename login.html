@@ -2,103 +2,151 @@
 
 <!-- Landing Page -->
 
-
-
 <!-- Landing Page -->
 
 <div id="jumbo" class="jumbotron jumbotron-fluid">
-  <div  class="container">
-    <h2 class="display-3">Fairbed is a short-stay rental platform that aims to be truly beneficial to the city.
-      To reach this ideal, profit is redistributed back to active neighboroods via community projects.</h2>
-  </div>
+    <div class="row">
+        <div style="margin-bottom:100px;" class="container container-fluid">
+            <h2 class="display-3" style="font-family: 'Gloria Hallelujah', cursive; color:black;">
+                FairBNB is a short-stay rental platform
+                <br>
+                that brings
+                <b style="color:green;">goodness</b>
+                to the city.
+                <br>
+            </h2>
+        </div>
+    </div>
+    <img style="margin-top:-90px; display: block; margin-left: auto; margin-right: auto; width:10%;" src="img/logo2.png" \>
+    <h2 class="display-3" style="font-family: 'Gloria Hallelujah', cursive; color:black;">
+        profit is redistributed
+        <b style="color:green;">back</b>
+        to active neighboroods
+    </h2><br>
 </div>
+<div class="container-fluid" style="background-color:#62C462;">
+    <div class="row">
+        <div class="col-lg-4">
+            <label for="basic-url">Type your destination</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">City</span>
+                <input id="name" type="text" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Choose a city, travel, and be part of something bigger!" class="form-control" aria-describedby="basic-addon3">
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <label for="basic-url">Persons</label>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <label for="basic-url">From / To</label>
 
+            <div class="input-daterange input-group" id="datepicker">
+                <input type="text" class="input-sm form-control" name="start"/>
+                <span class="input-group-addon">to</span>
+                <input type="text" class="input-sm form-control" name="end"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#00C450;">
+    <div class="row">
+
+    </div>
+
+</div>
 
 <!-- Modal -->
 <script type="text/ng-template" id="login-modal.html">
     <div class="modal-body loginmodal-container" id="modal-body">
-      <h1>Login</h1><br>
-      <form ng-submit="formSubmit()">
-        <input type="text" ng-model="username" name="user" placeholder="Username">
-        <input type="password" ng-model="password" name="pass" placeholder="Password">
-        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-      </form>
+        <h1>Login</h1><br>
+        <form ng-submit="formSubmit()">
+            <input type="text" ng-model="username" name="user" placeholder="Username">
+            <input type="password" ng-model="password" name="pass" placeholder="Password">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+        </form>
 
-      <div class="login-help">
-        <a class="btn">Register</a> - <a class="btn">Forgot Password</a>
-      </div>
+        <div class="login-help">
+            <a class="btn">Register</a>
+            -
+            <a class="btn">Forgot Password</a>
+        </div>
     </div>
 </script>
 <!-- End Modal -->
 
 <!-- Register Modal -->
 <script type="text/ng-template" id="signup-modal.html">
-  <div class="modal-body signupmodal-container">
-    <h1>Register to Fairbnb</h1><br>
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label for="inputEmail3" class="col-sm-3 control-label">Username*</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputEmail3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Password*</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Confirm password*</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <hr>
+    <div class="modal-body signupmodal-container">
+        <h1>Register to Fairbnb</h1><br>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Username*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Confirm password*</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <hr>
 
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">First Name*</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Last Name*</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Email*</label>
-        <div class="col-sm-9">
-          <input type="email" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <hr>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Address</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">Zip Code</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-3 control-label">City</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-        </div>
-      </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">First Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Last Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Email*</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Address</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Zip Code</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">City</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+            </div>
 
-
-      <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-          <button type="submit" class="btn btn-default pull-right">Register</button>
-        </div>
-      </div>
-    </form>
-</script>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-default pull-right">Register</button>
+                </div>
+            </div>
+        </form>
+    </script>

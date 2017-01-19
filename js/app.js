@@ -129,6 +129,16 @@ fairBnB.factory('LoginService', function($http, user, $state) {
 fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
 
+	// Triggering popovers for landing page on city input field
+	$('#name').popover();
+
+	//landing page datepicker callback
+
+	$('.datepicker .input-daterange').datepicker({
+	});
+
+// end datepicker call
+
 	$scope.logout = function() {
 		LoginService.logout();
 	}
