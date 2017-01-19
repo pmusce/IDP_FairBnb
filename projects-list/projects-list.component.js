@@ -77,10 +77,15 @@ module('projectsList')
 .component('detailFunded', {
 	templateUrl: 'projects-list/detail-funded.template.html',
 	controller: function DetailFundedController($scope, projectDetailService) {
+		$scope.myInterval = 5000;
+		$scope.noWrapSlides = false;
+		$scope.active = 0;
+
 		$scope.project = projectDetailService.project;
 		$scope.back = function() {
 			projectDetailService.goToList('funded');
 		}
+
 	}
 })
 .factory('projectDetailService', function() {

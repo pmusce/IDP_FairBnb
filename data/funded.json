@@ -7,6 +7,38 @@
     "read": false,
     "author": "Gianluca Grignani",
    	"supporters": 30,
-   	"funding": 80
+   	"funding": 80,
+   	"updates": [
+   		{
+   			"date": "20 Jun",
+   			"body": "Hired contractor"
+   		},
+   		{
+   			"date": "16 Jun",
+   			"body": "Search for contractors"
+   		},
+   		{
+   			"date": "10 Jun",
+   			"body": "Project funded"
+   		},
+      {
+        "date": "02 Jun",
+        "body": "Project created"
+      }
+   	],
+   	"pictures": [
+   		{
+   			"id": 0,
+   			"src": "img/ams2.jpg"
+   		},
+   		{
+   			"id": 1,
+   			"src": "img/ams.jpg"
+   		},
+   		{
+   			"id": 2,
+   			"src": "img/home.jpg"
+   		}
+   	]
 }
 ]
