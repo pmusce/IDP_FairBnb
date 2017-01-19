@@ -4,13 +4,20 @@
     </button>
 </p>
 <div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
         <a href="#">
-            <img class="news-img" ng-src="{{currentProject.image}}">
+            <img class="news-img" ng-src="{{project.image}}">
         </a>
     </div>
-    <div class="col-sm-9">
-        <h4 class="media-heading">{{currentProject.title}}</h4>
-        {{currentProject.body}}
+    <div class="col-sm-6">
+        <h1>{{project.title}}</h1>
+        <p>
+            {{project.body}}
+        </p>
+    </div>
+    <div class="col-sm-2 text-right">
+        <p>{{project.author}}</p>
+        <p>{{project.supporters}} supporters</p>
+        <p>Funding recived: €{{project.supporters}}</p>
     </div>
 </div>

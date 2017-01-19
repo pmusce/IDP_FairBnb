@@ -6,43 +6,31 @@
         </div>
         <div class="media-body">
             <div class="media-heading">
-                <h4 >
-                    <b>{{project.title}}</b>
-                </h4>
-                <div class="projectinfo">
-                    <b>Total Costs:
-                    </b>
-                    <span class="label label-primary">{{project.costs}}
-                        €</span>
-                    <b>Total Donated:
-                    </b>
-                    <span class="label label-warning">{{project.totdonated}}
-                        €</span>
-                    <b>Duration:
-                    </b>
-                    <span class="label label-primary">{{project.duration}}</span>
-                    Months</div>
-            </div>{{project.body}}</div>
+                <h4 ><b>{{project.title}}</b></h4>
+            </div>
+            {{project.body}}
+        </div>
 
         <div class="media-right media-middle">
             <div>
-                <uib-progressbar class="progress-striped" max="200" value="100" type="success">
+                <uib-progressbar max="200" value="100" type="success">
                     <i>{{project.totdonated}}
                         € /
                         {{project.costs}}
                         €</i>
                 </uib-progressbar>
             </div>
-
-            <button type="button" ng-click="openSupport(project)" data-tooltip="Support financially!" class="btn btn-success btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">
-                <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
-                <b>Support</b>
-            </button>
-
-            <button type="button" class="btn btn-primary btn-xs">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                <b>Discuss !</b>
-            </button><br>
+            <p>
+                <button type="button" ng-click="openSupport(project)" data-tooltip="Support financially!" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                    Support
+                </button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-primary">
+                    Discuss
+                </button>
+            </p>
         </div>
     </li>
 </ul>

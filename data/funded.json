@@ -1,9 +1,12 @@
 [{
-    "image": "img/logo.png",
+    "image": "img/ams2.jpg",
     "date": 2017,
     "title": "Fairbnb Project",
     "body": "Fairbnb aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
     "status": "approved",
-    "read": false
+    "read": false,
+    "author": "Gianluca Grignani",
+   	"supporters": 30,
+   	"funding": 80
 }
 ]
