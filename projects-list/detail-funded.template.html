@@ -1,29 +1,30 @@
-<p>
-    <button ng-click="back()" type="button" class="btn btn-primary">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
-    </button>
-</p>
-<div class="row">
-    <div class="col-sm-4">
-        <a href="#">
-            <img class="news-img" ng-src="{{project.image}}">
-        </a>
-    </div>
-    <div class="col-sm-6">
-        <h1>{{project.title}}</h1>
-        <p>
-            {{project.body}}
-        </p>
-    </div>
-    <div class="col-sm-2 text-right">
-        <br>
-        <p>by {{project.author}}</p>
-        <p>{{project.supporters}} supporters</p>
-        <p>Funding recived: €{{project.supporters}}</p>
+<div>
+    <p>
+        <button ng-click="back()" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+        </button>
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>{{project.title}}</h1>
+            <p>by {{project.author}}</p>
+            <p>
+                {{project.body}}
+            </p>
+            <br>
+             <p><h4>{{project.supporters}} supporters - Funding recived: €{{project.supporters}}</h4></p>
+        </div>
+        <div class="col-sm-6 text-right">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="pic in project.pictures track by pic.id" index="pic.id">
+                    <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row detail-bottom">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
         <h3>Project updates</h3>
         <ul class="media-list proj-updates">
             <li class="media" ng-repeat="update in project.updates">
@@ -37,13 +38,5 @@
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="col-sm-6">
-        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-            <div uib-slide ng-repeat="pic in project.pictures track by pic.id" index="pic.id">
-                <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
-            </div>
-        </div>
-    </div>
-    
+    </div>  
 </div>

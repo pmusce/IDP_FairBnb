@@ -37,10 +37,12 @@
             <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>
           </a>
           <ul class="dropdown-menu">
-            <li class="dropdown-header">User roles</li>
             <li>
-              <a href="#">
-                Switch To</a>
+              <a ui-sref="home">You received a message</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a ui-sref="home">Your project has been accepted</a>
             </li>
           </ul>
           </li>
@@ -57,7 +59,7 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a ui-sref="calendar">Update Profile</a>
+              <a ui-sref="home">Update Profile</a>
             </li>
             <li role="separator" class="divider"></li>
             <li><b class="funds">Current funds: <span class="label label-primary">{{user.funds}} €</span></b></li>
