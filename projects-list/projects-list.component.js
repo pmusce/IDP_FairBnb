@@ -31,6 +31,10 @@ module('projectsList')
 			self.projects = response.data;
 		});
 
+		self.openDetail = function(project) {
+			projectDetailService.project = project;
+			projectDetailService.layout = 'detailNeedFunding';
+		};
 	}
 })
 .component('funded', {
@@ -86,6 +90,20 @@ module('projectsList')
 		$scope.project = projectDetailService.project;
 		$scope.back = function() {
 			projectDetailService.goToList('funded');
+		}
+
+	}
+})
+.component('detailNeedFunding', {
+	templateUrl: 'projects-list/detail-need-funding.template.html',
+	controller: function DetailNeedFundingController($scope, projectDetailService) {
+		$scope.myInterval = 5000;
+		$scope.noWrapSlides = false;
+		$scope.active = 0;
+
+		$scope.project = projectDetailService.project;
+		$scope.back = function() {
+			projectDetailService.goToList('not-funded');
 		}
 
 	}

@@ -1,10 +1,10 @@
 <div ng-switch on="status.layout">
     <div ng-switch-when="explore">
         <div>
-            <button ng-click="createProject()" type="button" class="btn btn-success">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
-            </button>
             <form class="form-inline">
+                <button ng-click="createProject()" type="button" class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
+                </button>
                 <div class="form-group">
                     <div class="btn-group">
                         <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
@@ -29,4 +29,5 @@
     </div>
 
     <detail-funded ng-switch-when="detailFunded"></detail-funded>
+    <detail-need-funding ng-switch-when="detailNeedFunding"></detail-need-funding>
 </div>

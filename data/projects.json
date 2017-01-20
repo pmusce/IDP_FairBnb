@@ -7,7 +7,33 @@
     "costs": 100000,
     "totdonated": 65000,
     "duration": 21,
-    "read": false
+    "read": false,
+    "comments": [
+      {
+        "img": "img/sito.png",
+        "body": "Some text here"
+      },
+      {
+        "img": "img/sito.png",
+        "body": "More text"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/ams2.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/ams.jpg"
+        },
+        {
+            "id": 2,
+            "src": "img/home.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
 }, {
     "image": "img/proj2.png",
     "date": 2017,
@@ -17,7 +43,33 @@
     "costs": 22000,
     "totdonated": 9000,
     "duration": 6,
-    "read": false
+    "read": false,
+    "comments": [
+      {
+        "img": "img/sito.png",
+        "body": "Some text here"
+      },
+      {
+        "img": "img/sito.png",
+        "body": "More text"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/ams2.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/ams.jpg"
+        },
+        {
+            "id": 2,
+            "src": "img/home.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
 }, {
     "image": "img/proj3.png",
     "date": 2016,
@@ -27,7 +79,33 @@
     "costs": 8000,
     "totdonated": 7700,
     "duration": 8,
-    "read": false
+    "read": false,
+    "comments": [
+      {
+        "img": "img/sito.png",
+        "body": "Some text here"
+      },
+      {
+        "img": "img/sito.png",
+        "body": "More text"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/ams2.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/ams.jpg"
+        },
+        {
+            "id": 2,
+            "src": "img/home.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
 }, {
     "image": "img/proj4.png",
     "date": 2015,
@@ -37,7 +115,33 @@
     "costs": 4300,
     "totdonated": 3700,
     "duration": 1,
-    "read": false
+    "read": false,
+    "comments": [
+      {
+        "img": "img/sito.png",
+        "body": "Some text here"
+      },
+      {
+        "img": "img/sito.png",
+        "body": "More text"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/ams2.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/ams.jpg"
+        },
+        {
+            "id": 2,
+            "src": "img/home.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
 }, {
     "image": "img/proj5.png",
     "date": 2015,
@@ -47,6 +151,32 @@
     "costs": 5300,
     "totdonated": 5200,
     "duration": 1,
-    "read": false
+    "read": false,
+    "comments": [
+      {
+        "img": "img/sito.png",
+        "body": "Some text here"
+      },
+      {
+        "img": "img/sito.png",
+        "body": "More text"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/ams2.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/ams.jpg"
+        },
+        {
+            "id": 2,
+            "src": "img/home.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
 }
 ]

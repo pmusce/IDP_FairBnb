@@ -22,8 +22,6 @@ div.carousel.slide.col-lg-6 {
   font-size: 35px;
   text-align: center;
   text-transform: capitalize;
-  background-color: white;
-  opacity: 0.7;
 }
 
 div.col-lg-2 {
@@ -43,8 +41,6 @@ body {
 
 
 div#jumbo {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("img/home.jpg");
     background-position: 50% 73%;
     color: white;
     text-shadow: true;
@@ -76,6 +72,19 @@ a[ng-click] {
 
 .green-bg {
     background-color: #62C462;
+}
+
+.comments-form {
+    padding: 20px;
+    background-color: #7fea7f;
+    border: 1px solid #62C462;
+    border-radius: 4px;
+}
+
+.comments-form textarea {
+    width: 100%;
+        padding: 10px;
+    border-radius: 5px;
 }
 
 .new-project-modal .modal-lg {
