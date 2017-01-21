@@ -1,0 +1,15 @@
+.navbar-default {
+	background-image: none;
+	background-color: #62C462;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
