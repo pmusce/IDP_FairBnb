@@ -115,7 +115,7 @@ module('projectsList')
 	return {
 		project: undefined,
 		layout: 'explore',
-		type: "my-projects",
+		type: "all",
 		goToList: function(type) {
 			this.type = type;
 			this.project = undefined;

@@ -1,4 +1,23 @@
-<ul class="media-list liste">
+<div ng-repeat="project in $ctrl.projects" class="col-md-4">
+    <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
+      <div class="project-thumbnail">
+        <div class="overlay"></div>
+        <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
+        <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
+             {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">{{project.title}}</h4>
+        <h6 class="card-title">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+            {{project.location}}
+        </h6>
+        <p class="card-text">{{project.body}}</p>
+      </div>
+    </div>
+</div>
+
+<!-- <ul class="media-list liste">
     <li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
         <div class="media-left">
 
@@ -30,7 +49,7 @@
             </p>
         </div>
     </li>
-</ul>
+</ul> -->
 
 <!-- Modal -->
 

@@ -2,22 +2,26 @@
     <div ng-switch-when="explore">
         <div>
             <form class="form-inline">
+                <div class="form-group">
+                    <label for="filterSelect">Filter</label>
+                    <select ng-model="status.type" id="filterSelect" class="form-control">
+                        <option value="all">All Projects</option>
+                        <option value="not-funded">Need funding</option>
+                        <option value="funded">Funded</option>
+                    </select>
+                    <!-- <div class="btn-group">
+                        <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
+                        <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'funded'"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>  Funded</label>
+                    </div> -->
+                </div>
                 <button ng-click="createProject()" type="button" class="btn btn-success">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New project
                 </button>
-                <div class="form-group">
-                    <div class="btn-group">
-                        <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
-                        <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'funded'"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>  Funded</label>
-                        <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'my-projects'"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  My Projects</label>
-                    </div>
-                </div>
 
                 <span class="pull-right">
-                    <label for="filterSelect">Sort on</label>
-                    <select ng-model="$ctrl.query" id="filterSelect" class="form-control">
-                        <option value="">All</option>
-                    </select>
+                    <div id="demo-2">
+                        <input type="search" placeholder="">
+                    </div>
                 </span>
             </form>
         </div>

@@ -1,17 +1,29 @@
-<ul class="media-list liste">
-	<li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
-		<div class="media-left">
-				<img style="height: 100px; width: 136px; margin-top:11px;" ng-src="{{project.image}}">
-		</div>
-		<div class="media-body">
-			<div class="media-heading">
-				<h4 ><b>{{project.title}}</b></h4>
-			</div>
-			{{project.body}}
-		</div>
-		<div class="media-right media-middle">
-			<button type="button" class="btn btn-primary">
-			Discuss</button>
-		</div>
-	</li>
-</ul>
+<div ng-repeat="project in $ctrl.projects" class="col-md-4">
+    <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
+      <div class="project-thumbnail">
+        <div class="overlay overlay-funded" ng-if="project.status=='funded'">
+        	<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        	Funded
+        </div>
+        <div class="overlay overlay-pending" ng-if="project.status=='pending'">
+       	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+        	Waiting for approval
+        </div>
+        <div class="overlay overlay-declined" ng-if="project.status=='declined'">
+        	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        	Declined
+        </div>
+        <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
+        <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
+             {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">{{project.title}}</h4>
+        <h6 class="card-title">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+            {{project.location}}
+        </h6>
+        <p class="card-text">{{project.body}}</p>
+      </div>
+    </div>
+</div>
