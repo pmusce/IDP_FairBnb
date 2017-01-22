@@ -2,7 +2,7 @@ angular.
 module('projectsList')
 .component('projectsList', {
 	templateUrl: 'projects-list/projects-list.template.html',
-	controller: function ProjectListController($scope, $uibModal, projectDetailService) {
+	controller: function ProjectListController($scope, $uibModal, $http, user, projectDetailService) {
 		$scope.createProject = function() {
 	        $uibModal.open({
 		        animation: true,
@@ -14,13 +14,17 @@ module('projectsList')
 	        });
 	    };
 
+
+	    $scope.categories = [
+	        {name: 'All projects', type: ''},
+	        {name: 'Need funding', type: 'need-funding'},
+	        {name: 'Funded', type: 'funded'}
+	    ];
+	    
+	    $scope.filters = {type: ''};
+
 	    $scope.status = projectDetailService;
-	}
-})
-.component('needFunding', {
-	templateUrl: 'projects-list/need-funding-projects.template.html',
-	controller: function NeedFundingController($http, $scope, user, projectDetailService) {
-		var self = this;
+	    var self = this;
 		$scope.user = user;
 
 		$scope.openSupport = function(project) {
@@ -33,23 +37,11 @@ module('projectsList')
 
 		self.openDetail = function(project) {
 			projectDetailService.project = project;
-			projectDetailService.layout = 'detailNeedFunding';
-		};
-	}
-})
-.component('funded', {
-	templateUrl: 'projects-list/funded-projects.template.html',
-	controller: function FundedController($http, $scope, user, projectDetailService) {
-		var self = this;
-		$scope.user = user;
-
-		$http.get('../data/funded.json').then(function(response) {
-			self.projects = response.data;
-		});
-
-		self.openDetail = function(project) {
-			projectDetailService.project = project;
-			projectDetailService.layout = 'detailFunded';
+			if(project.type == 'need-funding') {
+				projectDetailService.layout = 'detailNeedFunding';
+			} else {
+				projectDetailService.layout = 'detailFunded';
+			}
 		};
 	}
 })

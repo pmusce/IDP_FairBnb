@@ -4,10 +4,7 @@
             <form class="form-inline">
                 <div class="form-group">
                     <label for="filterSelect">Filter</label>
-                    <select ng-model="status.type" id="filterSelect" class="form-control">
-                        <option value="all">All Projects</option>
-                        <option value="not-funded">Need funding</option>
-                        <option value="funded">Funded</option>
+                    <select ng-model="filters.type" ng-options="category.type as category.name for category in categories" id="filterSelect" class="form-control">
                     </select>
                     <!-- <div class="btn-group">
                         <label class="btn btn-primary" ng-model="status.type" uib-btn-radio="'not-funded'"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>  Need Funding</label>
@@ -20,16 +17,35 @@
 
                 <span class="pull-right">
                     <div id="demo-2">
-                        <input type="search" placeholder="">
+                        <input type="search" ng-model="filters.title" placeholder="">
                     </div>
                 </span>
             </form>
         </div>
-        <need-funding ng-if="status.type=='not-funded'"></need-funding>
-        <funded ng-if="status.type=='funded'"></funded>
-        <my-projects ng-if="status.type=='my-projects'"></my-projects>
 
-
+        <div class="row">
+            <div ng-repeat="project in $ctrl.projects | filter:filters" class="col-md-4">
+                <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
+                  <div class="project-thumbnail">
+                    <div class="overlay overlay-funded" ng-if="project.type=='funded'">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        Funded
+                    </div>
+                    <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
+                    <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
+                         {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
+                  </div>
+                  <div class="card-block">
+                    <h4 class="card-title">{{project.title}}</h4>
+                    <h6 class="card-title">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        {{project.location}}
+                    </h6>
+                    <p class="card-text">{{project.body}}</p>
+                  </div>
+                </div>
+            </div>     
+        </div>
     </div>
 
     <detail-funded ng-switch-when="detailFunded"></detail-funded>
