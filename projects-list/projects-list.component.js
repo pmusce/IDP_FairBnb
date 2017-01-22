@@ -27,10 +27,6 @@ module('projectsList')
 	    var self = this;
 		$scope.user = user;
 
-		$scope.openSupport = function(project) {
-			$scope.currentProject = project;
-		}
-
 		$http.get('../data/projects.json').then(function(response) {
 			self.projects = response.data;
 		});
@@ -88,7 +84,7 @@ module('projectsList')
 })
 .component('detailNeedFunding', {
 	templateUrl: 'projects-list/detail-need-funding.template.html',
-	controller: function DetailNeedFundingController($scope, user, projectDetailService) {
+	controller: function DetailNeedFundingController($scope, $uibModal, user, projectDetailService) {
 		$scope.myInterval = 5000;
 		$scope.noWrapSlides = false;
 		$scope.active = 0;
@@ -99,7 +95,27 @@ module('projectsList')
 			projectDetailService.goToList('not-funded');
 		}
 
+		$scope.support = function() {
+			$uibModal.open({
+		        animation: true,
+		        templateUrl: 'support-modal.html',
+		        controller: 'SupportProjectModalInstanceCtrl',
+		        controllerAs: '$ctrl',
+		        size: 'lg',
+		        resolve: {
+		        	project: function() {
+		        		return $scope.project;
+		        	}
+		        }
+	        });
+		}
 	}
+})
+.controller('SupportProjectModalInstanceCtrl', function ($scope, project, $uibModalInstance, $state) {
+	$scope.project = project;
+	$scope.cancel = function () {
+	    $uibModalInstance.dismiss('cancel');
+	};
 })
 .factory('projectDetailService', function() {
 	self = this;

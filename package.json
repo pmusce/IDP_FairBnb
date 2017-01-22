@@ -1,9 +1,9 @@
 {
-  "name": "IDP_FairBnb",
+  "name": "IDP_fairbed",
   "private": true,
   "version": "0.0.0",
-  "description": "FairBnB platform",
-  "repository": "https://github.com/pmusce/IDP_FairBnb",
+  "description": "fairbed platform",
+  "repository": "https://github.com/pmusce/IDP_fairbed",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",

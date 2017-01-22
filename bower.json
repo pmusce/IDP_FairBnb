@@ -1,10 +1,10 @@
 {
-  "name": "IDP_FairBnb",
-  "homepage": "https://github.com/pmusce/IDP_FairBnb",
+  "name": "IDP_fairbed",
+  "homepage": "https://github.com/pmusce/IDP_fairbed",
   "authors": [
     "Pasquale Muscettola <pasquale.muscettola@gmail.com>"
   ],
-  "description": "FairBnB platform",
+  "description": "fairbed platform",
   "main": "",
   "license": "MIT",
   "private": true,

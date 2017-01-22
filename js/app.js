@@ -1,5 +1,5 @@
-// Define the `fairBnB` module
-var fairBnB = angular.module('fairBnB', [
+// Define the `fairbed` module
+var fairbed = angular.module('fairbed', [
 	'ui.bootstrap',
 	'ui.router',
 	'ui.calendar',
@@ -12,7 +12,7 @@ var fairBnB = angular.module('fairBnB', [
 
 
 
-fairBnB.factory('user', [function() {
+fairbed.factory('user', [function() {
   	return {
         name: '',
         username: '',
@@ -46,7 +46,7 @@ fairBnB.factory('user', [function() {
     };
 }]);
 
-fairBnB.run(function($rootScope, $location, $state, LoginService) {
+fairbed.run(function($rootScope, $location, $state, LoginService) {
 	$rootScope.$on('$stateChangeStart',
 		function(event, toState, toParams, fromState, fromParams){
 			console.log(toState);
@@ -57,7 +57,7 @@ fairBnB.run(function($rootScope, $location, $state, LoginService) {
 	// }
 });
 
-fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	//$urlRouterProvider.otherwise('/login');
 
 	$stateProvider
@@ -95,7 +95,7 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 }]);
 
 
-fairBnB.factory('LoginService', function($http, user, $state) {
+fairbed.factory('LoginService', function($http, user, $state) {
 	self = this;
 	var isAuthenticated = false;
 
@@ -128,7 +128,7 @@ fairBnB.factory('LoginService', function($http, user, $state) {
 
 });
 
-fairBnB.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
+fairbed.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
 	$scope.user = user;
 
 	// Triggering popovers for landing page on city input field

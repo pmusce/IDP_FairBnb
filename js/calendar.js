@@ -1,5 +1,5 @@
 
-fairBnB.controller('CalendarController', function($scope,$compile,uiCalendarConfig) {
+fairbed.controller('CalendarController', function($scope,$compile,uiCalendarConfig) {
     var date = new Date();
     var d = date.getDate();
     var m = date.getMonth();
