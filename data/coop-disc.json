@@ -1,23 +1,22 @@
-[
-	{
-		"image": "img/disc.png",
-        "title": "Cooperative discussion about legal framework (unread)",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    	"type": "coop",
-    	"read": false
-    },
-	{
-		"image": "img/disc.png",
-        "title": "Another interesting discussion",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    	"type": "general",
-    	"read": false
-    },
-		{
-			"image": "img/disc.png",
-					"title": "Yet another read discussion about the coop",
-					"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-				"type": "general",
-				"read": true
-			}
-]
+[{
+    "image": "img/disc.png",
+		"status": "closed",
+    "title": "Cooperative discussion about legal framework (unread)",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "type": "coop",
+    "read": false
+}, {
+    "image": "img/disc.png",
+		"status": "closed",
+    "title": "Another interesting discussion",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "type": "general",
+    "read": false
+}, {
+    "image": "img/disc.png",
+		"status": "open",
+    "title": "Yet another read discussion about the coop",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "type": "general",
+    "read": true
+}]
