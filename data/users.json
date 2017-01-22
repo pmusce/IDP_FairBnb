@@ -1,6 +1,7 @@
 [
 	{
 		"username": "pasquale",
+		"image": "img/sito.png",
 		"password": "password",
 		"name": "Pasquale Muscettola",
 		"role": "admin"
@@ -8,6 +9,7 @@
 	{
 		"username": "pauline",
 		"password": "password",
+		"image": "img/sito.png",
 		"name": "Pauline Sia",
 		"role": "guest",
 		"funds": 2500
@@ -34,6 +36,7 @@
 		"username": "alessandro",
 		"password": "password",
 		"name": "Alessandro Latella",
+		"image": "img/frank.png",
 		"role": "host",
 		"funds": 2500
 	}
