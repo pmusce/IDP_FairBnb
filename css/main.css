@@ -53,14 +53,11 @@ input[type=search]:focus {
     box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
-<<<<<<< HEAD
 .m-progress-bar {
     min-height: 1em;
     background: #c12d2d;
     width: 5%;
 }
-
-=======
 
 input:-moz-placeholder {
     color: #999;
@@ -97,13 +94,13 @@ input::-webkit-input-placeholder {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
+
 #register {
   margin-top: 100px;
-=======
+}
+
 .clickable {
     cursor: pointer;
->>>>>>> 26b70369953cde987aec820705bef1fb061914ac
 }
 
 div.carousel.slide.col-lg-6 {
