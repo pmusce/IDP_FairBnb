@@ -1,9 +1,9 @@
 [
 	{
-    "image": "img/ams.jpg",
+    "image": "img/candy.jpg",
     "date": 2017,
-    "title": "Kijkdam Project",
-    "body": "Kijk, the nice project!",
+    "title": "Candy Shop On Oudezijds Achterburgwal",
+    "body": "The Candy Shop at 23C on Oudezijds Achterburgwal could be a very good project we think.",
     "status": "pending",
     "read": false,
     "costs": 100000,
@@ -12,10 +12,10 @@
     "location": "Amsterdam"
 	},
 	{
-    "image": "img/ams.jpg",
+    "image": "img/bbq.jpg",
     "date": 2017,
-    "title": "Kijkdam Project",
-    "body": "Kijk, the nice project!",
+    "title": "BBQ On The Rijn",
+    "body": "Why note having a nice BBQ all together on the Rijn?",
     "status": "declined",
     "read": false,
     "costs": 100000,
@@ -24,28 +24,15 @@
     "location": "Amsterdam"
 	},
 	{
-    "image": "img/ams.jpg",
+    "image": "img/mint.jpg",
     "date": 2017,
-    "title": "Kijkdam Project",
-    "body": "Kijk, the nice project!",
+    "title": "Munt Thee Salon",
+    "body": "The Munt Thee Salon in Kijkdam is a traditional salon in which Kijkdammer can book a table for corporate events, weddings, study sessions.",
     "status": "funded",
     "read": false,
     "costs": 100000,
     "totdonated": 100000,
     "duration": 21,
     "location": "Amsterdam"
-	},
-	{
-    "image": "img/ams.jpg",
-    "date": 2017,
-    "title": "Kijkdam Project",
-    "body": "Kijk, the nice project!",
-    "status": "approved",
-    "read": false,
-    "costs": 100000,
-    "totdonated": 65000,
-    "duration": 21,
-    "location": "Amsterdam"
-	}	
-
+	}
 ]

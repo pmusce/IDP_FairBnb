@@ -1,6 +1,6 @@
 [{
     "type": "need-funding",
-    "image": "img/coop.jpg",
+    "image": "img/coop4.jpg",
     "date": 2017,
     "location": "Amsterdam",
     "title": "Rebuilding Orphanage Amsterdam",
@@ -38,7 +38,7 @@
     "supporters": 10
 }, {
     "type": "need-funding",
-    "image": "img/proj2.png",
+    "image": "img/proj2.jpg",
     "date": 2017,
     "location": "Amsterdam",
     "title": "Renewable Energy Houses",
@@ -76,7 +76,7 @@
     "supporters": 10
 }, {
     "type": "need-funding",
-    "image": "img/proj3.png",
+    "image": "img/proj3.jpg",
     "date": 2016,
     "location": "Amsterdam",
     "title": "Save our old bridge",
@@ -114,7 +114,7 @@
     "supporters": 10
 }, {
     "type": "need-funding",
-    "image": "img/proj4.png",
+    "image": "img/proj4.jpg",
     "date": 2015,
     "location": "Amsterdam",
     "title": "New hanging bridge for kids in Vondelpark",
@@ -152,7 +152,7 @@
     "supporters": 10
 }, {
     "type": "need-funding",
-    "image": "img/proj5.png",
+    "image": "img/proj5.jpg",
     "date": 2015,
     "location": "Amsterdam",
     "title": "Youths hang out area at Oud-West",
