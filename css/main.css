@@ -53,6 +53,14 @@ input[type=search]:focus {
     box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
+<<<<<<< HEAD
+.m-progress-bar {
+    min-height: 1em;
+    background: #c12d2d;
+    width: 5%;
+}
+
+=======
 
 input:-moz-placeholder {
     color: #999;
@@ -84,12 +92,18 @@ input::-webkit-input-placeholder {
 #demo-2 input::-webkit-input-placeholder {
     color: transparent;
 }
+>>>>>>> 26b70369953cde987aec820705bef1fb061914ac
 #cata {
   margin-top: 10px;
 }
 
+<<<<<<< HEAD
+#register {
+  margin-top: 100px;
+=======
 .clickable {
     cursor: pointer;
+>>>>>>> 26b70369953cde987aec820705bef1fb061914ac
 }
 
 div.carousel.slide.col-lg-6 {
@@ -156,7 +170,7 @@ a[ng-click] {
 }
 
 .green-bg {
-    background-color: #62C462;
+    background-color: #59F771;
 }
 
 .comments-form {
@@ -179,36 +193,31 @@ a[ng-click] {
 .new-project-modal .well {
     margin: 0;
 }
-
 .tab-content {
     padding: 20px;
     background: white;
 }
-
 .modal-title {
     position: relative;
     right: -15px;
 }
 
+.img-circle {
+  width: 30px;
+  height: 30px;
+
+}
 .form-inline {
     margin-top: 20px;
 }
-
-.funds {
-    position: relative;
-    right: -20px;
-}
-
 .navbar-brand>img.navbar-logo {
     width: 20px;
     height: 20px;
     display: inline-block;
 }
-
 .news-img {
     width: 100%;
 }
-
 .main {
     border-style: solid;
     border-color: #ddd;
@@ -239,6 +248,10 @@ a[ng-click] {
 
 .label-danger {
     color: black;
+}
+
+p.well {
+left: 0px;
 }
 
 .well {
@@ -287,7 +300,7 @@ a[ng-click] {
 }
 
 .proj-update-date {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border: 1px solid lightgray;
     border-radius: 100%;

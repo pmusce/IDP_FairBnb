@@ -18,12 +18,14 @@ fairBnB.factory('user', [function() {
         username: '',
         role: '',
 				funds: '',
+				image: '',
         isAuth: false,
         setUser: function(usr) {
         	this.name = usr.name;
         	this.username = usr.username;
         	this.role = usr.role;
 					this.funds = usr.funds;
+					this.image = usr.image;
         },
         isAdmin: function() {
             return this.role == 'admin';
@@ -69,9 +71,9 @@ fairBnB.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		templateUrl : 'home.html',
 		controller : 'HomeController'
 	})
-  .state('bookings', {
+  .state('become', {
     url : '/booking',
-    templateUrl : 'booking.html',
+    templateUrl : 'become.html',
     controller : 'HomeController'
   })
   .state('calendar', {
