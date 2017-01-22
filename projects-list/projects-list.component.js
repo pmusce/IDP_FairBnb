@@ -96,11 +96,12 @@ module('projectsList')
 })
 .component('detailNeedFunding', {
 	templateUrl: 'projects-list/detail-need-funding.template.html',
-	controller: function DetailNeedFundingController($scope, projectDetailService) {
+	controller: function DetailNeedFundingController($scope, user, projectDetailService) {
 		$scope.myInterval = 5000;
 		$scope.noWrapSlides = false;
 		$scope.active = 0;
-
+		$scope.user = user;
+		
 		$scope.project = projectDetailService.project;
 		$scope.back = function() {
 			projectDetailService.goToList('not-funded');
@@ -114,7 +115,7 @@ module('projectsList')
 	return {
 		project: undefined,
 		layout: 'explore',
-		type: "my-projects",
+		type: "all",
 		goToList: function(type) {
 			this.type = type;
 			this.project = undefined;

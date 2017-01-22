@@ -2,7 +2,7 @@
 <div class="container">
   <uib-tabset active="active">
 
-    <uib-tab index="0" ng-if="!user.isAdmin()">
+    <uib-tab index="0">
       <uib-tab-heading>Projects</uib-tab-heading>
       <projects-list></projects-list>
     </uib-tab>
@@ -35,6 +35,10 @@
         <span class="badge">1</span>
       </uib-tab-heading>
       <member-list></member-list>
+    </uib-tab>
+    <uib-tab index="5">
+      <uib-tab-heading>My Projects</uib-tab-heading>
+      <my-projects></my-projects>
     </uib-tab>
   </uib-tabset>
 </div>

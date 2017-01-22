@@ -3,19 +3,97 @@ div.col-lg-4 {
     height: 90px;
     margin-left: 45px;
 }
+input {
+    outline: none;
+}
 
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; 
+}
+
+
+input[type=search] {
+    background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+<<<<<<< HEAD
 .m-progress-bar {
     min-height: 1em;
     background: #c12d2d;
     width: 5%;
 }
 
+=======
+
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+    background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+    width: 230px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+    color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+    color: transparent;
+}
+>>>>>>> 26b70369953cde987aec820705bef1fb061914ac
 #cata {
   margin-top: 10px;
 }
 
+<<<<<<< HEAD
 #register {
   margin-top: 100px;
+=======
+.clickable {
+    cursor: pointer;
+>>>>>>> 26b70369953cde987aec820705bef1fb061914ac
 }
 
 div.carousel.slide.col-lg-6 {
@@ -29,9 +107,10 @@ div.carousel.slide.col-lg-6 {
 }
 
 .display-3 {
-  font-size: 35px;
   text-align: center;
-  text-transform: capitalize;
+}
+h2.display-3 {
+    margin-top: 0px;
 }
 
 div.col-lg-2 {
@@ -185,11 +264,6 @@ left: 0px;
     margin-top: 20px;
 }
 
-#filterSelect {
-    width: 100px;
-    text-align: right;
-}
-
 .proj-updates .media {
     overflow: visible;
 }
@@ -240,6 +314,11 @@ div[uib-carousel] {
 
 .liste .media-right {
     padding-left: 100px;
+}
+
+.liste .media-right {
+    padding-left: 100px;
+    white-space: nowrap;
 }
 
 .liste.media-list {
@@ -467,4 +546,94 @@ s .my-fluid-container {
     border-color: lightgrey;
     border-width: 1px;
     margin-bottom: 10px;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    border: solid 1px #F1EEEA;
+    border-radius: 8px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+    font-size: 12px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+    height: 260px;
+}
+
+.card-block {
+    padding: 10px;
+}
+
+.project-thumbnail .progress {
+    height: 15px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.project-thumbnail .overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.overlay-funded {
+    background-color: #62C462;
+    color: white;
+}
+
+.overlay-pending {
+    background-color: #efef43;
+    color: #555;
+}
+
+.overlay-declined {
+    background-color: red;
+    color: white;
+}
+
+
+.img-bg {
+  position: relative;
+  background-color: #888;
+  z-index: -2;
+  padding: 0;
+}
+
+.img-bg::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+}
+
+.img-bg>div {
+    padding: 50px;
+}
+
+.img-bg::before {
+  background-image: url('../img/bg-image.png');
+  /* Prefix free isn't picking up this one */
+  -webkit-filter: url('#blur');
+  filter: url('#blur');
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }

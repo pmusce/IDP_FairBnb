@@ -1,9 +1,51 @@
-[{
+[
+	{
     "image": "img/ams.jpg",
     "date": 2017,
     "title": "Kijkdam Project",
     "body": "Kijk, the nice project!",
     "status": "pending",
-    "read": false
-}
+    "read": false,
+    "costs": 100000,
+    "totdonated": 0,
+    "duration": 21,
+    "location": "Amsterdam"
+	},
+	{
+    "image": "img/ams.jpg",
+    "date": 2017,
+    "title": "Kijkdam Project",
+    "body": "Kijk, the nice project!",
+    "status": "declined",
+    "read": false,
+    "costs": 100000,
+    "totdonated": 0,
+    "duration": 21,
+    "location": "Amsterdam"
+	},
+	{
+    "image": "img/ams.jpg",
+    "date": 2017,
+    "title": "Kijkdam Project",
+    "body": "Kijk, the nice project!",
+    "status": "funded",
+    "read": false,
+    "costs": 100000,
+    "totdonated": 100000,
+    "duration": 21,
+    "location": "Amsterdam"
+	},
+	{
+    "image": "img/ams.jpg",
+    "date": 2017,
+    "title": "Kijkdam Project",
+    "body": "Kijk, the nice project!",
+    "status": "approved",
+    "read": false,
+    "costs": 100000,
+    "totdonated": 65000,
+    "duration": 21,
+    "location": "Amsterdam"
+	}	
+
 ]
