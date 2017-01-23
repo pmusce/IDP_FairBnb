@@ -162,6 +162,11 @@ a[ng-click] {
     cursor: pointer;
 }
 
+.guideline {
+    padding: 10px 15px 15px 0;
+    margin: 10px;
+}
+
 .guidelines {
     padding: 10px 15px 15px 0;
 }
@@ -252,8 +257,9 @@ left: 0px;
 }
 
 .well {
-    position: relative;
     left: 0px;
+    margin: 10px;
+
 }
 
 .form-inline {
@@ -599,7 +605,7 @@ s .my-fluid-container {
 }
 
 .project-thumbnail .progress {
-    height: 15px;
+    height: 22px;
     border-radius: 0;
     box-shadow: none;
     margin: 0;
@@ -632,7 +638,7 @@ s .my-fluid-container {
 }
 
 .overlay-declined {
-    background-color: red;
+    background-color: rebd;
     color: white;
 }
 
@@ -644,6 +650,16 @@ s .my-fluid-container {
 .overlay-closed {
     background-color: black;
     color: white;
+}
+
+.img-bg-become {
+  display: block;
+  position: relative;
+  background-image: url('../img/become.jpg');
+  height: 350px;
+  background-size: cover;
+
+
 }
 
 
