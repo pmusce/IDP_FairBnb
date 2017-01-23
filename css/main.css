@@ -296,7 +296,7 @@ hr{
     content: '';
     left: 30px;
     top: 32px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .proj-updates .media-body {
@@ -312,6 +312,8 @@ hr{
     display: flex;
     justify-content: center;
     background-color: white;
+    z-index: 2;
+    position: relative;
 }
 
 .detail-bottom {
@@ -673,4 +675,8 @@ s .my-fluid-container {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+button.close {
+    position: relative;
+    z-index: 4000;
 }

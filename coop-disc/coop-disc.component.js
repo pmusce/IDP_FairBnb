@@ -19,8 +19,9 @@ angular.
       };
     }
   })
-  .controller('NewDiscussionModalInstanceCtrl', function ($scope, $uibModalInstance, $state) {
+  .controller('NewDiscussionModalInstanceCtrl', function ($scope, user, $uibModalInstance, $state) {
+    $scope.user = user;
     $scope.cancel = function () {
-        $uibModalInstance.dismiss('cancel');
+      $uibModalInstance.dismiss('cancel');
     };
 });
