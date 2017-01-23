@@ -14,6 +14,10 @@
         	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         	Declined
         </div>
+        <div class="overlay overlay-completed" ng-if="project.status=='completed'">
+        	<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        	Completed
+        </div>
         <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
         <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
              {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>

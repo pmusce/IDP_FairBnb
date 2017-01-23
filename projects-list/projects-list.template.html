@@ -39,9 +39,12 @@
                     <h4 class="card-title">{{project.title}}</h4>
                     <h6 class="card-title">
                         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                        {{project.location}}
+                        {{project.location}}&nbsp;
+                        <span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"> </span>
+                        {{project.initiator}}
+
                     </h6>
-                    <p class="card-text">{{project.body}}</p>
+                    <p class="card-text">{{project.description}}</p>
                   </div>
                 </div>
             </div>

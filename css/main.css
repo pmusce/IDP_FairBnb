@@ -619,6 +619,11 @@ s .my-fluid-container {
     color: white;
 }
 
+.overlay-completed {
+    background-color: #62C462;
+    color: white;
+}
+
 .overlay-pending {
     background-color: #efef43;
     color: #555;

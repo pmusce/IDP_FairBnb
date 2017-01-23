@@ -34,5 +34,17 @@
     "totdonated": 100000,
     "duration": 21,
     "location": "Amsterdam"
+	},
+	{
+    "image": "img/garden.jpg",
+    "date": 2017,
+    "title": "Roofgarden on Kijkdammergebouw",
+    "body": "The Munt Thee Salon in Kijkdam is a traditional salon in which Kijkdammer can book a table for corporate events, weddings, study sessions.",
+    "status": "completed",
+    "read": false,
+    "costs": 100000,
+    "totdonated": 100000,
+    "duration": 21,
+    "location": "Kijkdam"
 	}
 ]
