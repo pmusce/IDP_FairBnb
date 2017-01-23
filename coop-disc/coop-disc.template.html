@@ -1,4 +1,4 @@
-<div ng-switch on="detailOpened">
+<div ng-switch on="service.detailOpened">
 	<div ng-switch-when="false">
 		<form class="form-inline clearfix">
 			<button type="button" class="btn btn-primary" ng-click="createDiscussion();">
@@ -13,8 +13,8 @@
 			</span>
 		</form>
 
-		<ul class="list-group" ng-repeat="discussion in $ctrl.discussions | filter:$ctrl.query">
-		  <li class="list-group-item" ng-click="openDiscussion(discussion)">
+		<ul class="list-group" ng-repeat="discussion in discussions.list | filter:$ctrl.query">
+		  <li class="list-group-item clickable" ng-click="openDiscussion(discussion)">
 				<div class="project-thumbnail">
 					<div class="overlay overlay-closed" ng-if="discussion.status=='closed'">
 						<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>

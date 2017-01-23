@@ -1,22 +1,40 @@
 [{
-    "image": "img/disc.png",
-		"status": "closed",
+    "author": "paolo",
+    "usr_img": "img/frank.png",
+	"status": "closed",
     "title": "Cooperative discussion about legal framework (unread)",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "type": "coop",
-    "read": false
+    "comments": [
+        {
+            "username": "gianni",
+            "usr_img": "img/sito.png",
+            "body": "Some text here"
+        }
+    ]
 }, {
-    "image": "img/disc.png",
-		"status": "closed",
+    "author": "paolo",
+    "usr_img": "img/frank.png",
+	"status": "closed",
     "title": "Another interesting discussion",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "type": "general",
-    "read": false
+    "comments": [
+        {
+            "username": "gianni",
+            "usr_img": "img/sito.png",
+            "body": "Some text here"
+        }
+    ]
 }, {
-    "image": "img/disc.png",
-		"status": "open",
+    "author": "paolo",
+    "usr_img": "img/frank.png",
+	"status": "open",
     "title": "Yet another read discussion about the coop",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "type": "general",
-    "read": true
+    "comments": [
+        {
+            "username": "gianni",
+            "usr_img": "img/sito.png",
+            "body": "Some text here"
+        }
+    ]
 }]
