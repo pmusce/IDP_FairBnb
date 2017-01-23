@@ -47,15 +47,15 @@
     "body": "The Munt Thee Salon in Kijkdam is a traditional salon in which Kijkdammer can book a table for corporate events, weddings, study sessions.",
     "status": "completed",
     "read": false,
-    "costs": 100000,
-    "totdonated": 100000,
+    "costs": 250,
+    "totdonated": 100,
     "duration": 21,
     "location": "Kijkdam",
 		"initiator": "Me"
 
 	},
 	{
-		"image": "img/garden.jpg",
+		"image": "img/land.jpg",
 		"date": 2017,
 		"title": "Tourists Land Tour",
 		"body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",

@@ -2,7 +2,10 @@
     <div ng-repeat="project in $ctrl.projects | filter:filters" class="col-md-4">
         <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
           <div class="project-thumbnail">
-            <div class="overlay"></div>
+            <div class="overlay overlay-funded" ng-if="project.status=='funded'">
+            	<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            	Need Funding
+            </div>
             <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
             <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
                  {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
@@ -16,10 +19,10 @@
             <p class="card-text">{{project.body}}</p>
           </div>
         </div>
-    </div>     
+    </div>
 </div>
 
-<!-- 
+<!--
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
