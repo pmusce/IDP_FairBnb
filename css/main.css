@@ -670,4 +670,8 @@ s .my-fluid-container {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+button.close {
+    position: relative;
+    z-index: 4000;
 }
