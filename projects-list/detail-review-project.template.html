@@ -1,0 +1,49 @@
+<div>
+    <p>
+        <button ng-click="back()" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+        </button>
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>{{project.title}}</h1>
+            <p>by {{project.author}}</p>
+            <p>
+                {{project.description}}
+            </p>
+            <br>
+            <div>
+                <uib-progressbar class="progress-striped" max="project.costs" value="project.totdonated" type="success">
+                    <i>{{project.totdonated}} € /{{project.costs}} €</i>
+                </uib-progressbar>
+            </div>
+        </div>
+        <div class="col-sm-6 text-right">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="pic in project.pictures track by pic.id" index="pic.id">
+                    <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row detail-bottom">
+    <ul class="media-list liste">
+        <li class="media" ng-repeat="comment in project.comments">
+            <div class="media-left">
+                    <img style="width: 50px; height:50px; margin-top:11px;" class="img-circle" ng-src="{{comment.img}}">
+            </div>
+            <div class="media-body media-middle">
+              <b>{{comment.author}}</b>
+              <span style="color: lightgray;">- {{comment.time}}</span> <br>
+                {{comment.body}}
+            </div>
+        </li>
+    </ul>
+    <form class="comments-form clearfix">
+        <textarea rows="5" placeholder="Comment"></textarea>
+        <button type="button" data-tooltip="Support financially!" class="btn btn-success pull-right" data-toggle="modal" data-target=".bs-example-modal-lg">
+            Send
+        </button>
+    </form>
+</div>
