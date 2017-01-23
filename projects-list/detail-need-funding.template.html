@@ -37,9 +37,10 @@
     <ul class="media-list liste">
         <li class="media" ng-repeat="comment in project.comments">
             <div class="media-left">
-                    <img style="height: 100px; width: 136px; margin-top:11px;" ng-src="{{comment.img}}">
+                    <img style="width: 50px; height:50px; margin-top:11px;" class="img-circle" ng-src="{{comment.img}}">
             </div>
             <div class="media-body media-middle">
+              {{comment.time}}
                 {{comment.body}}
             </div>
         </li>
