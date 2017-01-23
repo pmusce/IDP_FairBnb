@@ -84,7 +84,7 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		controller : 'HomeController'
 	})
 	.state('become', {
-		url : '/booking',
+		url : '/becomehost',
 		templateUrl : 'become.html',
 		controller : 'HomeController'
 	})

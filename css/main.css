@@ -638,7 +638,7 @@ s .my-fluid-container {
 }
 
 .overlay-declined {
-    background-color: red;
+    background-color: rebd;
     color: white;
 }
 
@@ -650,6 +650,16 @@ s .my-fluid-container {
 .overlay-closed {
     background-color: black;
     color: white;
+}
+
+.img-bg-become {
+  display: block;
+  position: relative;
+  background-image: url('../img/become.jpg');
+  height: 350px;
+  background-size: cover;
+
+
 }
 
 

@@ -1,35 +1,32 @@
-  <div class="row" style="margin:10px;">
-      <form>
+<div class="row" style="margin:10px;">
+    <form>
         <fieldset class="form-group">
-          <label for="exampleInputEmail1">Project title</label>
-          <input type="text" class="form-control" id="projectTitle" placeholder="">
-          <small class="text-muted">Find a captivating title</small>
+            <label for="exampleInputEmail1">Project title</label>
+            <input type="text" class="form-control" id="projectTitle" placeholder="">
+            <small class="text-muted">Find a captivating title</small>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleInputPassword1">Short description (max. 100 characters)</label>
-          <textarea maxlength="100" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
-          <small class="text-muted">This description needs to summarize your project</small>
+            <label for="exampleInputPassword1">Short description (max. 100 characters)</label>
+            <textarea maxlength="100" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
+            <small class="text-muted">This description needs to summarize your project</small>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleSelect1">Minimum Budget</label>
-          <select class="form-control" id="exampleSelect1">
-            <option>500$</option>
-            <option>1000$</option>
-            <option>2000$</option>
-            <option>5000$</option>
-            <option>>5000$</option>
-          </select>
+            <label for="exampleInputEmail1">Project Budget</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">€</span>
+                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
         </fieldset>
 
         <fieldset class="form-group">
-          <label for="exampleTextarea">Full Description</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            <label for="exampleTextarea">Full Description</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleInputFile">Attach an image</label>
-          <input type="file" class="form-control-file" id="exampleInputFile">
-          <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            <label for="exampleInputFile">Attach an image</label>
+            <input type="file" class="form-control-file" id="exampleInputFile">
+            <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
         </fieldset>
         <button type="submit" class="btn btn-primary float-right">Submit</button>
-      </form>
+    </form>
 </div>
