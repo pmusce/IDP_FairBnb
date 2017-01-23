@@ -1,18 +1,26 @@
 <div>
     <p>
         <button ng-click="back()" type="button" class="btn btn-primary">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            Back
         </button>
     </p>
     <div class="row">
         <div class="col-sm-6">
-            <h1>{{project.title}}</h1>
-            <p>by {{project.author}}</p>
+            <div class="well detail">
+                <h2>{{project.title}}</h2>
+                <p>
+                    <b>by
+                    </b>{{project.author}}</p>
+                <p>
+                    <b>Supporters: </b>{{project.supporters}}<br>
+                    <b>Funding received: </b>€ {{project.totdonated}}
+                </p>
+            </div>
             <p>
                 {{project.body}}
             </p>
             <br>
-             <p><h4>{{project.supporters}} supporters - Funding recived: €{{project.supporters}}</h4></p>
         </div>
         <div class="col-sm-6 text-right">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
@@ -23,14 +31,14 @@
         </div>
     </div>
 </div>
-<div class="row detail-bottom">
-    <div class="col-md-4 col-md-offset-4">
+<div class="row">
+    <div class="col-md-4">
         <h3>Project updates</h3>
         <ul class="media-list proj-updates">
             <li class="media" ng-repeat="update in project.updates">
                 <div class="media-left">
                     <div class="proj-update-date">
-                        {{update.date}}
+                        <b>{{update.date}}</b>
                     </div>
                 </div>
                 <div class="media-body">
@@ -38,5 +46,5 @@
                 </div>
             </li>
         </ul>
-    </div>  
+    </div>
 </div>

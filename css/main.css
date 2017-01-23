@@ -253,7 +253,7 @@ left: 0px;
 
 .well {
     position: relative;
-    left: -30px;
+    left: 0px;
 }
 
 .form-inline {
@@ -617,13 +617,13 @@ s .my-fluid-container {
 }
 
 .overlay-funded {
-    background-color: #62C462;
+    background-color: blue;
     color: white;
 }
 
 .overlay-completed {
     background-color: #62C462;
-    color: white;
+    color: black;
 }
 
 .overlay-pending {
@@ -636,10 +636,14 @@ s .my-fluid-container {
     color: white;
 }
 
+.overlay-needfunding {
+    background-color: orange;
+    color: black;
+}
+
 .overlay-closed {
     background-color: black;
     color: white;
-
 }
 
 

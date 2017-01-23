@@ -9,7 +9,8 @@
     "costs": 100000,
     "totdonated": 0,
     "duration": 21,
-    "location": "Amsterdam"
+    "location": "Amsterdam",
+		"initiator": "Me"
 	},
 	{
     "image": "img/bbq.jpg",
@@ -21,7 +22,9 @@
     "costs": 100000,
     "totdonated": 0,
     "duration": 21,
-    "location": "Amsterdam"
+    "location": "Amsterdam",
+		"initiator": "Me"
+
 	},
 	{
     "image": "img/mint.jpg",
@@ -33,7 +36,9 @@
     "costs": 100000,
     "totdonated": 100000,
     "duration": 21,
-    "location": "Amsterdam"
+    "location": "Amsterdam",
+		"initiator": "Me"
+
 	},
 	{
     "image": "img/garden.jpg",
@@ -45,6 +50,22 @@
     "costs": 100000,
     "totdonated": 100000,
     "duration": 21,
-    "location": "Kijkdam"
+    "location": "Kijkdam",
+		"initiator": "Me"
+
+	},
+	{
+		"image": "img/garden.jpg",
+		"date": 2017,
+		"title": "Tourists Land Tour",
+		"body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
+		"status": "needfunding",
+		"read": true,
+		"costs": 900,
+		"totdonated": 400,
+		"duration": 12,
+		"location": "Utrecht",
+		"initiator": "Me"
+
 	}
 ]

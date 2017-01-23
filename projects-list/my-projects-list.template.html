@@ -3,12 +3,12 @@
     <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
       <div class="project-thumbnail">
         <div class="overlay overlay-funded" ng-if="project.status=='funded'">
-        	<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        	<span class="glyphicon glyphicon-eur" aria-hidden="true"></span>
         	Funded
         </div>
         <div class="overlay overlay-pending" ng-if="project.status=='pending'">
        	<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-        	Waiting for approval
+        	Awaiting Approval
         </div>
         <div class="overlay overlay-declined" ng-if="project.status=='declined'">
         	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
@@ -17,6 +17,10 @@
         <div class="overlay overlay-completed" ng-if="project.status=='completed'">
         	<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
         	Completed
+        </div>
+        <div class="overlay overlay-needfunding" ng-if="project.status=='needfunding'">
+          <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+          Needs Funding
         </div>
         <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
         <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">

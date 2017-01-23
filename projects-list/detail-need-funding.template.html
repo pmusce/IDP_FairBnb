@@ -6,12 +6,12 @@
     </p>
     <div class="row">
         <div class="col-sm-6">
-            <h1>{{project.title}}</h1>
-            <p>by {{project.author}}</p>
-            <p>
-                {{project.description}}
-            </p>
+          <div class="well detail">
+            <h2>{{project.title}}</h2>
+            <p><b>by</b> {{project.author}}</p>
+            <p>{{project.body}}</p>
             <br>
+          </div>
             <div>
                 <uib-progressbar class="progress-striped" max="project.costs" value="project.totdonated" type="success">
                     <i>{{project.totdonated}} € /{{project.costs}} €</i>
@@ -48,7 +48,7 @@
     </ul>
     <form class="comments-form clearfix">
         <textarea rows="5" placeholder="Comment"></textarea>
-        <button type="button" data-tooltip="Support financially!" class="btn btn-success pull-right" data-toggle="modal" data-target=".bs-example-modal-lg">
+        <button type="button" data-tooltip="Support finaybyncially!" class="btn btn-success pull-right" data-toggle="modal" data-target=".bs-example-modal-lg">
             Send
         </button>
     </form>
@@ -70,7 +70,9 @@
         <div class="media">
             <div class="media-left">
                 <a href="#">
-                    <img ng-src="{{project.image}}" style="height: 140px; width: 140px; margin-top:-26px;" class="media-object">
+                    <img ng-src="{{project.image}}"
+                    style="height: 140px; width: 140px; margin-top:-26px;"
+                    class="media-object">
                 </a>
             </div>
             <div class="media-body">
