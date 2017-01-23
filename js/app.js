@@ -3,6 +3,7 @@ var fairbed = angular.module('fairbed', [
 	'ui.bootstrap',
 	'ui.router',
 	'ui.calendar',
+	'ngCookies',
 	'newsList',
 	'discussionList',
 	'projectsList',
@@ -12,38 +13,49 @@ var fairbed = angular.module('fairbed', [
 
 
 
-fairbed.factory('user', [function() {
-  	return {
-        name: '',
-        username: '',
-        role: '',
-				funds: '',
-				image: '',
-        isAuth: false,
-        setUser: function(usr) {
-        	this.name = usr.name;
-        	this.username = usr.username;
-        	this.role = usr.role;
-					this.funds = usr.funds;
-					this.image = usr.image;
-        },
-        isAdmin: function() {
-            return this.role == 'admin';
-        },
-        isGuest: function() {
-            return this.role == 'guest';
-        },
-        switchRole: function() {
-            this.role = this.oppositeRole().toLowerCase();
-        },
-        oppositeRole: function() {
-            if (this.role == 'host')
-                return 'Admin';
-            if (this.role == 'admin')
-                return 'Host';
-            console.error("Invalid user role");
-        }
+fairbed.factory('user', ['$cookies', function($cookies) {
+	user = $cookies.getObject('user');
+
+	if(user === undefined) {
+	  	user = {
+	        name: '',
+	        username: '',
+	        role: '',
+			funds: '',
+			image: '',
+	        isAuth: false
+	    };
+	} else {
+		user.isAuth = true;
+	}
+
+    user.setUser= function(usr) {
+    	$cookies.putObject('user', usr);
+    	this.name = usr.name;
+    	this.username = usr.username;
+    	this.role = usr.role;
+		this.funds = usr.funds;
+		this.image = usr.image;
     };
+
+   	user.isAdmin= function() {
+        return this.role == 'admin';
+    };
+    user.isGuest= function() {
+        return this.role == 'guest';
+    };
+    user.switchRole= function() {
+        this.role = this.oppositeRole().toLowerCase();
+    };
+    user.oppositeRole= function() {
+        if (this.role == 'host')
+            return 'Admin';
+        if (this.role == 'admin')
+            return 'Host';
+        console.error("Invalid user role");
+    };
+
+    return user;
 }]);
 
 fairbed.run(function($rootScope, $location, $state, LoginService) {
@@ -71,31 +83,26 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		templateUrl : 'home.html',
 		controller : 'HomeController'
 	})
-  .state('become', {
-    url : '/booking',
-    templateUrl : 'become.html',
-    controller : 'HomeController'
-  })
-  .state('calendar', {
-    url : '/calendar',
-    templateUrl : 'calendar.html',
-    controller : 'CalendarController'
-  })
-  .state('project', {
-    url : '/project',
-    templateUrl : 'project.html',
-    controller : 'HomeController'
+	.state('become', {
+		url : '/booking',
+		templateUrl : 'become.html',
+		controller : 'HomeController'
+	})
+	.state('project', {
+		url : '/project',
+		templateUrl : 'project.html',
+		controller : 'HomeController'
 
-  })
-  .state('detailproject', {
-    url : '/detailproject',
-    templateUrl : 'detailproject.html',
-    controller : 'HomeController'
-  });
+	})
+	.state('detailproject', {
+		url : '/detailproject',
+		templateUrl : 'detailproject.html',
+		controller : 'HomeController'
+	})
 }]);
 
 
-fairbed.factory('LoginService', function($http, user, $state) {
+fairbed.factory('LoginService', function($http, $cookies, user, $state) {
 	self = this;
 	var isAuthenticated = false;
 
@@ -120,6 +127,7 @@ fairbed.factory('LoginService', function($http, user, $state) {
 			return isAuthenticated;
 		},
 		logout: function() {
+			$cookies.remove('user');
 			isAuthenticated = false;
 			user.isAuth = false;
 			$state.transitionTo('login');
