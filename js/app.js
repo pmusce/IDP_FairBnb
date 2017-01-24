@@ -83,6 +83,11 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		templateUrl : 'home.html',
 		controller : 'HomeController'
 	})
+	.state('become', {
+		url : '/become',
+		templateUrl : 'become.html',
+		controller : 'HomeController'
+	})
 	.state('home.projects', {
 		url : '^/projects',
 		component: 'projects'
@@ -175,7 +180,7 @@ fairbed.controller('HomeController', function($scope, $stateParams, $state, News
 	});
 
 // end datepicker call
-	
+
 	$scope.logout = function() {
 		LoginService.logout();
 	}
