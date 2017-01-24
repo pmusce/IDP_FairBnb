@@ -19,12 +19,14 @@
 		"username": "willem",
 		"password": "password",
 		"name": "Willem Duijvelshoff",
+		"image": "img/sito.png",
 		"role": "admin",
 		"funds": 10.30
 	},
 	{
 		"username": "cindy",
 		"password": "password",
+		"image": "img/sito.png",
 		"name": "Cindy Van Den Berg",
 		"role": "guest",
 		"funds": 10.30
@@ -32,6 +34,7 @@
 	{
 		"username": "admin",
 		"password": "password",
+		"image": "img/sito.png",
 		"name": "Axel De Jong",
 		"role": "host",
 		"funds": 10.30

@@ -2,22 +2,15 @@ angular.
 module('newsList').
 component('newsList', {
   templateUrl: 'news-list/news-list.template.html',
-  controller: function NewsListController($scope, $uibModal, $http, user) {
+  bindings: { news: '<' },
+  controller: function NewsListController($scope, $uibModal, $http, NewsService, user) {
+
     var self = this;
     this.user = user;
-    this.news = [];
+    
+    NewsService.unread = 0;
 
     $scope.newsOpened = false;
-
-    $scope.countUnread = function() {
-      self.user.unread = self.news.reduce(function (total, current) {
-        if (!current.read) {
-          return total + 1;
-        }
-        return total;
-      }, 0);
-      console.log(self.user.unread);
-    };
 
     $scope.createNews = function() {
       $uibModal.open({
@@ -34,22 +27,8 @@ component('newsList', {
       });
     }
 
-    $http.get('../data/news.json').then(function(response) {
-      self.news = response.data;
-      $scope.countUnread();
-
-      self.categories = self.news.reduce(function (acc, curr) {
-        if(acc.indexOf(curr.type) === -1) {
-          return acc.concat(curr.type);
-        }
-        return acc
-      }, []);
-    });
-
     $scope.openNews = function(news) {
       $scope.newsOpened = true;
-      news.read=true; 
-      $scope.countUnread();
       $scope.currentNews = news;
     }
 
@@ -63,4 +42,38 @@ component('newsList', {
   $scope.cancel = function () {
       $uibModalInstance.dismiss('cancel');
   };
-});
+})
+.factory('NewsService', ['$http', function ($http) {
+  var newsList = undefined;
+  var service = {
+    unread: 3,
+    getAllNews: function() {
+      if (!newsList) {
+        newsList = $http.get('data/news.json', { cache: true }).then(function(resp) {
+          service.updateUnread(resp.data);
+          return resp.data;
+        });
+      }
+      return newsList;
+    },
+    getNews: function(id) {
+      function newsMatchesParam(person) {
+        return news.id === id;
+      }
+
+      return service.getAllNews().then(function (people) {
+        return newsList.find(newsMatchesParam)
+      });
+    },
+    updateUnread: function(newsList) {
+      this.unread = newsList.reduce(function(acc, curr) {
+        if(!curr.read) {
+          return acc + 1;
+        }
+        return acc;
+      }, 0);
+    }
+  }
+
+  return service;
+}]);

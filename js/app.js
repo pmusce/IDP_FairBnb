@@ -93,7 +93,21 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 	})
 	.state('home.news', {
 		url : '^/news',
-		component: 'newsList'
+		component: 'newsList',
+		resolve: {
+			news: function(NewsService) {
+	          	return NewsService.getAllNews();
+	        }
+		}
+	})
+	.state('home.newsdetail', {
+		url : '^/news/{newsId}',
+		component: 'newsList',
+		resolve: {
+			newsItem: function(NewsService) {
+	          	return NewsService.getNews(newsId);
+	        }
+		}
 	})
 	.state('home.reviewproj', {
 		url : '^/reviewproj',
@@ -149,8 +163,8 @@ fairbed.factory('LoginService', function($http, $cookies, user, $state) {
 
 });
 
-fairbed.controller('HomeController', function($scope, $stateParams, $state, user, LoginService) {
-	$scope.user = user;
+fairbed.controller('HomeController', function($scope, $stateParams, $state, NewsService, user, LoginService) {
+	$scope.news = NewsService;
 
 	// Triggering popovers for landing page on city input field
 	$('#name').popover();
@@ -161,7 +175,7 @@ fairbed.controller('HomeController', function($scope, $stateParams, $state, user
 	});
 
 // end datepicker call
-
+	
 	$scope.logout = function() {
 		LoginService.logout();
 	}

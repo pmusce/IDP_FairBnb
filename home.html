@@ -6,7 +6,7 @@
       <li role="presentation" ui-sref-active="active"><a ui-sref="home.discussions">Discussions</a></li>
       <li role="presentation" ui-sref-active="active">
         <a ui-sref="home.news">
-          News <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
+          News <span class="badge" ng-if='news.unread'>{{news.unread}}</span>
         </a>
       </li>
       <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewproj">Review Projects</a></li>
