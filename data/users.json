@@ -4,7 +4,8 @@
 		"image": "img/sito.png",
 		"password": "password",
 		"name": "Pasquale Muscettola",
-		"role": "admin"
+		"role": "admin",
+		"funds": 5.40
 	},
 	{
 		"username": "pauline",
@@ -12,25 +13,28 @@
 		"image": "img/sito.png",
 		"name": "Pauline Sia",
 		"role": "guest",
-		"funds": 455.55
+		"funds": 55.55
 	},
 	{
 		"username": "willem",
 		"password": "password",
 		"name": "Willem Duijvelshoff",
-		"role": "admin"
+		"role": "admin",
+		"funds": 10.30
 	},
 	{
 		"username": "cindy",
 		"password": "password",
 		"name": "Cindy Van Den Berg",
-		"role": "guest"
+		"role": "guest",
+		"funds": 10.30
 	},
 	{
 		"username": "admin",
 		"password": "password",
 		"name": "Axel De Jong",
-		"role": "host"
+		"role": "host",
+		"funds": 10.30
 	},
 	{
 		"username": "alessandro",
@@ -38,6 +42,6 @@
 		"name": "Alessandro Latella",
 		"image": "img/frank.png",
 		"role": "host",
-		"funds": 848.88
+		"funds": 48.88
 	}
 ]

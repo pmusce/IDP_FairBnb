@@ -70,7 +70,7 @@ fairbed.run(function($rootScope, $location, $state, LoginService) {
 });
 
 fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	//$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/login');
 
 	$stateProvider
 	.state('login', {
@@ -84,27 +84,27 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		controller : 'HomeController'
 	})
 	.state('home.projects', {
-		url : '/projects',
+		url : '^/projects',
 		component: 'projects'
 	})
 	.state('home.discussions', {
-		url : '/discussions',
+		url : '^/discussions',
 		component: 'discussionList'
 	})
 	.state('home.news', {
-		url : '/news',
+		url : '^/news',
 		component: 'newsList'
 	})
 	.state('home.reviewproj', {
-		url : '/reviewproj',
+		url : '^/reviewproj',
 		component: 'projects'
 	})
 	.state('home.reviewhosts', {
-		url : '/reviewhosts',
+		url : '^/reviewhosts',
 		component: 'memberList'
 	})
 	.state('home.myproj', {
-		url : '/myprojects',
+		url : '^/myprojects',
 		component: 'myProjects'
 	})
 	.state('detailproject', {
