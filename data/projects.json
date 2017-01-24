@@ -53,9 +53,35 @@
     "body": "This project will sponsor our hosts to contribute to clean and renewable energy. Our target is to provide clean solar panels for 100 eligible households in Amsterdam area. All of Fairbed hosts will be invited to join and benefit from this sponsored projects. ",
     "status": "pending",
     "costs": 4500,
-    "totdonated": 2000,
+    "totdonated": 4500,
     "duration": 12,
     "read": false,
+    "updates": [
+        {
+            "date": "Sep-15",
+            "body": "Proposal submitted at UvA"
+        },
+        {
+            "date": "Oct-19",
+            "body": "Meeting #1 at Waag"
+        },
+        {
+            "date": "Nov-18",
+            "body": "Meeting #1 at Waag"
+        },
+        {
+          "date": "Dic-20",
+          "body": "UvA Meeting"
+        },
+        {
+          "date": "Dic-20",
+          "body": "UvA Meeting"
+        },
+        {
+          "date": "Feb-1",
+          "body": "Symposium - Showcase"
+        }
+          ],
     "comments": [
       {
         "author": "Sito Veracruz",

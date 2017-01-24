@@ -12,7 +12,7 @@
 		"image": "img/sito.png",
 		"name": "Pauline Sia",
 		"role": "guest",
-		"funds": 2500
+		"funds": 455.55
 	},
 	{
 		"username": "willem",
@@ -38,6 +38,6 @@
 		"name": "Alessandro Latella",
 		"image": "img/frank.png",
 		"role": "host",
-		"funds": 2500
+		"funds": 848.88
 	}
 ]

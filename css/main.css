@@ -30,7 +30,6 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search] {
-    background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
     width: 55px;
@@ -258,7 +257,6 @@ left: 0px;
 
 .well {
     left: 0px;
-    margin: 10px;
 
 }
 
@@ -477,8 +475,13 @@ user-select: none; */
 }
 
 .btn-warning {
-    color: black;
-    background: #E6DF03;
+    color: white;
+    background: #FF8000;
+}
+
+.btn-lg {
+  padding: 18px 80px;
+  border-radius: -10px;
 }
 
 .img.disc {
