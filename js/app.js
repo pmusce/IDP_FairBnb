@@ -83,22 +83,35 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		templateUrl : 'home.html',
 		controller : 'HomeController'
 	})
-	.state('become', {
-		url : '/becomehost',
-		templateUrl : 'become.html',
-		controller : 'HomeController'
+	.state('home.projects', {
+		url : '/projects',
+		component: 'projects'
 	})
-	.state('project', {
-		url : '/project',
-		templateUrl : 'project.html',
-		controller : 'HomeController'
-
+	.state('home.discussions', {
+		url : '/discussions',
+		component: 'discussionList'
+	})
+	.state('home.news', {
+		url : '/news',
+		component: 'newsList'
+	})
+	.state('home.reviewproj', {
+		url : '/reviewproj',
+		component: 'projects'
+	})
+	.state('home.reviewhosts', {
+		url : '/reviewhosts',
+		component: 'memberList'
+	})
+	.state('home.myproj', {
+		url : '/myprojects',
+		component: 'myProjects'
 	})
 	.state('detailproject', {
 		url : '/detailproject',
 		templateUrl : 'detailproject.html',
 		controller : 'HomeController'
-	})
+	});
 }]);
 
 

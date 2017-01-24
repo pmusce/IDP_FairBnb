@@ -1,6 +1,6 @@
 angular.
 module('projectsList')
-.component('projectsList', {
+.component('projects', {
 	templateUrl: 'projects-list/projects-list.template.html',
 	controller: function ProjectListController($scope, $uibModal, $http, user, projectDetailService) {
 		$scope.createProject = function() {

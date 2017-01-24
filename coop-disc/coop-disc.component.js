@@ -18,7 +18,7 @@ component('discussionList', {
       });
 
       modalInstance.result.then(function (new_discussion) {
-        discussionsService.add(new_discussion);
+        discussionsService.push(new_discussion);
       });
     };
 
@@ -44,8 +44,6 @@ component('discussionList', {
     }
 
     $uibModalInstance.close(new_discussion);
-
-
   };
 })
 .component('discussionDetail', {
@@ -60,15 +58,14 @@ component('discussionList', {
 })
 .factory('discussionsService', function($http) {
   self = this;
-  self.discussions = {
-    list: [],
-    add: function(new_discussion) {
-      this.list.push(new_discussion);
-    }
-  };
+  self.discussions = [];
 
   $http.get('../data/coop-disc.json').then(function(response) {
-      self.discussions.list = response.data;
+      response.data.forEach(function (element) {
+        self.discussions.push(element);
+      });
+
+      console.log(self.discussions);
   });
   
   return self.discussions;

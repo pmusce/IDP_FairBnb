@@ -13,7 +13,7 @@
 			</span>
 		</form>
 
-		<ul class="list-group" ng-repeat="discussion in discussions.list | filter:$ctrl.query">
+		<ul class="list-group" ng-repeat="discussion in discussions | filter:$ctrl.query">
 		  <li class="list-group-item clickable" ng-click="openDiscussion(discussion)">
 				<div class="project-thumbnail">
 					<div class="overlay overlay-closed" ng-if="discussion.status=='closed'">

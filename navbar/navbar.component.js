@@ -34,7 +34,7 @@ angular.
         $scope.username = '';
         $scope.password = '';
         $uibModalInstance.close();
-        $state.transitionTo('home');
+        $state.transitionTo('home.projects');
       }, function() {
         $scope.error = "Incorrect username/password !";
       });

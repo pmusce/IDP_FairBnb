@@ -1,46 +1,19 @@
 <div class="gray-bg">
-<navbar></navbar>
-<div class="container">
-  <uib-tabset active="active">
+  <navbar></navbar>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li role="presentation" ui-sref-active="active"><a ui-sref="home.projects">Projects</a></li>
+      <li role="presentation" ui-sref-active="active"><a ui-sref="home.discussions">Discussions</a></li>
+      <li role="presentation" ui-sref-active="active">
+        <a ui-sref="home.news">
+          News <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
+        </a>
+      </li>
+      <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewproj">Review Projects</a></li>
+      <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewhosts">Review Members</a></li>
+      <li role="presentation" ui-sref-active="active"><a ui-sref="home.myproj">My Projects</a></li>
+    </ul>
 
-    <uib-tab index="0">
-      <uib-tab-heading>Projects</uib-tab-heading>
-      <projects-list></projects-list>
-    </uib-tab>
-
-    <uib-tab index="1" ng-if="!user.isGuest()">
-      <uib-tab-heading>Discussions</uib-tab-heading>
-      <discussion-list></discussion-list>
-    </uib-tab>
-
-    <uib-tab index="2">
-      <uib-tab-heading>News
-        <span class="badge" ng-if='user.unread'>{{user.unread}}</span>
-      </uib-tab-heading>
-      <news-list></news-list>
-    </uib-tab>
-
-    <uib-tab index="3" ng-if="user.isAdmin()">
-      <uib-tab-heading>
-        <b>Review</b>
-        Projects
-        <span class="badge">1</span>
-      </uib-tab-heading>
-      <projects-list></projects-list>
-    </uib-tab>
-
-    <uib-tab index="4" ng-if="user.isAdmin()">
-      <uib-tab-heading>
-        <b>Review</b>
-        New Members
-        <span class="badge">1</span>
-      </uib-tab-heading>
-      <member-list></member-list>
-    </uib-tab>
-    <uib-tab index="5">
-      <uib-tab-heading>My Projects</uib-tab-heading>
-      <my-projects></my-projects>
-    </uib-tab>
-  </uib-tabset>
-</div>
+    <div ui-view class="tab-content"></div>
+  </div>
 </div>
