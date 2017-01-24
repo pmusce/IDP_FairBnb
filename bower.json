@@ -19,14 +19,15 @@
     "angular-ui": "^0.4.0",
     "angular": "~1.6.1",
     "bootstrap": "3",
-    "angular-ui-router": "ui-router#^1",
     "angular-bootstrap": "^2.4.0",
     "angular-ui-calendar": "latest",
     "angular-animate": "^1.6.1",
-    "angular-cookies": "^1.6.1"
+    "angular-cookies": "^1.6.1",
+    "angular-ui-router": "1.0.0-rc.1"
   },
   "resolutions": {
     "angular": "~1.6.1",
-    "moment": "~2.10.3"
+    "moment": "~2.10.3",
+    "angular-ui-router": "1"
   }
 }
