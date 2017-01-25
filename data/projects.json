@@ -1,49 +1,5 @@
 [{
     "type": "need-funding",
-    "image": "img/land.jpg",
-    "date": 2017,
-    "location": "Utrecht",
-    "title": "Tourists Land Tour",
-    "initiator": "Anna De Meijer",
-    "description": "The project aims to let tourists and newcomers in The Netherlands to discover the nature of The Netherlands",
-    "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
-    "status": "approved",
-    "costs": 900,
-    "totdonated": 400,
-    "duration": 12,
-    "read": false,
-    "comments": [
-      {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "I think this project needs to be funded. It would allow tourists to have more options than staying in the city",
-        "time": "3 Days Ago"
-      },
-      {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "We need more funding for this project before we can actually start. How long does it take to have a project funded?",
-        "time": "3 Days Ago"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/ams2.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/ams.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ],
-    "author": "Pasquale Muscettola",
-    "supporters": 10
-}, {
-    "type": "need-funding",
     "image": "img/planting.jpg",
     "date": 2016,
     "location": "Amsterdam",
@@ -74,19 +30,59 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/ams2.jpg"
+            "src": "img/tree1.jpg"
         },
         {
             "id": 1,
-            "src": "img/ams.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
+            "src": "img/tree2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
     "supporters": 10
+}, {
+    "type": "funded",
+    "image": "img/Pop_podium.jpg",
+    "location": "Amsterdam Zuid",
+    "date": 2017,
+    "title": "Converting an old warehouse to a Pop Podium",
+    "initiator": "Amsterdam Zuid Neighborood",
+    "description": "We want to convert the old ware house in Amsterdam Zuid to a pop podium",
+    "body": "In Amsterdam Zuid there is an old warehouse that has not been used for years and crackers have found their way in. At the same time, the youth in the area have expressed a desire to have a pop podium were they can display their talents and listen to what the local scene has to offer. That’s why we want to convert the old ware house in Amsterdam Zuid to a pop podium, so that these two problems will be solved at the same time.",
+    "status": "approved",
+    "read": false,
+    "author": "Amsterdam Zuid Neighborood",
+    "supporters": 30,
+    "costs": 3000,
+    "totdonated": 3000,
+    "funding": 80,
+    "updates": [
+        {
+            "date": "Jan-10",
+            "body": "Project Funded on Fairbed"
+        },
+        {
+            "date": "Jan-15",
+            "body": "Received Bank Wire"
+        },
+        {
+            "date": "Jan-18",
+            "body": "Contacted initial stakeholders"
+        },
+      {
+        "date": "Jan-25",
+        "body": "First Meeting in Brasterdijk"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/Pop_podium.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/Pop_podium2.jpg"
+        }
+    ]
 }, {
     "type": "need-funding",
     "image": "img/proj4.jpg",
@@ -119,15 +115,11 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/ams2.jpg"
+            "src": "img/proj4.jpg"
         },
         {
             "id": 1,
-            "src": "img/ams.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
+            "src": "img/Vondelpark2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
@@ -163,28 +155,24 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/ams2.jpg"
+            "src": "img/hangout1.jpg"
         },
         {
             "id": 1,
-            "src": "img/ams.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
+            "src": "img/hangout2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
     "supporters": 10
 }, {
     "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
+    "image": "img/bbq.jpg",
+    "location": "Duumdijk",
     "date": 2017,
-    "title": "Fairbed Project",
+    "title": "BBQ for the whole neighborhood",
     "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
+    "description": "We will have a BBQ to celebrate",
+    "body": "The community has done a good job working together so far, and this has to be rewarded. For this reason, a BBQ will be organized so the whole neighborhood can have a nice piece of meat, and it will also help to improve the social cohesion in the neighborhood, bringing down crime in the process.",
     "status": "approved",
     "read": false,
     "author": "Fikke & Fokkei",
@@ -213,63 +201,11 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/***.jpg"
+            "src": "img/bbq.jpg"
         },
         {
             "id": 1,
-            "src": "img/***.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/***.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/waag1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
+            "src": "img/bbq1.jpg"
         }
     ]
 }, {
@@ -316,58 +252,14 @@
             "src": "img/Graffiti_2.jpg"
         }
     ]
-}, {
+},  {
     "type": "funded",
-    "image": "img/Pop_podium.jpg",
-    "location": "Amsterdam Zuid",
-    "date": 2017,
-    "title": "Converting an old warehouse to a Pop Podium",
-    "initiator": "Amsterdam Zuid Neighborood",
-    "description": "We want to convert the old ware house in Amsterdam Zuid to a pop podium",
-    "body": "In Amsterdam Zuid there is an old warehouse that has not been used for years and crackers have found their way in. At the same time, the youth in the area have expressed a desire to have a pop podium were they can display their talents and listen to what the local scene has to offer. That’s why we want to convert the old ware house in Amsterdam Zuid to a pop podium, so that these two problems will be solved at the same time.",
-    "status": "approved",
-    "read": false,
-    "author": "Amsterdam Zuid Neighborood",
-    "supporters": 30,
-    "costs": 3000,
-    "totdonated": 3000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/Pop_podium.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/Pop_podium2.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/ams2.jpg",
+    "image": "img/Older_People.jpg",
     "location": "Whole Amsterdam",
     "date": 2017,
     "title": "Activities for the elderly people",
     "initiator": "Nienke Stoijpers",
-    "description": "will organize an activity for elderly every month, so they will have an opportunity to socialize with other people.",
+    "description": "We will organize an activity for elderly every month, so they will have an opportunity to socialize with other people.",
     "body": "There are a lot of elderly people in Amsterdam who are very lonely. Out of 4.1 million people in the Netherlands who are 55 years or older, 1 million of them are reported to have feelings of loneliness. The same relative numbers can be applied to Amsterdam. To make this situation a little better, a comity has been put up that will organize an activity for elderly every month, so they will have an opportunity to socialize with other people.",
     "status": "approved",
     "read": false,
@@ -406,13 +298,13 @@
     ]
 }, {
     "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
+    "image": "img/car_sharing.jpg",
+    "location": "Nieuwe West",
     "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
+    "title": "Car Sharing Project",
+    "initiator": "Adam Luijteswel",
+    "description": "We would like to supply a number of cars which are especially for sharing, so that work goers can be a lot more environment friendly",
+    "body": "When traveling to work, many people go by car by themselves, and because of this, there are a lot of cars driving around with just one person in it, and a lot of empty seats. Also, lots of people don’t have access to a car themselves. In this project, we would like to supply a number of cars which are especially for sharing, so that work goers can be a lot more environment friendly, and also be more social with each other in the process. ",
     "status": "approved",
     "read": false,
     "author": "Fikke & Fokkei",
@@ -441,15 +333,11 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/waag1.jpg"
+            "src": "img/car_sharing.jpg"
         },
         {
             "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
+            "src": "img/car_sharing2.jpg"
         }
     ]
 }

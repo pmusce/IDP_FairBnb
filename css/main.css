@@ -15,6 +15,11 @@ div.col-lg-4 {
     padding-top: 20px;
 }
 
+.collapsed a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 input {
     outline: none;
 }
