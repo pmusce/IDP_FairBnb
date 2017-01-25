@@ -20,10 +20,50 @@
         </div>
         <div class="col-sm-6 text-right">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                <div uib-slide ng-repeat="pic in project.pictures track by pic.id" index="pic.id">
+                <div uib-slide ng-repeat="pic in $ctrl.project.pictures track by pic.id" index="pic.id">
                     <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <div id="form-container">
+
+                <div class="page-header text-center">
+                    <h2>Review</h2>
+                    
+                    <!-- the links to our nested states using relative paths -->
+                    <!-- add the active class if the state matches our ui-sref -->
+                    <div id="status-buttons" class="text-center">
+                        <a ui-sref-active="active" ui-sref=".space"><span>1</span> Location bound</a>
+                        <a ui-sref-active="active" ui-sref=".services"><span>2</span> Services</a>
+                        <a ui-sref-active="active" ui-sref=".description"><span>3</span> Description</a>
+                    </div>
+                </div>
+                
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+                <form id="become-host-form" ng-submit="processForm()">
+                    <p>Does it follow the guideline:</p>
+                    <!-- our nested state views will be injected here -->
+                    <div id="form-views" class="form-horizontal">
+                        Projects supported by Fairbed (Amsterdam) must be for the benefit of local cooperative community of Fairbed Amsterdam 
+                    </div>
+                    <div class="clearfix">
+                        <button class="btn btn-success pull-right">Yes</button>
+                        <button class="btn btn-danger pull-right">No</button>
+                    </div>
+                    <h4>Why?</h4>
+                    <textarea style="width:100%" class="form-control" rows="3"></textarea>
+                    <button class="btn btn-success pull-right">Submit</button>
+                </form>
+
+            </div>
+
         </div>
     </div>
 </div>
