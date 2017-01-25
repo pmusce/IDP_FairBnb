@@ -34,8 +34,8 @@ fairbed.factory('user', ['$cookies', function($cookies) {
     	this.name = usr.name;
     	this.username = usr.username;
     	this.role = usr.role;
-		this.funds = usr.funds;
-		this.image = usr.image;
+			this.funds = usr.funds;
+			this.image = usr.image;
     };
 
    	user.isAdmin= function() {
