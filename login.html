@@ -7,45 +7,45 @@
     </div>
     <div class="row">
         <img style="margin-top:-90px; display: block; margin-left: auto; margin-right: auto; width:10%;" src="img/logo2.png" \="">
-        <h1 class="display-3" style="color: white;">
+        <h1 class="display-3 main-title" style="color: white;">
             <b>fairbed</b>
         </h1>
-        <h2 class="display-3">Support local projects while traveling</h2>
+        <h2 class="display-3 sub-title">Support local projects while traveling</h2>
     </div>
 
 </div>
-<div class="container-fluid" style="background-color:#62C462; color:white;">
+<div class="container-fluid booking">
     <div class="row">
-        <div class="col-lg-4">
-            <label for="basic-url">Type your destination</label>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon3">City</span>
-                <input id="name" type="text" class="form-control" aria-describedby="basic-addon3">
-            </div>
+        <div class="col-sm-2 col-sm-offset-1">
+            <label for="basic-url">Destination</label>    
+            <input id="name" type="text" class="form-control" placeholder="Type destination here">
         </div>
-        <div class="col-lg-2">
-            <label for="basic-url">Persons</label>
+        <div class="col-sm-2">
+            <label for="basic-url">People</label>
             <select class="form-control">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>1 person</option>
+                <option>2 people</option>
+                <option>3 people</option>
+                <option>4 people</option>
+                <option>5 people</option>
             </select>
         </div>
-        <div class="col-lg-4">
-            <label for="basic-url">From / To</label>
-
-            <div class="input-daterange input-group" id="datepicker">
-                <input type="text" class="input-sm form-control" name="start"/>
-                <span class="input-group-addon">to</span>
-                <input type="text" class="input-sm form-control" name="end"/>
-            </div>
+        <div class="col-sm-2">
+            <label for="basic-url">From </label>
+            <input id="name" type="text" class="form-control" placeholder="dd-mm-yyyy" aria-describedby="basic-addon3">
+        </div>
+        <div class="col-sm-2">
+            <label for="basic-url">From </label>
+            <input id="name" type="text" class="form-control" placeholder="dd-mm-yyyy" aria-describedby="basic-addon3">
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-primary">Search <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
         </div>
     </div>
 </div>
-<div class="container">
-    <br>
+<div class="container home">
+    <h2 class="text-center">Recent Projects</h2>
+    <projects></projects>
 </div>
 
 <!-- Modal -->

@@ -1,3 +1,63 @@
+@font-face {
+  font-family: 'brandonGrotesque';
+  src: url('Brandon_med.otf'); 
+}
+
+.main-title {
+    font-size: 70pt;
+}
+
+.sub-title {
+    font-size: 24pt;
+    font-family: 'brandonGrotesque', sans-serif;
+    font-style: italic;
+}
+
+.booking {
+    padding: 30px;
+    background-color:#7EC9CF; 
+    color:white;
+}
+
+.booking .btn {
+    width: 100%;
+    background-color: #e99010;
+    border: none;
+}
+
+.booking input, .booking select, .booking button {
+    border-radius: 0;
+}
+
+.booking button {
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.booking input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-style: italic;
+}
+.booking input::-moz-placeholder { /* Firefox 19+ */
+    font-style: italic;
+}
+.booking input:-ms-input-placeholder { /* IE 10+ */
+    font-style: italic;
+}
+.booking input:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+}
+
+
+.booking label {
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #393939;
+}
+
 div.col-lg-4 {
     margin-top: 25px;
     height: 90px;
@@ -15,6 +75,10 @@ div.col-lg-4 {
     font-weight: bold;
     background: white;
     right: inherit;
+}
+
+.home projects form {
+    display: none;
 }
 
 .gray-bg {
@@ -172,10 +236,6 @@ margin-right: auto;
 .navbar-nav>li>a.profile-image {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.form-control {
-    text-transform: capitalize;
 }
 
 a[ng-click] {
@@ -720,8 +780,8 @@ s .my-fluid-container {
   /* Prefix free isn't picking up this one */
   -webkit-filter: url('#blur');
   filter: url('#blur');
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
   background-size: cover;
   opacity: 0.9;
   width: 100%;
