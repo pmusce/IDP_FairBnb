@@ -1,5 +1,5 @@
 <ul class="media-list liste">
-	<li class="media" ng-repeat="project in $ctrl.projects | filter:$ctrl.query">
+	<li ui-sref="home.reviewprojdetail({project: project.id})" class="media clickable" ng-repeat="project in $ctrl.projects">
 		<div class="media-left">
 
 				<img ng-src="{{project.image}}" style="height: 80px; width: 120px; margin-top:11px;">
@@ -9,11 +9,6 @@
 				<h4 ><b>{{project.title}}</b></h4>
 			</div>
 			{{project.body}}
-		</div>
-		<div class="media-right media-middle">
-			<button type="button" ng-click="$ctrl.openDetail(project);" class="btn btn-primary">
-				View Project</button>
-
 		</div>
 	</li>
 </ul>
