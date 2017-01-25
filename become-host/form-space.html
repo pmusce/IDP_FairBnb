@@ -1,0 +1,68 @@
+<div class="form-group">
+    <label for="people" class="control-label">Room for</label>
+    <select name='people' class="form-control">
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+    <label for="email">people</label>
+</div>
+
+<div class="form-group">
+    <label for="email" class="control-label">Number of bedrooms</label>
+    <input type="text" class="form-control" name="email" ng-model="formData.email">
+</div>
+
+<div class="form-group">
+    <label for="email" class="control-label">Number of beds</label>
+    <input type="text" class="form-control" name="email" ng-model="formData.email">
+</div>
+
+
+<div class="row">
+	<div class="form-group col-xs-6">
+	    <div class="radio">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+		    Option one is this and that&mdash;be sure to include why it's great
+		  </label>
+		</div>
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		    Option two can be something else and selecting it will deselect option one
+		  </label>
+		</div>
+	</div>
+
+	<div class="form-group col-xs-6">
+	    <div class="radio">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+		    Option one is this and that&mdash;be sure to include why it's great
+		  </label>
+		</div>
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		    Option two can be something else and selecting it will deselect option one
+		  </label>
+		</div>
+		<div class="radio disabled">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+		    Option three is disabled
+		  </label>
+		</div>
+	</div>
+</div>
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="hostform.services" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>
