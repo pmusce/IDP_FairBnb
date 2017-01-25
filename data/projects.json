@@ -8,8 +8,17 @@
     "description": "We want to plant new trees in the Botheram region",
     "body": "Restoration of parts of the 500 year-old bridge near Zuidpark in Amsterdam. There are about 399 bricks need to be replaced to make it safe again to pedestrians. This has over 900 pedestrians crossing daily and each of them has 11% chance of tripping over a loose brick and fall. Over the last year, over 99 reported cases of people tripping over this unsafe bridge. Currently, it has been closed until it is made safe again. If no one comes forward to help, this bridge will remain close and create inconvenience to pedestrians travelling from Zuidpark towards city center.",
     "status": "pending",
-    "costs": 350,
-    "totdonated": 290,
+    "costs": 4300,
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "totdonated": 3000,
     "duration": 8,
     "read": false,
     "comments": [
@@ -52,8 +61,17 @@
     "read": false,
     "author": "Amsterdam Zuid Neighborood",
     "supporters": 30,
-    "costs": 3000,
-    "totdonated": 3000,
+    "costs": 5000,
+    "breakdown": [
+      {
+        "amount": 1000,
+        "description": "Labour (building stage, bar, lounging area)"
+      },
+      {
+        "amount": 4000,
+        "description": "Equipment (speakers, spotlights)"
+      }],
+    "totdonated": 5000,
     "funding": 80,
     "updates": [
         {
@@ -94,6 +112,15 @@
     "body": "Vondelpark has beautiful parkland, wonderful wooden play equipment, rope bridges, zip wires, an open-air theatre, huge paddling pool, skate hire, a Picasso sculpture and a cracking café, too. Families can grab coffee and pancakes from the Groot Melkhuis, this is the place to relax and let kids run wild. There is a large lake in the middle of the lake which we feel needs a hanging bridge so that children can walk across and enjoy the lovely green lush of fresh water views, plants, birds and other reptiles. They can enjoy a nice nature walk across this bridge.",
     "status": "pending",
     "costs": 4300,
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (building playbridge)"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
     "totdonated": 3700,
     "duration": 1,
     "read": false,
@@ -134,7 +161,16 @@
     "description": "We need a new hangout are for our kids! Tourist have a bad influence on them",
     "body": "There are over 844,000 inhabitants in Amsterdam and 45% of them are below 21.  These youths need a safe and relaxing place to hangout and take a break during their school holidays. These kids have nowhere to go and we would like to create a safe place for them. We have identified a house owner who is willing to offer the place during weekends for this hangout place. We just need to perform paintings, purchase new games, equipments and furniture to make this place conducive to hangout.",
     "status": "pending",
-    "costs": 5300,
+    "costs": 2600,
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour to build the space"
+      },
+      {
+        "amount": 600,
+        "description": "Administrative costs"
+      }],
     "totdonated": 5200,
     "duration": 1,
     "read": false,
@@ -177,8 +213,17 @@
     "read": false,
     "author": "Fikke & Fokkei",
     "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
+    "costs": 1500,
+    "breakdown": [
+      {
+        "amount": 500,
+        "description": "BBQ equipment"
+      },
+      {
+        "amount": 1000,
+        "description": "Food and drinks"
+      }],
+    "totdonated": 1500,
     "funding": 80,
     "updates": [
         {
@@ -221,8 +266,18 @@
     "read": false,
     "author": "Neighborood Einsteinsweg",
     "supporters": 5,
-    "costs": 200,
-    "totdonated": 200,
+    "costs": 4000,
+    "breakdown": [
+      {
+        "amount": 3000,
+        "description": "Labour"
+      },
+      {
+        "amount": 1000,
+        "description": "Cleaning materials (scrubbing equipment, chemicals)"
+      }
+    ],
+    "totdonated": 4000,
     "funding": 5,
     "updates": [
         {
@@ -265,8 +320,21 @@
     "read": false,
     "author": "Nienke Stoijpers",
     "supporters": 30,
-    "costs": 1000,
-    "totdonated": 1000,
+    "costs": 5300,
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Staff (coordinating activities)"
+      },
+      {
+        "amount": 2300,
+        "description": "Room rent in community centre"
+      },
+      {
+        "amount": 1000,
+        "description": "Various materials for leisure"
+      }],
+    "totdonated": 5300,
     "funding": 80,
     "updates": [
         {
@@ -310,6 +378,15 @@
     "author": "Fikke & Fokkei",
     "supporters": 30,
     "costs": 6000,
+    "breakdown": [
+      {
+        "amount": 1000,
+        "description": "Sharable cars"
+      },
+      {
+        "amount": 5000,
+        "description": "Parking space rent"
+      }],
     "totdonated": 6000,
     "funding": 80,
     "updates": [
