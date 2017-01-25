@@ -1,21 +1,14 @@
 <ul class="media-list liste">
-    <li class="media" ng-class="{unread: !new.read}" ng-repeat="member in $ctrl.members | filter:$ctrl.query">
-        <div class="media-left">
-            <a href="#"></a>
+    <li class="media" ng-repeat="member in $ctrl.members | filter:$ctrl.query">
+       <div class="media-left media-middle">
+                <img style="width: 60px; height:60px;" class="img-circle" ng-src="{{member.image}}">
         </div>
-        <div class="media-body">
-            <h4 class="media-heading">{{member.name}}</h4>
-            <p>{{member.role}}<br><br></p>
-
-            <div class="btn-group">
-                <label class="btn btn-xs btn-default">Decline</label>
-                <label class="btn btn-xs btn-success">Accept</label>
-            </div>
-
+        <div class="media-body media-middle">
+        {{member.name}}
         </div>
-        <div class="media-right">
+        <div class="media-right media-middle">
             <p>
-                <span class="label label-primary">{{member.role}}</span>
+                <span class="label label-primary">{{member.status}}</span>
             </p>
 
         </div>

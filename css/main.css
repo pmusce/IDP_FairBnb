@@ -10,7 +10,9 @@ div.col-lg-4 {
     width: 100%;
     position: fixed;
     overflow: auto;
-    padding-bottom: 25px;
+    padding-bottom: 80px;
+    margin-top: -20px;
+    padding-top: 20px;
 }
 
 input {
@@ -88,7 +90,7 @@ input::-webkit-input-placeholder {
 #demo-2 input::-webkit-input-placeholder {
     color: transparent;
 }
->>>>>>> 26b70369953cde987aec820705bef1fb061914ac
+
 #cata {
   margin-top: 10px;
 }
@@ -179,6 +181,16 @@ a[ng-click] {
     background-color: #7fea7f;
     border: 1px solid #62C462;
     border-radius: 4px;
+}
+
+.comment {
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nested-comment-list {
+    padding-left: 20px;
 }
 
 .comments-form textarea {

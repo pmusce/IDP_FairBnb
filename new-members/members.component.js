@@ -6,7 +6,7 @@ component('memberList', {
     this.user = user;
     var self = this;
 
-    $http.get('../data/users.json').then(function(response) {
+    $http.get('../data/hosts-req.json').then(function(response) {
       self.members = response.data;
       self.user.unread = self.members.reduce(function (total, current) {
         if (!current.read) {

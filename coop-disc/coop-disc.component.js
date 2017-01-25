@@ -48,12 +48,21 @@ component('discussionList', {
 })
 .component('discussionDetail', {
   templateUrl: 'coop-disc/discussion-detail.template.html',
-  controller: function discussionDetailController($http, discussionDetailService, $scope) {
+  controller: function discussionDetailController(discussionDetailService, $scope) {
     var self = this; 
     $scope.discussion = discussionDetailService.discussion;
     $scope.back = function() {
       discussionDetailService.detailOpened = 'false';
     }
+  }
+})
+.component('subCommentList', {
+  bindings: {
+    comments: '='
+  },
+  templateUrl: 'coop-disc/sub-comment-list.template.html',
+  controller: function subCommentListController() {
+    console.log(this.comments);
   }
 })
 .factory('discussionsService', function($http) {
@@ -64,8 +73,6 @@ component('discussionList', {
       response.data.forEach(function (element) {
         self.discussions.push(element);
       });
-
-      console.log(self.discussions);
   });
   
   return self.discussions;
