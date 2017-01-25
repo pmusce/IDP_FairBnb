@@ -39,6 +39,12 @@
                       <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
                       Needs Funding
                     </div>
+                    <div class="overlay pig-supp" ng-if="project.supp=='auto'">
+                      <img src="img/auto-supp.png" style="width: 30px; height: 30px">
+                    </div>
+                    <div class="overlay pig-supp" ng-if="project.supp=='prev'">
+                      <img src="img/prev-supp.png" style="width: 30px; height: 30px">
+                    </div>
                     <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
                     <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
                          {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>

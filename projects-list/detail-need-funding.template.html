@@ -20,7 +20,7 @@
             </div>
             <div class="col-sm-4">
               <p>
-                <button type="button" ng-click="support(project)" class="btn btn-xs btn-primary pull-right" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <button type="button" ng-click="support(project)" class="btn btn-xs btn-primary pull-right">
                   <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
                   Support
                 </button>
@@ -77,7 +77,7 @@
 
 <script type="text/ng-template" id="support-modal.html">
     <div class="modal-header modal-header-success">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" ng-click="cancel()">
             <span aria-hidden="true">&times;</span>
         </button>
         <h3 class="modal-title" id="myModalLabel">
@@ -139,10 +139,7 @@
         <!-- row -->
     </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
-        <b>Close</b>
-    </button>
-    <button type="button" class="btn btn-sm btn-success" data-dismiss="modal">
+    <button type="button" class="btn btn-sm btn-success">
         <b>Support</b>
     </button>
 </div>

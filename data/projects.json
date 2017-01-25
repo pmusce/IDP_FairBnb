@@ -2,6 +2,7 @@
     "type": "need-funding",
     "image": "img/planting.jpg",
     "date": 2016,
+    "supp": "auto",
     "location": "Amsterdam",
     "title": "Planting Trees in Botheram",
     "initiator": "Bamberoo",
@@ -51,6 +52,7 @@
 }, {
     "type": "funded",
     "image": "img/Pop_podium.jpg",
+    "supp": "none",
     "location": "Amsterdam Zuid",
     "date": 2017,
     "title": "Converting an old warehouse to a Pop Podium",
@@ -105,6 +107,7 @@
     "type": "need-funding",
     "image": "img/proj4.jpg",
     "date": 2015,
+    "supp": "none",
     "location": "Vondelarea",
     "title": "New hanging bridge for kids in Vondelpark",
     "initiator": "Ron Van Eijsel",
@@ -155,6 +158,7 @@
     "type": "need-funding",
     "image": "img/proj5.jpg",
     "date": 2015,
+    "supp": "none",
     "location": "Oud-West (Amsterdam)",
     "title": "Youths hang out area at Oud-West",
     "initiator": "Karine van Effretikon",
@@ -203,6 +207,7 @@
 }, {
     "type": "funded",
     "image": "img/bbq.jpg",
+    "supp": "prev",
     "location": "Duumdijk",
     "date": 2017,
     "title": "BBQ for the whole neighborhood",
@@ -256,6 +261,7 @@
 }, {
     "type": "funded",
     "image": "img/Graffiti_2.jpg",
+    "supp": "none",
     "location": "Einsteinsweg",
     "date": 2017,
     "title": "Graffiti removal in Einsteinsweg",
@@ -310,6 +316,7 @@
 },  {
     "type": "funded",
     "image": "img/Older_People.jpg",
+    "supp": "none",
     "location": "Whole Amsterdam",
     "date": 2017,
     "title": "Activities for the elderly people",
@@ -367,6 +374,7 @@
 }, {
     "type": "funded",
     "image": "img/car_sharing.jpg",
+    "supp": "none",
     "location": "Nieuwe West",
     "date": 2017,
     "title": "Car Sharing Project",

@@ -111,8 +111,10 @@ module('projectsList')
 		}
 	}
 })
-.controller('SupportProjectModalInstanceCtrl', function ($scope, project, $uibModalInstance, $state) {
+.controller('SupportProjectModalInstanceCtrl', function ($scope, user, project, $uibModalInstance, $state) {
 	$scope.project = project;
+	$scope.user = user;
+	
 	$scope.cancel = function () {
 	    $uibModalInstance.dismiss('cancel');
 	};

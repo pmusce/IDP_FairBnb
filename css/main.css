@@ -4,6 +4,19 @@ div.col-lg-4 {
     margin-left: 45px;
 }
 
+.project-thumbnail .overlay.pig-supp {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 18px;
+    font-weight: bold;
+    background: white;
+    right: inherit;
+}
+
 .gray-bg {
     background: #eee;
     height: 100%;
