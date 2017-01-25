@@ -181,6 +181,16 @@ a[ng-click] {
     border-radius: 4px;
 }
 
+.comment {
+    border: 1px #ddd solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nested-comment-list {
+    padding-left: 20px;
+}
+
 .comments-form textarea {
     width: 100%;
         padding: 10px;
