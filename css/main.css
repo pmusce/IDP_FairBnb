@@ -37,6 +37,7 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search] {
+    background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
     width: 55px;
@@ -74,8 +75,8 @@ input::-webkit-input-placeholder {
 
 /* Demo 2 */
 #demo-2 input[type=search] {
-    width: 15px;
-    padding-left: 10px;
+    width: 16px;
+    padding-left: 12px;
     color: transparent;
     cursor: pointer;
 }
@@ -602,7 +603,7 @@ s .my-fluid-container {
 }
 
 .project-card {
-    background-color: #FFFFFF;
+    background-color: #dff0f4;
     border: solid 1px #F1EEEA;
     border-radius: 8px;
     line-height: 1.5;
@@ -719,4 +720,10 @@ s .my-fluid-container {
 button.close {
     position: relative;
     z-index: 4000;
+}
+
+.progress-bar-success {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-image: none;
 }
