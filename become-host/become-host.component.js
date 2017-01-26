@@ -7,21 +7,16 @@ angular.module('becomeHost', ['ngAnimate', 'ui.router'])
             controller: 'formController'
         })
         
-        // nested states 
-        // each of these sections will have their own view
-        // url will be nested (/form/profile)
         .state('hostform.space', {
             url: '/space',
             templateUrl: 'become-host/form-space.html'
         })
         
-        // url will be /form/interests
         .state('hostform.services', {
             url: '/services',
             templateUrl: 'become-host/form-services.html'
         })
         
-        // url will be /form/payment
         .state('hostform.description', {
             url: '/description',
             templateUrl: 'become-host/form-description.html'

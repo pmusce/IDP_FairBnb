@@ -39,27 +39,20 @@
                     
                     <!-- the links to our nested states using relative paths -->
                     <!-- add the active class if the state matches our ui-sref -->
-                    <div id="status-buttons" class="text-center">
-                        <a ui-sref-active="active" ui-sref=".space"><span>1</span> Location bound</a>
-                        <a ui-sref-active="active" ui-sref=".services"><span>2</span> Services</a>
-                        <a ui-sref-active="active" ui-sref=".description"><span>3</span> Description</a>
+                    <div id="status-buttons" class="text-center">  
+                        <a ui-sref-active="active" ui-sref=".location"><span>1</span> Location</a>
+                        <a ui-sref-active="active" ui-sref=".legality"><span>2</span> Legality</a>
+                        <a ui-sref-active="active" ui-sref=".value"><span>3</span> Value</a>
+                        <a ui-sref-active="active" ui-sref=".shortterm"><span>4</span> Term</a>
+                        <a ui-sref-active="active" ui-sref=".budget"><span>5</span> Budget</a>
+                        <a ui-sref-active="active" ui-sref=".feasibility"><span>6</span> Feasibility</a>
+                        <a ui-sref-active="active" ui-sref=".approvals"><span>7</span> Approvals</a>
                     </div>
                 </div>
                 
                 <!-- use ng-submit to catch the form submission and use our Angular function -->
                 <form id="become-host-form" ng-submit="processForm()">
-                    <p>Does it follow the guideline:</p>
-                    <!-- our nested state views will be injected here -->
-                    <div id="form-views" class="form-horizontal">
-                        Projects supported by Fairbed (Amsterdam) must be for the benefit of local cooperative community of Fairbed Amsterdam 
-                    </div>
-                    <div class="clearfix">
-                        <button class="btn btn-success pull-right">Yes</button>
-                        <button class="btn btn-danger pull-right">No</button>
-                    </div>
-                    <h4>Why?</h4>
-                    <textarea style="width:100%" class="form-control" rows="3"></textarea>
-                    <button class="btn btn-success pull-right">Submit</button>
+                    <div id="form-views" class="form-horizontal" ui-view></div>
                 </form>
 
             </div>

@@ -96,19 +96,6 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		url : '^/discussions',
 		component: 'discussionList'
 	})
-	.state('home.reviewproj', {
-		url : '^/reviewproj',
-		component: 'reviewProjects'
-	})
-	.state('home.reviewprojdetail', {
-		url : '^/reviewprojdetail?{project}',
-		component: 'detailReviewProjects',
-		resolve: {
-		    project: function(ReviewProjectService, $transition$) {
-		      	return ReviewProjectService.getReviewProject($transition$.params().project);
-		    }
-	    }
-	})
 	.state('home.news', {
 		url : '^/news',
 		component: 'newsList',
