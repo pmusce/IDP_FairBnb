@@ -34,8 +34,8 @@ module('projectsList')
         url: '/value',
         templateUrl: 'projects-list/review-form/form-value.html'
     })
-    .state('home.reviewproj.detail.shortterm', {
-        url: '/shortterm',
+    .state('home.reviewproj.detail.term', {
+        url: '/term',
         templateUrl: 'projects-list/review-form/form-term.html'
     })
     .state('home.reviewproj.detail.budget', {
@@ -49,6 +49,10 @@ module('projectsList')
     .state('home.reviewproj.detail.approvals', {
         url: '/approvals',
         templateUrl: 'projects-list/review-form/form-approvals.html'
+    })
+    .state('home.reviewproj.detail.completed', {
+        url: '/completed',
+        templateUrl: 'projects-list/review-form/form-completed.html'
     })
 }])
 .component('reviewProjects', {
@@ -71,7 +75,7 @@ module('projectsList')
 	    	location: { decision: undefined, cause: ''},
 			legality: { decision: undefined, cause: ''},
 			value: { decision: undefined, cause: ''},
-			shortterm: { decision: undefined, cause: ''},
+			term: { decision: undefined, cause: ''},
 			budget: { decision: undefined, cause: ''},
 			feasibility: { decision: undefined, cause: ''},
 			approvals: { decision: undefined, cause: ''}

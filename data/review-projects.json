@@ -9,6 +9,15 @@
     "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
     "status": "approved",
     "costs": 900,
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
     "totdonated": 400,
     "duration": 12,
     "read": false,

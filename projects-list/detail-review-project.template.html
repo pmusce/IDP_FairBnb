@@ -1,22 +1,32 @@
 <div>
     <p>
-        <button ui-sref="home.reviewproj" type="button" class="btn btn-primary">
+        <button ui-sref="home.reviewproj.list" type="button" class="btn btn-primary">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
         </button>
     </p>
     <div class="row">
         <div class="col-sm-6">
-            <h1>{{$ctrl.project.title}}</h1>
-            <p>by {{$ctrl.project.author}}</p>
-            <p>
-                {{$ctrl.project.description}}
-            </p>
+          <div>
+            <h2>{{$ctrl.project.title}}</h2>
+            <p><b>by</b> {{$ctrl.project.author}}</p>
+            <p>{{$ctrl.project.body}}</p>
             <br>
-            <div>
-                <uib-progressbar class="progress-striped" max="$ctrl.project.costs" value="$ctrl.project.totdonated" type="success">
-                    <i>{{$ctrl.project.totdonated}} € /{{$ctrl.project.costs}} €</i>
-                </uib-progressbar>
-            </div>
+          </div>
+            <h2>Budget Breakdown</h2>
+            <table class="table table-hover" >
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  ng-repeat="breakdow in $ctrl.project.breakdown">
+                        <td>€ {{breakdow.amount}}</td>
+                        <td>€ {{breakdow.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="col-sm-6 text-right">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
@@ -40,13 +50,13 @@
                     <!-- the links to our nested states using relative paths -->
                     <!-- add the active class if the state matches our ui-sref -->
                     <div id="status-buttons" class="text-center">  
-                        <a ui-sref-active="active" ui-sref=".location"><span>1</span> Location</a>
-                        <a ui-sref-active="active" ui-sref=".legality"><span>2</span> Legality</a>
-                        <a ui-sref-active="active" ui-sref=".value"><span>3</span> Value</a>
-                        <a ui-sref-active="active" ui-sref=".shortterm"><span>4</span> Term</a>
-                        <a ui-sref-active="active" ui-sref=".budget"><span>5</span> Budget</a>
-                        <a ui-sref-active="active" ui-sref=".feasibility"><span>6</span> Feasibility</a>
-                        <a ui-sref-active="active" ui-sref=".approvals"><span>7</span> Approvals</a>
+                        <a ui-sref-active="active" ui-sref=".location"><span ng-class="{'bg-success': formData.location.decision, 'bg-danger': formData.location.decision===false}">1</span> Location</a>
+                        <a ui-sref-active="active" ui-sref=".legality"><span ng-class="{'bg-success': formData.legality.decision, 'bg-danger': formData.legality.decision===false}">2</span> Legality</a>
+                        <a ui-sref-active="active" ui-sref=".value"><span ng-class="{'bg-success': formData.value.decision, 'bg-danger': formData.value.decision===false}">3</span> Value</a>
+                        <a ui-sref-active="active" ui-sref=".term"><span ng-class="{'bg-success': formData.term.decision, 'bg-danger': formData.term.decision===false}">4</span> Term</a>
+                        <a ui-sref-active="active" ui-sref=".budget"><span ng-class="{'bg-success': formData.budget.decision, 'bg-danger': formData.budget.decision===false}">5</span> Budget</a>
+                        <a ui-sref-active="active" ui-sref=".feasibility"><span ng-class="{'bg-success': formData.feasibility.decision, 'bg-danger': formData.feasibility.decision===false}">6</span> Feasibility</a>
+                        <a ui-sref-active="active" ui-sref=".approvals"><span ng-class="{'bg-success': formData.approvals.decision, 'bg-danger': formData.approvals.decision===false}">7</span> Approvals</a>
                     </div>
                 </div>
                 
@@ -59,4 +69,26 @@
 
         </div>
     </div>
+</div>
+
+<div class="row detail-bottom">
+    <h2 class="text-center">Comments</h2>
+    <ul class="media-list liste">
+        <li class="media" ng-repeat="comment in $ctrl.project.comments">
+            <div class="media-left">
+                    <img style="width: 50px; height:50px; margin-top:11px;" class="img-circle" ng-src="{{comment.img}}">
+            </div>
+            <div class="media-body media-middle">
+              <b>{{comment.author}}</b>
+              <span style="color: lightgray;">- {{comment.time}}</span> <br>
+                {{comment.body}}
+            </div>
+        </li>
+    </ul>
+    <form class="comments-form clearfix">
+        <textarea rows="5" placeholder="Comment"></textarea>
+        <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target=".bs-example-modal-lg">
+            Send
+        </button>
+    </form>
 </div>
