@@ -1,0 +1,68 @@
+<div>
+    <p>
+        <button ng-click="back()" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            Back
+        </button>
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <h2>{{project.title}}</h2>
+                <p>
+                    <b>by
+                    </b>{{project.author}}</p>
+                <p>
+                    <b>Supporters:
+                    </b>{{project.supporters}}<br>
+                    <b>Funding received:
+                    </b>€
+                    {{project.totdonated}}
+                </p>
+            </div>
+            <p>
+                {{project.body}}
+            </p>
+            <h2>Budget Breakdown</h2>
+            <table class="table table-hover" >
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="breakdow in project.breakdown">
+                    <tr>
+                        <td>€ {{breakdow.amount}} </span></td>
+                        <td>{{breakdow.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-sm-6 text-right">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="pic in project.pictures track by pic.id" index="pic.id">
+                    <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Project updates</h2>
+        <ul class="media-list proj-updates">
+            <li class="media" ng-repeat="update in project.updates">
+                <div class="media-left">
+                    <div class="proj-update-date">
+                        <b>{{update.date}}</b>
+                    </div>
+                </div>
+                <div class="media-body">
+                    {{update.body}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

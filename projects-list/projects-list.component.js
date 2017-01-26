@@ -20,7 +20,7 @@ module('projectsList')
 	        {name: 'Need funding', type: 'need-funding'},
 	        {name: 'Funded', type: 'funded'}
 	    ];
-	    
+
 	    $scope.filters = {type: ''};
 
 	    $scope.status = projectDetailService;
@@ -44,7 +44,7 @@ module('projectsList')
 .component('myProjects', {
 	templateUrl: 'projects-list/my-projects-list.template.html',
 	controller: function MyProjectsController($http, $scope, MyProjectsService) {
-		self = this;  	
+		self = this;
 	  	$http.get('../data/my-projects.json').then(function(response) {
 			self.projects = response.data;
 		});
@@ -88,7 +88,7 @@ module('projectsList')
 		$scope.noWrapSlides = false;
 		$scope.active = 0;
 		$scope.user = user;
-		
+
 		$scope.project = projectDetailService.project;
 		$scope.back = function() {
 			projectDetailService.goToList('not-funded');
@@ -113,7 +113,7 @@ module('projectsList')
 .controller('SupportProjectModalInstanceCtrl', function ($scope, user, project, $uibModalInstance, $state) {
 	$scope.project = project;
 	$scope.user = user;
-	
+
 	$scope.cancel = function () {
 	    $uibModalInstance.dismiss('cancel');
 	};
@@ -194,7 +194,6 @@ module('projectsList')
 					$state.go(".needfunding");
 					break;
 			    default:
-			        console.log("Porcoddio");
 			}
 	    }
 	})

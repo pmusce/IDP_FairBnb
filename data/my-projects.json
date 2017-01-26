@@ -7,12 +7,48 @@
     "body": "The Candy Shop at 23C on Oudezijds Achterburgwal could be a very good project we think.",
     "status": "pending",
     "read": false,
-    "costs": 100000,
+    "costs": 25000,
     "totdonated": 0,
     "duration": 21,
     "location": "Amsterdam",
-		"initiator": "Me"
-	},
+		"initiator": "Me",
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "comments": [
+      {
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "time": "1 Days Ago"
+
+      },
+      {
+        "author": "Frank Nack",
+        "img": "img/frank.png",
+        "body": "More text",
+        "time": "3 Days Ago"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/tree1.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/tree2.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
+},
 	{
     "id": 2,
     "image": "img/bbq.jpg",
@@ -25,7 +61,47 @@
     "totdonated": 0,
     "duration": 21,
     "location": "Amsterdam",
-		"initiator": "Me"
+		"initiator": "Me",
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "totdonated": 3000,
+    "duration": 8,
+    "read": false,
+    "comments": [
+      {
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "time": "1 Days Ago"
+
+      },
+      {
+        "author": "Frank Nack",
+        "img": "img/frank.png",
+        "body": "More text",
+        "time": "3 Days Ago"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/tree1.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/tree2.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
+
 
 	},
 	{
@@ -40,7 +116,47 @@
     "totdonated": 100000,
     "duration": 21,
     "location": "Amsterdam",
-		"initiator": "Me"
+		"initiator": "Me",
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "totdonated": 3000,
+    "duration": 8,
+    "read": false,
+    "comments": [
+      {
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "time": "1 Days Ago"
+
+      },
+      {
+        "author": "Frank Nack",
+        "img": "img/frank.png",
+        "body": "More text",
+        "time": "3 Days Ago"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/tree1.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/tree2.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
+
 
 	},
 	{
@@ -55,9 +171,47 @@
     "totdonated": 250,
     "duration": 21,
     "location": "Kijkdam",
-		"initiator": "Me"
+		"initiator": "Me",
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "totdonated": 3000,
+    "duration": 8,
+    "read": false,
+    "comments": [
+      {
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "time": "1 Days Ago"
 
-	},
+      },
+      {
+        "author": "Frank Nack",
+        "img": "img/frank.png",
+        "body": "More text",
+        "time": "3 Days Ago"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/tree1.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/tree2.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
+},
 	{
 		"id": 5,
         "image": "img/land.jpg",
@@ -70,7 +224,44 @@
 		"totdonated": 400,
 		"duration": 12,
 		"location": "Utrecht",
-		"initiator": "Me"
+		"initiator": "Me",
+    "breakdown": [
+      {
+        "amount": 2000,
+        "description": "Labour (planting tree seeds"
+      },
+      {
+        "amount": 2300,
+        "description": "Building Materials (Wood, ropes)"
+      }],
+    "totdonated": 3000,
+    "duration": 8,
+    "read": false,
+    "comments": [
+      {
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "time": "1 Days Ago"
 
-	}
-]
+      },
+      {
+        "author": "Frank Nack",
+        "img": "img/frank.png",
+        "body": "More text",
+        "time": "3 Days Ago"
+      }
+    ],
+    "pictures": [
+        {
+            "id": 0,
+            "src": "img/tree1.jpg"
+        },
+        {
+            "id": 1,
+            "src": "img/tree2.jpg"
+        }
+    ],
+    "author": "Pasquale Muscettola",
+    "supporters": 10
+}]
