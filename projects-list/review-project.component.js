@@ -28,27 +28,27 @@ module('projectsList')
     })
     .state('home.reviewproj.detail.legality', {
         url: '/legality',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-legality.html'
     })
     .state('home.reviewproj.detail.value', {
         url: '/value',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-value.html'
     })
     .state('home.reviewproj.detail.shortterm', {
         url: '/shortterm',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-term.html'
     })
     .state('home.reviewproj.detail.budget', {
         url: '/budget',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-budget.html'
     })
     .state('home.reviewproj.detail.feasibility', {
         url: '/feasibility',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-feasibility.html'
     })
     .state('home.reviewproj.detail.approvals', {
         url: '/approvals',
-        templateUrl: 'projects-list/review-form/form-location.html'
+        templateUrl: 'projects-list/review-form/form-approvals.html'
     })
 }])
 .component('reviewProjects', {
@@ -65,8 +65,22 @@ module('projectsList')
 	bindings: {
 		project: '='
 	},
-	controller: function ReviewProjectsController($scope, user) {
-		
+	controller: function ReviewProjectsController($scope, user) {	
+	    // we will store all of our form data in this object
+	    $scope.formData = {
+	    	location: { decision: undefined, cause: ''},
+			legality: { decision: undefined, cause: ''},
+			value: { decision: undefined, cause: ''},
+			shortterm: { decision: undefined, cause: ''},
+			budget: { decision: undefined, cause: ''},
+			feasibility: { decision: undefined, cause: ''},
+			approvals: { decision: undefined, cause: ''}
+	    };
+
+	    // function to process the form
+	    $scope.processForm = function() {
+	        alert('Our team will review your application. You will receive an email when your subscription will be validated ');
+	    };
 	}
 })
 .factory('ReviewProjectService', ['$http', function ($http) {
@@ -89,4 +103,4 @@ module('projectsList')
 	}
 
   return service;
-}]);;
+}]);

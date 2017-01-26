@@ -18,7 +18,9 @@
     display: inline-block;
 }
 /* active buttons turn light green-blue*/
-/*#status-buttons a.active span   { background:#00BC8C; }*/
+#status-buttons a.active span {
+    border: 2px solid gray;
+}
 
 /* style.css */
 /* ANIMATION STYLINGS

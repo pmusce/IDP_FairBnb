@@ -1,6 +1,6 @@
 <div class="row">
 <div ng-repeat="project in $ctrl.projects" class="col-md-4">
-    <div ng-click="$ctrl.openDetail(project);" class="project-card clickable">
+    <div ui-sref="^.detail({project: project.id})" class="project-card clickable">
       <div class="project-thumbnail">
         <div class="overlay overlay-funded" ng-if="project.status=='funded'">
         	<span class="glyphicon glyphicon-eur" aria-hidden="true"></span>
