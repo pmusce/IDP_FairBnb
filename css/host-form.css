@@ -6,11 +6,11 @@
 
 /* numbered buttons */
 #status-buttons                 {  }
-#status-buttons a               { color:black; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a               { color:black; display:inline-block; font-size:13px; margin-bottom:35px; margin-left:35px; margin-top:20px; margin-right:10px; text-align:center; text-transform:uppercase; }
 #status-buttons a:hover         { text-decoration:none; }
 
 /* we will style the span as the circled number */
-#status-buttons span            { background:white; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
+#status-buttons span            { background:white; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px;
     border-radius:50%; border: 1px solid lightgray; }
 
 #become-host-form .form-control {
@@ -23,28 +23,28 @@
 /* style.css */
 /* ANIMATION STYLINGS
 ============================================================================= */
-#become-host-form           { position:relative; min-height:300px; overflow:hidden; padding:30px; }
+#become-host-form           { position:relative; min-height:300px; overflow:hidden; padding:0px; }
 #form-views             { width:auto; }
 
 /* basic styling for entering and leaving */
 /* left and right added to ensure full width */
 #form-views.ng-enter,
 #form-views.ng-leave      { position:absolute; left:30px; right:30px;
-    transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease; 
+    transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease;
 }
-    
+
 /* enter animation */
-#form-views.ng-enter            { 
+#form-views.ng-enter            {
     -webkit-animation:slideInRight 0.5s both ease;
     -moz-animation:slideInRight 0.5s both ease;
-    animation:slideInRight 0.5s both ease; 
+    animation:slideInRight 0.5s both ease;
 }
 
 /* leave animation */
-#form-views.ng-leave            { 
+#form-views.ng-leave            {
     -webkit-animation:slideOutLeft 0.5s both ease;
     -moz-animation:slideOutLeft 0.5s both ease;
-    animation:slideOutLeft 0.5s both ease;   
+    animation:slideOutLeft 0.5s both ease;
 }
 
 /* ANIMATIONS
@@ -53,7 +53,7 @@
 @keyframes slideOutLeft {
     to      { transform: translateX(-200%); }
 }
-@-moz-keyframes slideOutLeft {  
+@-moz-keyframes slideOutLeft {
     to      { -moz-transform: translateX(-200%); }
 }
 @-webkit-keyframes slideOutLeft {
