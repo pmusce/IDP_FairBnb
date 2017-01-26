@@ -1,14 +1,22 @@
-<ul class="media-list liste">
-	<li ui-sref="home.reviewproj.detail.location({project: project.id})" class="media clickable" ng-repeat="project in $ctrl.projects">
-		<div class="media-left">
-
-				<img ng-src="{{project.image}}" style="height: 80px; width: 120px; margin-top:11px;">
-		</div>
-		<div class="media-body">
-			<div class="media-heading">
-				<h4 ><b>{{project.title}}</b></h4>
-			</div>
-			{{project.body}}
-		</div>
-	</li>
-</ul>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>User</th>
+			<th>Created</th>
+			<th>Comments</th>
+			<th># staff votes</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ui-sref="home.reviewproj.detail.location({project: project.id})" class="media clickable" ng-repeat="project in $ctrl.projects">
+			<td>{{project.title}}</td>
+			<td>{{project.author}}</td>
+			<td>{{project.date}}</td>
+			<td>{{project.comments.length}}</td>
+			<td>{{project.votes}}/6</td>
+			<td>{{project.status}}</td>
+		</tr>
+	</tbody>
+</table>

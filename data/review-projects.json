@@ -1,14 +1,14 @@
 [{
-    "type": "need-funding",
     "image": "img/land.jpg",
-    "date": 2017,
+    "date": "20/01/2017",
     "location": "Utrecht",
     "title": "Tourists Land Tour",
-    "initiator": "Anna De Meijer",
+    "author": "Pasquale Muscettola",
     "description": "The project aims to let tourists and newcomers in The Netherlands to discover the nature of The Netherlands",
     "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
     "status": "approved",
     "costs": 900,
+    "votes": 3,
     "breakdown": [
       {
         "amount": 2000,
@@ -18,7 +18,6 @@
         "amount": 2300,
         "description": "Building Materials (Wood, ropes)"
       }],
-    "totdonated": 400,
     "duration": 12,
     "read": false,
     "id": 1,
@@ -49,9 +48,7 @@
             "id": 2,
             "src": "img/home.jpg"
         }
-    ],
-    "author": "Pasquale Muscettola",
-    "supporters": 10
+    ]
 }, {
     "type": "need-funding",
     "image": "img/planting.jpg",
