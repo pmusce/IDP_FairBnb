@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'brandonGrotesque';
-  src: url('Brandon_med.otf'); 
+  src: url('Brandon_med.otf');
 }
 
 .main-title {
@@ -13,9 +13,13 @@
     font-style: italic;
 }
 
+.page-header {
+  margin: 40px 0 0;
+}
+
 .booking {
     padding: 30px;
-    background-color:#7EC9CF; 
+    background-color:#7EC9CF;
     color:white;
 }
 
@@ -752,8 +756,10 @@ s .my-fluid-container {
   background-image: url('../img/become.jpg');
   height: 350px;
   background-size: cover;
+}
 
-
+#become-host-form {
+  padding:-30px;
 }
 
 
