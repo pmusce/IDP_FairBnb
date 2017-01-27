@@ -25,3 +25,28 @@
     top: 50%;
     margin-left: 6px;
 }
+
+.dropdown-menu.notification {
+    padding: 0;
+}
+
+.dropdown-menu.notification a {
+    padding: 9px 17px;
+}
+
+.dropdown-menu.notification .divider {
+    margin: 0;
+}
+
+.newmsg {
+    background-color: #90e4ea;
+}
+
+.dropdown-menu>li>a.newmsg:focus, .dropdown-menu>li>a.newmsg:hover {
+    background-color: #7ec9cf;
+    background-image: none;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: none;
+}

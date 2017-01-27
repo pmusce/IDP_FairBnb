@@ -38,11 +38,11 @@
                 <li class="dropdown">
                     <a class='dropdown-toggle' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        <span class="badge">1</span>
+                        <span ng-if="notification" class="badge">1</span>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu notification">
                         <li>
-                            <a ui-sref="home">You received a message</a>
+                            <a ng-class="{newmsg: notification}" ng-click="notification=false" ui-sref="home">You received a message</a>
                         </li>
                         <li role="separator" class="divider"></li>
                         <li>

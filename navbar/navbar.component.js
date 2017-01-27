@@ -4,6 +4,7 @@ angular.
     templateUrl: 'navbar/navbar.template.html',
     controller: function navbarController($uibModal, $scope, $http, user, LoginService) {
       $scope.user = user;
+      $scope.notification = true;
 
       $scope.login = function() {
         $uibModal.open({
