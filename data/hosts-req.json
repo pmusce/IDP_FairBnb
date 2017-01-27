@@ -3,60 +3,246 @@
 		"id": 1,
 		"username": "pasquale",
 		"image": "img/sito.png",
-		"password": "password",
 		"name": "Pasquale Muscettola",
-		"role": "admin",
-		"funds": 5.40,
-		"status": "needs"
+		"status": "needs",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	},
 	{
 		"id": 2,
 		"username": "pauline",
-		"password": "password",
 		"image": "img/sito.png",
 		"name": "Pauline Sia",
-		"role": "guest",
-		"funds": 55.55,
-		"status": "waiting"
+		"status": "waiting",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	},
 	{
 		"id": 3,
 		"username": "willem",
-		"password": "password",
 		"name": "Willem Duijvelshoff",
 		"image": "img/sito.png",
-		"role": "admin",
-		"funds": 10.30,
-		"status": "declined"
+		"status": "declined",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	},
 	{
 		"id": 4,
 		"username": "cindy",
-		"password": "password",
 		"image": "img/sito.png",
 		"name": "Cindy Van Den Berg",
-		"role": "guest",
-		"funds": 10.30,
-		"status": "approved"
+		"status": "approved",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	},
 	{
 		"id": 5,
 		"username": "admin",
-		"password": "password",
 		"image": "img/sito.png",
 		"name": "Axel De Jong",
-		"role": "host",
-		"funds": 10.30,
-		"status": "needs"
+		"status": "needs",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	},
 	{
 		"id": 6,
 		"username": "alessandro",
-		"password": "password",
 		"name": "Alessandro Latella",
 		"image": "img/frank.png",
-		"role": "host",
-		"funds": 48.88,
-		"status": "needs"
+		"status": "needs",
+		"address": "Strackéstraat 121, 1067 KV Amsterdam",
+		"space": {
+			"people": 2,
+			"rooms": 1,
+			"beds": 2,
+			"house_type": "house",
+			"room_type": "private"
+		},
+		"services": {
+			"wifi": true,
+			"smoking": false,
+			"washing": false,
+			"heating": false,
+			"kitchen": true,
+			"tv": true,
+			"drying": false,
+			"iron": false,
+			"price": 30.00,
+			"deposit": 20.00,
+			"cleaning": 5.00
+		},
+		"description": {
+			"text": "This text is just an example",
+			"images": [
+		        {
+		            "id": 0,
+		            "src": "img/tree1.jpg"
+		        },
+		        {
+		            "id": 1,
+		            "src": "img/tree2.jpg"
+		        }
+		    ]
+		}
 	}
 ]

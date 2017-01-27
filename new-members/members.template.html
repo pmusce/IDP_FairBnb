@@ -1,5 +1,5 @@
 <ul class="media-list liste">
-    <li class="media" ng-repeat="member in $ctrl.members | filter:$ctrl.query">
+    <li class="media" ui-sref="^.form({hostId: member.id})" ng-repeat="member in $ctrl.hosts | orderBy:'status':false:statusComparator">
        <div class="media-left media-middle">
                 <img style="width: 60px; height:60px;" class="img-circle" ng-src="{{member.image}}">
         </div>
@@ -7,8 +7,19 @@
         {{member.name}}
         </div>
         <div class="media-right media-middle">
-            <p>
-                <span class="label label-primary">{{member.status}}</span>
+            <p ng-switch on="member.status">
+                <span ng-switch-when="needs" class="text-primary">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Needs review
+                </span>
+                <span ng-switch-when="waiting" class="text-muted">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span> Waiting for approval
+                </span>
+                <span ng-switch-when="declined" class="text-danger">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Declined
+                </span>
+                <span ng-switch-when="approved" class="text-success">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Approved
+                </span>
             </p>
         </div>
     </li>

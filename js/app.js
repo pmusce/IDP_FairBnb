@@ -114,10 +114,6 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 	        }
 		}
 	})
-	.state('home.reviewhosts', {
-		url : '^/reviewhosts',
-		component: 'memberList'
-	})
 	.state('detailproject', {
 		url : '/detailproject',
 		templateUrl : 'detailproject.html',

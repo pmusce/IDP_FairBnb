@@ -53,7 +53,7 @@ module('projectsList')
     .state('home.reviewproj.detail.completed', {
         url: '/completed',
         templateUrl: 'projects-list/review-form/form-completed.html'
-    })
+    });
 }])
 .component('reviewProjects', {
 	templateUrl: 'projects-list/review-projects.template.html',

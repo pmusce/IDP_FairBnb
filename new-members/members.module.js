@@ -1,1 +1,1 @@
-angular.module('memberList', []);
+angular.module('memberList', ['ngAnimate', 'ui.router']);

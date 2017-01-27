@@ -1,0 +1,26 @@
+<!-- form-payment.html -->
+<div class="row">
+	<div class="col-md-12" style="text-align:center;">
+		<h4>Name</h4><hr><br>
+		{{$ctrl.host.name}}
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-12" style="text-align:center;">
+		<h4>Address</h4><hr><br>
+		{{$ctrl.host.address}}
+	</div>
+</div>
+<div>
+	<div class="text-center">
+		<h3>Is the content appropriate?</h3>
+		<button class="btn btn-success" type="button" ui-sref="^.space" ng-click="formData.personal.decision = true">Yes</button>
+		<button class="btn btn-danger" type="button" ng-click="formData.personal.decision = false">No</button>
+	</div>
+	<div ng-if="formData.personal.decision === false">
+		<h4>Why?</h4>
+		<textarea style="width:100%" class="form-control" rows="3" ng-model='formData.personal.cause'></textarea>
+		<button class="btn btn-success pull-right" type="button" ui-sref="^.space">Submit</button>
+	</div>
+</div>

@@ -2,50 +2,32 @@
 <div class="row">
     <div class="col-md-12" style="text-align:center;">
         <h4>Description</h4><hr><br>
-              <textarea class = "form-control" rows = "3"></textarea>
+            {{$ctrl.host.description.text}}
         </div>
     </div>
     <br>
     <div class="col-md-12" style="text-align:center;">
-        <h4>Add Pictures</h4><hr><br>
+        <h4>Pictures</h4><hr><br>
         </div>
 
         <!-- HTML heavily inspired by http://blueimp.github.io/jQuery-File-Upload/ -->
-<div class="table table-striped" class="files" id="previews">
-
-  <div id="template" style="text-align:center;" class="file-row">
-    <!-- This is used as the file preview template -->
-    <div>
-        <p class="name" data-dz-name></p>
-        <strong class="error text-danger" data-dz-errormessage></strong>
-    </div>
-    <div>
-        <p class="size" data-dz-size></p>
-        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-          <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+<div>
+    <div uib-carousel active="active" no-wrap="noWrapSlides">
+        <div uib-slide ng-repeat="pic in $ctrl.host.description.images track by pic.id" index="pic.id">
+            <img class="carousel-img" ng-src="{{pic.src}}" style="margin:auto;">
         </div>
     </div>
-    <div>
-      <button class="btn btn-primary start">
-          <i class="glyphicon glyphicon-upload"></i>
-          <span>Add Files</span>
-      </button>
-      <button data-dz-remove class="btn btn-warning cancel">
-          <i class="glyphicon glyphicon-ban-circle"></i>
-          <span>Upload</span>
-      </button>
-      <button data-dz-remove class="btn btn-danger delete">
-        <i class="glyphicon glyphicon-trash"></i>
-        <span>Cancel Upload</span>
-      </button>
-    </div>
-  </div>
-
 </div>
 
-
-<div class="text-center" style="top-margin:50px;">
-    <p>You will receive an email confirming your submission is under review</p>
-
-    <button type="submit" class="btn btn-md btn-primary" style="width:200px;">Submit</button>
+<div>
+    <div class="text-center">
+        <h3>Is the content appropriate?</h3>
+        <button class="btn btn-success" type="button" ui-sref="home.reviewhosts.list" ng-click="formData.description.decision = true; $ctrl.host.status='waiting'">Yes</button>
+        <button class="btn btn-danger" type="button" ng-click="formData.description.decision = false">No</button>
+    </div>
+    <div ng-if="formData.description.decision === false">
+        <h4>Why?</h4>
+        <textarea style="width:100%" class="form-control" rows="3" ng-model='formData.description.cause'></textarea>
+        <button class="btn btn-success pull-right" ng-click="$ctrl.host.status='waiting'" type="button" ui-sref="home.reviewhosts.list">Submit</button>
+    </div>
 </div>
