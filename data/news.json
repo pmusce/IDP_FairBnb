@@ -1,41 +1,37 @@
 [{
     "id": 1,
-    "image": "img/coop.jpg",
-    "title": "The FairBnB project is now live! ",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "type": "coop",
+    "image": "img/news1.png",
+    "title": "Dutch housing stock boosted by 54,000 homes in 2016 ",
+    "body": "Some 54,000 new homes were built in the Netherlands last year, according to preliminary figures released by the national statistics office CBS on Wednesday.  The final figures will be released in May and will probably be even better, the CBS said. Although 54,000 is the highest number of completed new homes since 2012, it is still well below the average of 76,000 delivered between 2000 and 2009. The completions take the total number of homes in the Netherlands to 7.7 million.  The biggest impact was felt in Utrecht province, where the residential property supply increased by 1%. In Amsterdam, where there is a serious shortage of places to live, 5,058 new homes were completed. The city has plans to build 50,000 new homes by 2025.",
+    "type": "general",
     "read": false,
+    "realdate" : "25/1/2016",
     "date": 1
 }, {
     "id": 2,
-    "image": "img/ame.jpg",
-    "title": "FairBnB expands in South America",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+    "image": "img/news2.png",
+    "title": "Amsterdam house price boom will end, say ING economists",
+    "body": "The huge price rises in the Amsterdam property market may come to an end in the coming years, according to ING economists. House prices in Amsterdam rose by some 22% in 2016, boosting the average cost of a city home by some €50,000 over the year. Living in the capital is becoming so expensive that first-time buyers in particular are unable to get a foothold on the market, the economists say in a new report. ‘This will reduce demand in the capital and price rises will be more modest as a result,’ the ING report said. ‘When house prices rise so sharply, the risk of a price correction increases.’ In addition, house prices may eventually fall because the current low interest rates are unsustainable, the ING report said. A sharp interest rise or economic crisis could be a trigger for a downturn in prices. While there is no crisis at the moment, ‘people who buy a house in Amsterdam this year should not assume that prices will rise by upwards of 10%,’ said economist Senne Janssen in the Parool.",
     "type": "general",
     "read": false,
+    "realdate" : "26/1/2016",
     "date": 2
 }, {
     "id": 3,
-  "image": "img/chart.jpg",
-    "title": "Fairbnb has now 34'000 hosts worldwide",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
+  "image": "img/news3.png",
+    "title": "Taxi touts banned from Schiphol airport, face fines of €350",
+    "body": "Taxi touts who try to get tourists to take expensive unlicenced taxis at Schiphol airport face a fine of €350 if caught from next week, Haarlemmermeer town council has decided. The council has introduced bylaws banning touts from operating at the airport for six months. ‘The fine can mount up to €1,500 and ultimately, a judge can order their cars can be confiscated or ban them from the area altogether,’ the council said.  For months, there has been a standoff at Schiphol, with certain taxi firms licensed by the airport to pick up passengers but others legally plying for work in the public plaza. In October, British singer Skin from the band Skunk Anansie criticised the airport for allowing travellers to be ‘harassed’ by touts wearing ‘official taxi’ high-visibility vests. ‘It is wrong that people who come to the Netherlands from all over the world are hassled by touts as a first impression,’ Haarlemmermeer council said. Other tourists have reported being charged hundreds of euros for a trip to Amsterdam, which normally costs around €50. Schiphol airport and junior infrastructure minister Sharon Dijksma have also called the situation ‘untenable’. The change to the bylaws is only temporary and a permanent solution will require changes to the taxi laws.",
     "type": "general",
+    "realdate" :" 27/1/2016",
     "read": false,
     "date": 3
 }, {
     "id": 4,
-    "image": "img/knot.jpg",
-    "title": "Collaboration is key in the realm of cooperative flat sharing",
-    "body": "Sharing your home on Fairbnb should be a rewarding experience. By initiating projects in your neighborood, you could turn your idea into a business! Your friends could participate. Got a good idea? Involve your friends by inviting them to fund your project!",
+    "image": "img/news4.png",
+    "title": "‘Love and kindness is what truly makes you feel at home’",
+    "body": "For Indian national Sabyasachi Sengupta, Amsterdam’s culture diversity and welcoming attitude makes it a city where dreams can come true. Sabyasachi, 30, is a banker for ABN Amro during the week and works as a professional trainer and speaker at weekends. How did you end up in the Netherlands? Following my dreams brought me to the Netherlands. I came here in 2010 on a scholarship to study for a Masters in Business Economics at the University of Amsterdam. After I graduated, I got a job, started working, and now Amsterdam is home. How do you describe yourself – an expat, lovepat, immigrant, international etc? I will call myself dream-pat because in the six years I have lived in the Netherlands, I’ve been able to do everything I wanted to do. I’ve travelled to many countries, I bought my first house in Amsterdam and, most importantly, I’ve been able to pursue my passion of public speaking. The Dutch culture supports people in following what they truly wish to become.",
     "type": "general",
+    "realdate" : "28/1/2016",
     "read": true,
     "date": 4
-}, {
-    "id": 5,
-  "image": "img/berlin.jpg",
-    "title": "Fairbnb Is Testing its Host Model in Berlin",
-    "body": "A new host model, in which 5% of hosts' revenues are available to hosts to either initiate or fund others' project is being tested in Berlin. The first results are encouraging, seeing a rise of 15% of new projects coming from hosts. Also, projects get funded more rapidly",
-    "type": "general",
-    "read": true,
-    "date": 5
 }]

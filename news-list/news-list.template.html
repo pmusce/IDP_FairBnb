@@ -1,100 +1,104 @@
 <div ng-if="!newsOpened">
-<form class="form-inline clearfix">
-	<button ng-if="$ctrl.user.isAdmin()" type="button" class="btn btn-primary" ng-click="createNews();">
-        Add News Annoucement
-	</button>
-</form>
-
-<ul class="media-list liste">
-	<li class="media clickable" ng-click="openNews(new)" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['date']">
-		<div class="media-left">
-			<a href="#">
-				<img ng-src="{{new.image}}" style="height: 100px; width: 136px;">
-			</a>
-		</div>
-		<div class="media-body">
-			<h4 ><b>{{new.title}}</b></h4>
-			{{new.body}}
-		</div>
-	</li>
-</ul>
-
-<script type="text/ng-template" id="create-news-modal.html">
-            <!-- Modal Header -->
-    <div class="modal-header">
-        <button type="button" class="close" ng-click="cancel()">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
+    <form class="form-inline clearfix">
+        <button ng-if="$ctrl.user.isAdmin()" type="button" class="btn btn-primary" ng-click="createNews();">
+            Add News Annoucement
         </button>
-        <h4 class="modal-title" id="myModalLabel">
-            Add New Annoucement
-        </h4>
-    </div>
-    <!-- Modal Body -->
-    <div class="modal-body">
+    </form>
 
-        <form class="form-horizontal" role="form">
-            <div class="form-group">
-                <label class="col-sm-3 control-label" for="inputTitle">Title</label>
-                <div class="col-sm-9">
-                    <input type="textarea" class="form-control" id="inputEmail3" placeholder=""/>
-                </div>
+    <ul class="media-list liste">
+        <li class="media clickable" ng-click="openNews(new)" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['date']">
+            <div class="media-left">
+                <a href="#">
+                    <img ng-src="{{new.image}}" style="height: 50; width: 70px;">
+                </a>
             </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label" for="inputAnnoucement">Announcement</label>
-                <div class="col-sm-9">
-                	<textarea id="txtArea" rows="8" class="form-control" placeholder="Write here your annoucement..."></textarea>
-                </div>
+            <div class="media-body">
+                Date:
+                {{new.realdate}}<br>
+                Title:
+                <b>{{new.title}}</b>
             </div>
+        </li>
+    </ul>
 
-            <div class="form-group">
-                <label class="col-sm-3 control-label" for="sel1">Type of Annoucement</label>
-                <div class="col-sm-9">
+    <script type="text/ng-template" id="create-news-modal.html">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+                Add New Annoucement
+            </h4>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
 
-                <select class="form-control" id="audience">
-                    <option>Coop</option>
-                    <option>General</option>
-                </select>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="inputTitle">Title</label>
+                    <div class="col-sm-9">
+                        <input type="textarea" class="form-control" id="inputEmail3" placeholder=""/>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-sm-3 control-label" for="sel1">Who can see the announcement</label>
-              <div class="col-sm-9">
-                <div class="checkbox">
-                	<label><input type="checkbox" value="all"> All </label>
-                </div>
-                <div class="checkbox">
-                	<label><input type="checkbox" value="coopStaff">Coop Staff</label>
-                </div>
-                <div class="checkbox">
-                	<label><input type="checkbox" value="coopStaff">Hosts</label>
-                </div>
-                <div class="checkbox">
-                	<label><input type="checkbox" value="coopStaff">Community Members</label>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="inputAnnoucement">Announcement</label>
+                    <div class="col-sm-9">
+                        <textarea id="txtArea" rows="8" class="form-control" placeholder="Write here your annoucement..."></textarea>
+                    </div>
                 </div>
 
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="sel1">Type of Annoucement</label>
+                    <div class="col-sm-9">
 
-              </div>
-            </div>
-        </form>
-    </div>
-    <!-- Modal Footer -->
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" ng-click="cancel()">
-            Close
-        </button>
-        <button type="button" class="btn btn-primary">
-            Publish
-        </button>
-    </div>
-</script>        
+                        <select class="form-control" id="audience">
+                            <option>Coop</option>
+                            <option>General</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="sel1">Who can see the announcement</label>
+                    <div class="col-sm-9">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="all">
+                                All
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="coopStaff">Coop Staff</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="coopStaff">Hosts</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="coopStaff">Community Members</label>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" ng-click="cancel()">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary">
+                Publish
+            </button>
+        </div>
+    </script>
 </div>
 
 <div ng-if="newsOpened">
     <p>
         <button ng-click="closeNews()" type="button" class="btn btn-primary">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            Back
         </button>
     </p>
     <div class="row">
