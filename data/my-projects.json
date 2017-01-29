@@ -7,43 +7,49 @@
     "body": "The Candy Shop at 23C on Oudezijds Achterburgwal could be a very good project we think.",
     "status": "pending",
     "read": false,
-    "costs": 25000,
+    "costs": 2000,
     "totdonated": 0,
     "duration": 21,
     "location": "Amsterdam",
 		"initiator": "Me",
     "breakdown": [
       {
-        "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "amount": 1500,
+        "description": "Setting up shop"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
+        "amount": 500,
+        "description": "Administrative tasks"
       }],
     "comments": [
       {
         "author": "Sito Veracruz",
         "img": "img/sito.png",
-        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "body": "I am not sure...",
         "time": "1 Days Ago"
 
       },
       {
         "author": "Frank Nack",
         "img": "img/frank.png",
-        "body": "More text",
+        "body": "Might be interested, what did the cooperative Staff members said?",
         "time": "3 Days Ago"
+      },
+			{
+        "author": "Sito Veracruz",
+        "img": "img/sito.png",
+        "body": "They did not answer yet, but I don't think it's in their guidelines",
+        "time": "1 Days Ago"
       }
     ],
     "pictures": [
         {
             "id": 0,
-            "src": "img/tree1.jpg"
+            "src": "img/candy2.jpg"
         },
         {
             "id": 1,
-            "src": "img/tree2.jpg"
+            "src": "img/candy3.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
@@ -54,22 +60,21 @@
     "image": "img/bbq.jpg",
     "date": 2017,
     "title": "BBQ On The Rijn",
-    "body": "Why note having a nice BBQ all together on the Rijn?",
+    "body": "Why not having a nice BBQ all together on the Rijn?",
     "status": "declined",
     "read": false,
-    "costs": 5000,
-    "totdonated": 0,
+    "costs": 450,
     "duration": 21,
     "location": "Amsterdam",
 		"initiator": "Me",
     "breakdown": [
       {
-        "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "amount": 400,
+        "description": "Food"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
+        "amount": 50,
+        "description": "Drink"
       }],
     "totdonated": 0,
     "duration": 8,
@@ -78,31 +83,29 @@
       {
         "author": "Sito Veracruz",
         "img": "img/sito.png",
-        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "body": "Why not a BBQ, yes!",
         "time": "1 Days Ago"
 
       },
       {
         "author": "Frank Nack",
         "img": "img/frank.png",
-        "body": "More text",
+        "body": "This is GREAT",
         "time": "3 Days Ago"
       }
     ],
     "pictures": [
         {
             "id": 0,
-            "src": "img/tree1.jpg"
+            "src": "img/bbq1.jpg"
         },
         {
             "id": 1,
-            "src": "img/tree2.jpg"
+            "src": "img/bbq2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
     "supporters": 10
-
-
 	},
 	{
     "id": 3,
@@ -113,19 +116,19 @@
     "status": "funded",
     "read": false,
     "costs": 2500,
+		"totdonated": 2500,
     "duration": 21,
     "location": "Amsterdam",
 		"initiator": "Me",
     "breakdown": [
       {
         "amount": 2000,
-        "description": "Labour (planting tree seeds)"
+        "description": "Renting Building Amsterjsjioin 234H first floor (reception)"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
+        "amount": 500,
+        "description": "Furniture"
       }],
-    "totdonated": 2500,
     "duration": 8,
     "read": false,
     "comments": [
@@ -139,24 +142,22 @@
       {
         "author": "Frank Nack",
         "img": "img/frank.png",
-        "body": "More text",
+        "body": "Nice impact you could have!",
         "time": "3 Days Ago"
       }
     ],
     "pictures": [
         {
             "id": 0,
-            "src": "img/tree1.jpg"
+            "src": "img/tea.jpg"
         },
         {
             "id": 1,
-            "src": "img/tree2.jpg"
+            "src": "img/tea2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
     "supporters": 10
-
-
 	},
 	{
     "id": 4,
@@ -166,19 +167,19 @@
     "body": "Our idea is to build a Roofgarden on top of the Kijkdammergebouw to let tourists and the community enjoy it.",
     "status": "completed",
     "read": false,
-    "costs": 250,
-    "totdonated": 250,
+    "costs": 2500,
+    "totdonated": 2500,
     "duration": 21,
     "location": "Kijkdam",
 		"initiator": "Me",
     "breakdown": [
       {
         "amount": 2000,
-        "description": "Labour (planting tree seeds)"
+        "description": "Renting the roof"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
+        "amount": 500,
+        "description": "Materials (Wood, Outside furniture)"
       }],
     "duration": 8,
     "read": false,
@@ -186,7 +187,7 @@
       {
         "author": "Sito Veracruz",
         "img": "img/sito.png",
-        "body": "Might be something I'll fund in the future",
+        "body": "Might be something I'll fund in the future as it seems to costly for now",
         "time": "1 Days Ago"
 
       },
@@ -200,15 +201,33 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/tree1.jpg"
+            "src": "img/roofgarden1.jpg"
         },
         {
             "id": 1,
-            "src": "img/tree2.jpg"
+            "src": "img/roofgarden2.jpg"
         }
     ],
     "author": "Pasquale Muscettola",
-    "supporters": 10
+    "supporters": 10,
+		"updates": [
+        {
+            "date": "Jan-10",
+            "body": "Project Funded on Fairbed"
+        },
+        {
+            "date": "Jan-15",
+            "body": "Contacted building owner to rent roof"
+        },
+        {
+            "date": "Jan-18",
+            "body": "First visitors are being invited!"
+        },
+      {
+        "date": "Jan-25",
+        "body": "First Meeting in Brasterdijk"
+      }
+    ]
 },
 	{
 		"id": 5,
@@ -221,18 +240,17 @@
 		"costs": 900,
 		"totdonated": 400,
 		"duration": 12,
-		"location": "Utrecht",
+		"location": "Amsterdam",
 		"initiator": "Me",
     "breakdown": [
       {
-        "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "amount": 100,
+        "description": "Organizing first meeting"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
+        "amount": 800,
+        "description": "Material needed for hiking"
       }],
-    "totdonated": 3000,
     "duration": 8,
     "read": false,
     "comments": [
