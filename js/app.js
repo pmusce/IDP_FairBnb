@@ -88,10 +88,6 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		url : '/become',
 		templateUrl : 'become-host/become.html'
 	})
-	.state('home.projects', {
-		url : '^/projects',
-		component: 'projects'
-	})
 	.state('home.discussions', {
 		url : '^/discussions',
 		component: 'discussionList'

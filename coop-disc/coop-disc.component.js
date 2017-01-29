@@ -9,8 +9,6 @@ component('discussionList', {
     $scope.discussions = discussionsService;
 
     $scope.createDiscussion = function() {
-      console.log('YEAG');
-      console.log($scope.discussions.list);
       var modalInstance = $uibModal.open({
         animation: true,
         templateUrl: 'coop-disc/new-discuss.template.html',

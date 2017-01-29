@@ -235,7 +235,7 @@
 		"date": 2017,
 		"title": "Tourists Land Tour",
 		"body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
-		"status": "needfunding",
+		"status": "need-funding",
 		"read": true,
 		"costs": 900,
 		"totdonated": 400,

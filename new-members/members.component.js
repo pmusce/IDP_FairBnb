@@ -93,9 +93,7 @@ component('memberList', {
 			}
 
 			return service.getAllReviewHosts().then(function (hosts) {
-				var h = hosts.find(hostMatchesParam);
-				console.log(h);
-				return h;
+				return hosts.find(hostMatchesParam);
 			});
 		}
 	}

@@ -2,7 +2,10 @@ angular.
 module('projectsList')
 .component('projects', {
 	templateUrl: 'projects-list/projects-list.template.html',
-	controller: function ProjectListController($scope, $uibModal, $http, user, projectDetailService) {
+	bindings: {
+		projects: '='
+	},
+	controller: function ProjectListController($scope, $uibModal, ProjectsService, user, projectDetailService) {
 		$scope.createProject = function() {
 	        $uibModal.open({
 		        animation: true,
@@ -27,10 +30,6 @@ module('projectsList')
 	    var self = this;
 		$scope.user = user;
 
-		$http.get('../data/projects.json').then(function(response) {
-			self.projects = response.data;
-		});
-
 		self.openDetail = function(project) {
 			projectDetailService.project = project;
 			if(project.type == 'need-funding') {
@@ -39,16 +38,6 @@ module('projectsList')
 				projectDetailService.layout = 'detailFunded';
 			}
 		};
-	}
-})
-.component('myProjects', {
-	templateUrl: 'projects-list/my-projects-list.template.html',
-	controller: function MyProjectsController($http, $scope, MyProjectsService) {
-		self = this;
-	  	$http.get('../data/my-projects.json').then(function(response) {
-			self.projects = response.data;
-		});
-
 	}
 })
 .component('newProject', {
@@ -81,33 +70,29 @@ module('projectsList')
 
 	}
 })
-.component('detailNeedFunding', {
-	templateUrl: 'projects-list/detail-need-funding.template.html',
-	controller: function DetailNeedFundingController($scope, $uibModal, user, projectDetailService) {
-		$scope.myInterval = 5000;
-		$scope.noWrapSlides = false;
-		$scope.active = 0;
-		$scope.user = user;
+.controller('detailNeedFunding', function DetailNeedFundingController($scope, $uibModal, user, project) {
+	$scope.project = project;
+	$scope.myInterval = 5000;
+	$scope.noWrapSlides = false;
+	$scope.active = 0;
+	$scope.user = user;
+	$scope.back = function() {
+		projectDetailService.goToList('not-funded');
+	}
 
-		$scope.project = projectDetailService.project;
-		$scope.back = function() {
-			projectDetailService.goToList('not-funded');
-		}
-
-		$scope.support = function() {
-			$uibModal.open({
-		        animation: true,
-		        templateUrl: 'support-modal.html',
-		        controller: 'SupportProjectModalInstanceCtrl',
-		        controllerAs: '$ctrl',
-		        size: 'lg',
-		        resolve: {
-		        	project: function() {
-		        		return $scope.project;
-		        	}
-		        }
-	        });
-		}
+	$scope.support = function() {
+		$uibModal.open({
+	        animation: true,
+	        templateUrl: 'support-modal.html',
+	        controller: 'SupportProjectModalInstanceCtrl',
+	        controllerAs: '$ctrl',
+	        size: 'lg',
+	        resolve: {
+	        	project: function() {
+	        		return $scope.project;
+	        	}
+	        }
+        });
 	}
 })
 .controller('SupportProjectModalInstanceCtrl', function ($scope, user, project, $uibModalInstance, $state) {
@@ -133,13 +118,12 @@ module('projectsList')
 	};
 
 })
-.factory('MyProjectsService', ['$http', function ($http) {
-	var projectsList = $http.get('data/my-projects.json', { cache: true }).then(function(resp) {
+.factory('ProjectsService', ['$http', function ($http) {
+	var projectsList = $http.get('data/projects.json', { cache: true }).then(function(resp) {
 		return resp.data;
 	});
   	var service = {
 	    getAllProjects: function() {
-	    	console.log(projectsList);
 	      	return projectsList;
 	    },
 	    getProject: function(id) {
@@ -157,74 +141,58 @@ module('projectsList')
 }])
 .config(['$stateProvider', function($stateProvider) {
 
+	// Projects states
 	$stateProvider
-	.state('home.myproj', {
+	.state('home.projects', {
 		template: "<ui-view />",
 		controller: function($state) {
 			$state.go('.list');
 		}
 	})
-	.state('home.myproj.list', {
-		url : '^/myprojects',
-		component: 'myProjects'
-	})
-	.state('home.myproj.detail', {
-		url : '^/myproj/detail/{project}',
+	.state('home.projects.list', {
+		component: 'projects',
 		resolve: {
-		    project: function(MyProjectsService, $transition$) {
-		      	return MyProjectsService.getProject($transition$.params().project);
+		    projects: function(ProjectsService, $transition$) {
+		      	return ProjectsService.getAllProjects();
+		    }
+	    }
+	})
+	.state('home.projects.detail', {
+		url : '^/projects/detail/{project}',
+		resolve: {
+		    project: function(ProjectsService, $transition$) {
+		      	return ProjectsService.getProject($transition$.params().project);
 		    }
 	    },
 	    controller: function($state, project) {
-	    	switch(project.status) {
-				case "pending":
-					$state.go(".pending");
-					break;
-				case "declined":
-					console.log('OK');
-					$state.go(".declined");
-					break;
+	    	switch(project.type) {
 				case "funded":
 					$state.go(".funded");
 					break;
 				case "completed":
 					$state.go(".completed");
 					break;
-				case "needfunding":
+				case "need-funding":
 					$state.go(".needfunding");
 					break;
 			    default:
 			}
 	    }
 	})
-	.state('home.myproj.detail.pending', {
-		templateUrl: 'projects-list/detail-pending.template.html',
-		controller: function($scope, project) {
-			$scope.project = project;
-		}
-	})
-	.state('home.myproj.detail.declined', {
-		templateUrl: 'projects-list/detail-rejected.template.html',
-		controller: function($scope, project) {
-			$scope.project = project;
-		}
-	})
-	.state('home.myproj.detail.funded', {
+	.state('home.projects.detail.funded', {
 		templateUrl: 'projects-list/detail-funded.template.html',
 		controller: function($scope, project) {
 			$scope.project = project;
 		}
 	})
-	.state('home.myproj.detail.completed', {
+	.state('home.projects.detail.completed', {
 		templateUrl: 'projects-list/detail-completed.template.html',
 		controller: function($scope, project) {
 			$scope.project = project;
 		}
 	})
-	.state('home.myproj.detail.needfunding', {
+	.state('home.projects.detail.needfunding', {
 		templateUrl: 'projects-list/detail-need-funding.template.html',
-		controller: function($scope, project) {
-			$scope.project = project;
-		}
+		controller: 'detailNeedFunding'
 	})
 }]);
