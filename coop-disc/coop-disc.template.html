@@ -4,22 +4,22 @@
 			<button type="button" class="btn btn-primary" ng-click="createDiscussion();">
 		        Create Discussion
 			</button>
-			<span class="pull-right">
+			<!-- <span class="pull-right">
 				<label for="filterSelect">Filter </label>
 				<select ng-model="$ctrl.query" id="filterSelect" class="form-control">
 				  <option value="">All</option>
 				  <option ng-repeat="cat in $ctrl.categories" value="{{cat}}">{{cat}}</option>
 				</select>
-			</span>
+			</span> -->
 		</form>
 
-		<ul class="list-group" ng-repeat="discussion in discussions | filter:$ctrl.query">
+		<ul class="list-group" ng-repeat="discussion in discussions" ng-if="discussion.status=='open' || user.isAdmin() ">
 		  <li class="list-group-item clickable" ng-click="openDiscussion(discussion)">
 				<div class="project-thumbnail">
 					<div class="overlay overlay-closed" ng-if="discussion.status=='closed'">
 						<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
 					</div>
-				</div>Title: <b>{{discussion.title}}</b><br>
+				</div><b>{{discussion.title}}</b><br>
 
 			</li>
 		</ul>

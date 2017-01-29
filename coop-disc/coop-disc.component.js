@@ -2,8 +2,9 @@ angular.
 module('discussionList').
 component('discussionList', {
   templateUrl: 'coop-disc/coop-disc.template.html',
-  controller: function discussionListController($http, $scope, discussionsService, discussionDetailService, $uibModal) {
+  controller: function discussionListController($http, user, $scope, discussionsService, discussionDetailService, $uibModal) {
     var self = this;
+    $scope.user = user;
     $scope.service = discussionDetailService;
     $scope.discussions = discussionsService;
 
