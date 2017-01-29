@@ -5,7 +5,7 @@
 			<th>User</th>
 			<th>Created</th>
 			<th>Comments</th>
-			<th># staff votes</th>
+			<th># staff reviews</th>
 			<th>Status</th>
 		</tr>
 	</thead>
@@ -16,7 +16,20 @@
 			<td>{{project.date}}</td>
 			<td>{{project.comments.length}}</td>
 			<td>{{project.votes}}/6</td>
-			<td>{{project.status}}</td>
+			<td ng-switch on="project.status">
+				<span ng-switch-when="needs"class="text-primary">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Needs review
+                </span>
+				<span ng-switch-when="pending" class="text-muted">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>Reviewed
+                </span>
+				<span ng-switch-when="declined" class="text-danger">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Declined
+                </span>
+                <span ng-switch-when="approved" class="text-success">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Approved
+                </span>
+			</td>
 		</tr>
 	</tbody>
 </table>
