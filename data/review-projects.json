@@ -6,7 +6,7 @@
     "author": "Pasquale Muscettola",
     "description": "The project aims to let tourists and newcomers in The Netherlands to discover the nature of The Netherlands",
     "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
-    "status": "approved",
+    "status": "needs",
     "costs": 900,
     "votes": 3,
     "breakdown": [
@@ -62,7 +62,7 @@
     "costs": 350,
     "totdonated": 290,
     "duration": 8,
-    "read": false,
+    "read": true,
     "id": 2,
     "comments": [
       {
@@ -411,7 +411,7 @@
         }
     ]
 }, {
-    "type": "funded",
+    "type": "declined",
     "image": "img/ams2.jpg",
     "location": "Brasterdijk",
     "date": 2017,

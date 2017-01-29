@@ -418,11 +418,11 @@
     "pictures": [
         {
             "id": 0,
-            "src": "img/car_sharing.jpg"
+            "src": "img/Car_sharing.jpg"
         },
         {
             "id": 1,
-            "src": "img/car_sharing2.jpg"
+            "src": "img/Car_sharing2.jpg"
         }
     ]
 }
