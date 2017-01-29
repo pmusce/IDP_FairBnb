@@ -57,7 +57,7 @@
     "body": "Why note having a nice BBQ all together on the Rijn?",
     "status": "declined",
     "read": false,
-    "costs": 100000,
+    "costs": 5000,
     "totdonated": 0,
     "duration": 21,
     "location": "Amsterdam",
@@ -71,7 +71,7 @@
         "amount": 2300,
         "description": "Building Materials (Wood, ropes)"
       }],
-    "totdonated": 3000,
+    "totdonated": 0,
     "duration": 8,
     "read": false,
     "comments": [
@@ -112,21 +112,20 @@
     "body": "The Munt Thee Salon in Kijkdam is a traditional salon in which Kijkdammer can book a table for corporate events, weddings, study sessions.",
     "status": "funded",
     "read": false,
-    "costs": 100000,
-    "totdonated": 100000,
+    "costs": 2500,
     "duration": 21,
     "location": "Amsterdam",
 		"initiator": "Me",
     "breakdown": [
       {
         "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "description": "Labour (planting tree seeds)"
       },
       {
         "amount": 2300,
         "description": "Building Materials (Wood, ropes)"
       }],
-    "totdonated": 3000,
+    "totdonated": 2500,
     "duration": 8,
     "read": false,
     "comments": [
@@ -164,7 +163,7 @@
     "image": "img/garden.jpg",
     "date": 2017,
     "title": "Roofgarden on Kijkdammergebouw",
-    "body": "The Munt Thee Salon in Kijkdam is a traditional salon in which Kijkdammer can book a table for corporate events, weddings, study sessions.",
+    "body": "Our idea is to build a Roofgarden on top of the Kijkdammergebouw to let tourists and the community enjoy it.",
     "status": "completed",
     "read": false,
     "costs": 250,
@@ -175,27 +174,26 @@
     "breakdown": [
       {
         "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "description": "Labour (planting tree seeds)"
       },
       {
         "amount": 2300,
         "description": "Building Materials (Wood, ropes)"
       }],
-    "totdonated": 3000,
     "duration": 8,
     "read": false,
     "comments": [
       {
         "author": "Sito Veracruz",
         "img": "img/sito.png",
-        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "body": "Might be something I'll fund in the future",
         "time": "1 Days Ago"
 
       },
       {
         "author": "Frank Nack",
         "img": "img/frank.png",
-        "body": "More text",
+        "body": "Very enthusiastic, where can I fund it???",
         "time": "3 Days Ago"
       }
     ],
