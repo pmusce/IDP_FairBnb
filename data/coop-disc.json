@@ -1,39 +1,38 @@
 [{
     "id": 1,
-    "author": "paolo",
-    "usr_img": "img/frank.png",
-	"status": "closed",
-    "title": "Cooperative discussion about legal framework (unread)",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "likes": 1,
+    "status": "open",
+    "type" : "Open Local Discussion",
+    "author": "Judy",
+    "usr_img": "img/new-host-judy.jpg",
+    "title": "The “Converting an old warehouse to a Pop Podium” project is running over budget",
+    "body": "We have to announce some bad news: the project to convert the old warehouse into a pop podium is going to need more money than we anticipated. Right now, there is €1000 left, but we still need to fund video and audio equipment. What are your suggestions on how to proceed with the project?",
     "comments": [
         {
             "id": 2,
-            "username": "gianni",
-            "usr_img": "img/sito.png",
-            "body": "Some text here",
+            "username": "Mary Chiang",
+            "usr_img": "img/marychiang.jpg",
+            "body": "I think we need to put the project up for funding again, the project is already too far to stop now, otherwise all used money will be wasted.",
+            "likes": 15,
+            "comments": []
+        } , {
+            "id": 3,
+            "username": "Michael Heng",
+            "usr_img": "img/michaelheng.jpg",
+            "body": "I agree, I’m sure the community will understand if we explain them clearly how we managed to run over budget.",
+            "likes": 6,
+            "comments": []
+        }, {
+            "id": 4,
+            "username": "James",
+            "usr_img": "img/new-host-james.jpg",
+            "body": "We should just cancel the project and refund everyone who supported the project equally, because the additional costs will be way too high.",
             "likes": 2,
             "comments": [
                 {
-                    "id": 3,
-                    "username": "gianni",
-                    "usr_img": "img/sito.png",
-                    "body": "Some text here",
-                    "likes": 3,
-                    "comments": [ {
-                        "id": 4,
-                        "username": "gianni",
-                        "usr_img": "img/sito.png",
-                        "body": "Some text here",
-                        "likes": 4,
-                        "comments": []
-                    }]
-                },
-                {
                     "id": 5,
-                    "username": "gianni",
-                    "usr_img": "img/sito.png",
-                    "body": "Some text here",
+                    "username": "Michael Heng",
+                    "usr_img": "img/michaelheng.jpg",
+                    "body": "Are you sure you’re not just suggesting this because you don’t like noise?",
                     "likes": 5,
                     "comments": []
                 }
@@ -42,34 +41,133 @@
     ]
 }, {
     "id": 6,
-    "author": "paolo",
-    "usr_img": "img/frank.png",
-	"status": "closed",
-    "title": "Another interesting discussion",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "likes": 6,
-    "comments": [
-        {
+   "type" : "Open Local Host Discussion",
+   "status": "open",
+   "author": "Michael Heng",
+   "usr_img": "img/michaelheng.jpg",
+   "title": "Proposing a new rule for proposing projects",
+   "body": "The community staff has thought about improving the fairbed platform, and we have been thinking of a new rule behind the screens, that we would like to have your opinion on. We thought it would be more fair if every community member can propose at most 1 project per week, so everybody will have a fair chance of having their project funded within a reasonable time.",
+   "comments": [
+         {
             "id": 7,
-            "username": "gianni",
-            "usr_img": "img/sito.png",
-            "body": "Some text here"
+            "username": "Elin van Ginkel",
+            "usr_img": "img/elinvanginkel.jpg",
+            "body": "I think we need to put the project up for funding again, the project is already too far to stop now, otherwise all used money will be wasted.",
+            "likes": 15,
+            "comments": []
+        } , {
+            "id": 8,
+            "username": "James",
+            "usr_img": "img/new-host-james.jpg",
+            "body": "I think that you should just propose better projects if you want them to receive funding.",
+            "likes": 6,
+            "comments": [
+                 {
+                    "id": 9,
+                    "username": "Amy",
+                    "usr_img": "img/new-host-amy.jpg",
+                    "body": "That’s not a very kind thing to say, we shouldn’t degrade each other’s inputs in this community.",
+                    "likes": 6,
+                    "comments": []
+                }
+            ]
+        }, {
+            "id": 10,
+            "username": "Elin van Ginkel",
+            "usr_img": "img/elinvanginkel.jpg",
+            "body": "I think that you shouldn’t limit people in the amount of projects they put out, if people have a lot of good propositions, I would to have all of them out on the website.",
+            "likes": 2,
+            "comments": []
         }
     ]
 }, {
-    "id": 8,
-    "author": "paolo",
-    "usr_img": "img/frank.png",
-	"status": "open",
-    "title": "Yet another read discussion about the coop",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab at corporis accusantium autem atque facilis illum deleniti nesciunt consequuntur blanditiis distinctio ad, libero id tempora dolore qui quam nulla.",
-    "likes": 7,
+    "id": 11,
+    "type" : "Closed Discussion",
+    "status": "closed",
+    "author": "Dorothy",
+    "usr_img": "img/staff-dorothy.jpg",
+    "title": "Ejecting “James” from the  fairbed community",
+    "body": "We have received news that James has been renting out his apartment via illegal ways, and in this way has been violating the Fairbed rules. Should we give the James another chance to redeem himself, of should we eject him from the community?",
     "comments": [
         {
-            "id": 9,
-            "username": "gianni",
-            "usr_img": "img/sito.png",
-            "body": "Some text here"
+            "id": 12,
+            "username": "Michael Heng",
+            "usr_img": "img/michaelheng.jpg",
+            "body": "I think we need to put the project up for funding again, the project is already too far to stop now, otherwise all used money will be wasted.",
+            "likes": 15,
+            "comments": []
+        } , {
+            "id": 13,
+            "username": "Dorothy",
+            "usr_img": "img/staff-dorothy.jpg",
+            "body": "The rules are clear on this sort of things, I think we should be strict on violations like this.",
+            "likes": 6,
+            "comments": []
         }
     ]
+}, {
+    "id": 14,
+    "type" : "Closed Discussion",
+    "status": "closed",
+    "author": "Dorothy",
+    "usr_img": "img/staff-dorothy.jpg",
+    "title": "Reviewing the project “Sleeping place for the homeless people”",
+    "body": "This is the thread to discuss the proposal of the “Sleeping place for the homeless people”. Please discuss and explain whether you would would accept this project for funding or not.",
+    "comments": [
+        {
+            "id": 15,
+            "username": "Michael Heng",
+            "usr_img": "img/michaelheng.jpg",
+            "body": "I think this would be a good addition to the community, it’s societal relevance is very high, and every member of the community will benefit from it.",
+            "likes": 5,
+            "comments": []
+        }, {
+            "id": 16,
+            "username": "Steven",
+            "usr_img": "img/staff-steven.jpg",
+            "body": "Agreed, I really like projects like this, this is why I signed up for this community in the first place. ",
+            "likes": 5,
+            "comments": []
+        }, {
+            "id": 17,
+            "username": "Dorothy",
+            "usr_img": "img/staff-dorothy.jpg",
+            "body": "Also agree, this will be a very feasible project finance-wise",
+            "likes": 5,
+            "comments": []
+        }
+    ]
+
+}, {
+    "id": 18,
+    "type" : "Open Global Discussion",
+    "status": "open",
+    "author": "Mary Chiang",
+    "usr_img": "img/marychiang.jpg",
+    "title": "More tourists should be guided on what to do in Amsterdam",
+    "body": "May I suggest that Fairbed to get more descriptions and recommendations for tourists who want to visit Amsterdam?",
+    "comments": [
+        {
+            "id": 19,
+            "username": "Michael Heng",
+            "usr_img": "img/michaelheng.jpg",
+            "body": "Yes, we can post more suggestions on things to do in Amsterdam.",
+            "likes": 15,
+            "comments": []
+        }, {
+            "id": 20,
+            "username": "Steven",
+            "usr_img": "img/staff-steven.jpg",
+            "body": "Agreed, this area can be improved.",
+            "likes": 6,
+            "comments": []
+        }, {
+            "id": 21,
+            "username": "Dorothy",
+            "usr_img": "img/staff-dorothy.jpg",
+            "body": "We have started some work last year but it did not go very far because we ran into office move project",       
+            "likes": 15,
+            "comments": []
+        }
+    ]    
 }]
