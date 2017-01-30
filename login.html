@@ -43,10 +43,50 @@
         </div>
     </div>
 </div>
-<!-- <div class="container home">
+<div class="container home">
     <h2 class="text-center">Recent Projects</h2>
-    <projects></projects>
-</div> -->
+    <div class="row">
+        <div ng-repeat="project in projects | limitTo:3" class="col-md-4">
+            <div class="project-card">
+              <div class="project-thumbnail">
+                <div class="overlay overlay-funded" ng-if="project.type=='funded'">
+                    <span class="glyphicon glyphicon-eur" aria-hidden="true"></span>
+                    Funded
+                </div>
+                <div class="overlay overlay-completed" ng-if="project.type=='completed'">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    Completed
+                </div>
+                <div class="overlay overlay-needfunding" ng-if="project.type=='need-funding'">
+                  <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                  Needs Funding
+                </div>
+                <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
+                <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
+                     {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">{{project.title}}</h4>
+                <h6 class="card-title">
+
+                    <!-- <span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"> </span> -->
+                    by {{project.initiator}}
+                </h6>
+
+                <h6 class="card-title">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    {{project.location}}
+
+                </h6>
+                <p class="card-text">{{project.description}}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="margin-bottom: 27px;">
+        <button class="btn btn-primary landingButton">Explore projects</button>
+    </div>
+</div>
 
 <!-- Modal -->
 <script type="text/ng-template" id="login-modal.html">

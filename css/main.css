@@ -23,17 +23,24 @@
     color:white;
 }
 
-.booking .btn {
+.booking .btn  {
     width: 100%;
     background-color: #e99010;
     border: none;
+}
+
+.landingButton {
+    background-color: #e99010;
+    border: none;
+    border-radius: 0;
+    padding: 9px 30px;
 }
 
 .booking input, .booking select, .booking button {
     border-radius: 0;
 }
 
-.booking button {
+.booking button, .landingButton {
     font-family: 'Roboto';
     font-size: 13px;
     font-weight: bold;

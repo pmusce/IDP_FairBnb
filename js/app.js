@@ -77,7 +77,12 @@ fairbed.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 	.state('login', {
 		url : '/login',
 		templateUrl : 'login.html',
-		controller : 'HomeController'
+		controller : 'LandingController',
+		resolve: {
+		    projects: function(ProjectsService, $transition$) {
+		      	return ProjectsService.getAllProjects();
+		    }
+	    }
 	})
 	.state('home', {
 		url : '/home',
@@ -155,6 +160,26 @@ fairbed.factory('LoginService', function($http, $cookies, user, $state) {
 fairbed.controller('HomeController', function($scope, $stateParams, $state, NewsService, user, LoginService) {
 	$scope.news = NewsService;
 	$scope.user = user;
+
+	console.log(user.isAdmin());
+	// Triggering popovers for landing page on city input field
+	$('#name').popover();
+
+	//landing page datepicker callback
+
+	$('.datepicker .input-daterange').datepicker({
+	});
+
+// end datepicker call
+
+	$scope.logout = function() {
+		LoginService.logout();
+	}
+});
+
+fairbed.controller('LandingController', function($scope, user, projects, LoginService) {
+	$scope.user = user;
+	$scope.projects = projects;
 
 	console.log(user.isAdmin());
 	// Triggering popovers for landing page on city input field
