@@ -8,6 +8,7 @@
     "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
     "status": "needs",
     "costs": 900,
+    "costs": 900,
     "votes": 3,
     "breakdown": [
       {
@@ -60,6 +61,7 @@
     "body": "Restoration of parts of the 500 year-old bridge near Zuidpark in Amsterdam. There are about 399 bricks need to be replaced to make it safe again to pedestrians. This has over 900 pedestrians crossing daily and each of them has 11% chance of tripping over a loose brick and fall. Over the last year, over 99 reported cases of people tripping over this unsafe bridge. Currently, it has been closed until it is made safe again. If no one comes forward to help, this bridge will remain close and create inconvenience to pedestrians travelling from Zuidpark towards city center.",
     "status": "pending",
     "costs": 350,
+    "votes": 3,
     "totdonated": 290,
     "duration": 8,
     "read": true,
@@ -106,6 +108,7 @@
     "body": "Vondelpark has beautiful parkland, wonderful wooden play equipment, rope bridges, zip wires, an open-air theatre, huge paddling pool, skate hire, a Picasso sculpture and a cracking café, too. Families can grab coffee and pancakes from the Groot Melkhuis, this is the place to relax and let kids run wild. There is a large lake in the middle of the lake which we feel needs a hanging bridge so that children can walk across and enjoy the lovely green lush of fresh water views, plants, birds and other reptiles. They can enjoy a nice nature walk across this bridge.",
     "status": "pending",
     "costs": 4300,
+    "votes": 3,
     "totdonated": 3700,
     "duration": 1,
     "read": false,
@@ -152,6 +155,7 @@
     "body": "There are over 844,000 inhabitants in Amsterdam and 45% of them are below 21.  These youths need a safe and relaxing place to hangout and take a break during their school holidays. These kids have nowhere to go and we would like to create a safe place for them. We have identified a house owner who is willing to offer the place during weekends for this hangout place. We just need to perform paintings, purchase new games, equipments and furniture to make this place conducive to hangout.",
     "status": "pending",
     "costs": 5300,
+    "votes": 3,
     "totdonated": 5200,
     "duration": 1,
     "read": false,
@@ -200,6 +204,7 @@
     "author": "Fikke & Fokkei",
     "supporters": 30,
     "costs": 6000,
+    "votes": 3,
     "totdonated": 6000,
     "funding": 80,
     "comments": [
@@ -232,54 +237,6 @@
     ]
 }, {
     "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/waag1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
     "image": "img/Graffiti_2.jpg",
     "location": "Einsteinsweg",
     "date": 2017,
@@ -292,6 +249,7 @@
     "author": "Neighborood Einsteinsweg",
     "supporters": 5,
     "costs": 200,
+    "votes": 3,
     "totdonated": 200,
     "funding": 5,
     "updates": [
@@ -321,7 +279,8 @@
             "id": 1,
             "src": "img/Graffiti_2.jpg"
         }
-    ]
+    ],
+    "comments": []
 }, {
     "type": "funded",
     "image": "img/Pop_podium.jpg",
@@ -336,6 +295,7 @@
     "author": "Amsterdam Zuid Neighborood",
     "supporters": 30,
     "costs": 3000,
+    "votes": 3,
     "totdonated": 3000,
     "funding": 80,
     "updates": [
@@ -365,7 +325,8 @@
             "id": 1,
             "src": "img/Pop_podium2.jpg"
         }
-    ]
+    ],
+    "comments": []
 }, {
     "type": "funded",
     "image": "img/ams2.jpg",
@@ -380,6 +341,7 @@
     "author": "Nienke Stoijpers",
     "supporters": 30,
     "costs": 1000,
+    "votes": 3,
     "totdonated": 1000,
     "funding": 80,
     "updates": [
@@ -409,54 +371,7 @@
             "id": 1,
             "src": "img/elderpeeps.png"
         }
-    ]
-}, {
-    "type": "declined",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
     ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/waag1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ]
+    "comments": []
 }
 ]
