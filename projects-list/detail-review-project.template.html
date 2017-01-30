@@ -23,7 +23,7 @@
                 <tbody>
                     <tr  ng-repeat="breakdow in $ctrl.project.breakdown">
                         <td>€ {{breakdow.amount}}</td>
-                        <td>€ {{breakdow.description}}</td>
+                        <td>{{breakdow.description}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -61,7 +61,7 @@
                 </div>
                 
                 <!-- use ng-submit to catch the form submission and use our Angular function -->
-                <form id="become-host-form" ng-submit="processForm()">
+                <form id="review-proj-form" ng-submit="processForm()">
                     <div id="form-views" class="form-horizontal" ui-view></div>
                 </form>
 
@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<div class="row detail-bottom">
+<div class="row">
     <h2 class="text-center">Discussion</h2>
     <ul class="media-list liste">
         <li class="media" ng-repeat="comment in $ctrl.project.comments">

@@ -62,24 +62,37 @@
                   Needs Funding
                 </div>
                 <img class="card-img-top" ng-src="{{project.image}}" alt="Card image cap">
-                <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
-                     {{project.totdonated}}€/{{project.costs}}€</uib-progressbar>
               </div>
-              <div class="card-block">
-                <h4 class="card-title">{{project.title}}</h4>
-                <h6 class="card-title">
+             <div class="card-block">
+                    <h4 class="card-title">{{project.title}}</h4>
+                    <!-- <div class="clearfix">
+                        <div style="position: absolute;"><h6 style="margin-top: 0" class="card-title">
+                            by {{project.initiator}}
+                        </h6></div> -->
 
-                    <!-- <span class="glyphicon glyphicon glyphicon-send" aria-hidden="true"> </span> -->
-                    by {{project.initiator}}
-                </h6>
+                        <div><h6 style="margin-top: 0" class="card-title">
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            {{project.location}}
 
-                <h6 class="card-title">
-                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                    {{project.location}}
-
-                </h6>
-                <p class="card-text">{{project.description}}</p>
-              </div>
+                        </h6></div>
+                    <!-- </div> -->
+                    <p class="card-text">{{project.description}}</p>
+                  </div>
+                  <div class="card-footer">
+                      <uib-progressbar animate="false" max="project.costs" value="project.totdonated" type="success">
+                         </uib-progressbar>
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div><b>Target</b></div><div> €{{project.costs}}</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div><b>Current</b></div><div> €{{project.totdonated}}</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div><b>Needed</b></div><div> €{{project.costs - project.totdonated}}</div>
+                            </div>
+                        </div>
+                  </div>
             </div>
         </div>
     </div>

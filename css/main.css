@@ -96,11 +96,26 @@ div.col-lg-4 {
     background: #eee;
     height: 100%;
     width: 100%;
-    position: fixed;
     overflow: auto;
     padding-bottom: 80px;
-    margin-top: -20px;
+    margin-top: -75px;
     padding-top: 20px;
+    position: fixed;
+    z-index: -1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #62C462;
+    color: white;
+}
+
+.footer .container {
+    max-width: 480px;
 }
 
 .collapsed a {
@@ -223,8 +238,16 @@ div.col-lg-2 {
     margin-top: 25px;
 }
 
+html {
+   height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
+      margin: 0;
+      padding-bottom: 4rem;
+      min-height: 100%;
 }
 
 
@@ -303,6 +326,7 @@ a[ng-click] {
 .tab-content {
     padding: 20px;
     background: white;
+    margin-bottom: 50px;
 }
 .modal-title {
     position: relative;
@@ -825,4 +849,8 @@ button.close {
     box-shadow: none;
     -webkit-box-shadow: none;
     background-image: none;
+}
+
+#review-proj-form {
+    position:relative; min-height:150px; overflow:hidden; padding:0px;
 }
