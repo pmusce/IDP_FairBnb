@@ -62,6 +62,8 @@
     "title": "BBQ On The Rijn",
     "body": "Why not having a nice BBQ all together on the Rijn?",
     "status": "declined",
+    "declinedTag" : "Value, Approvals",
+    "declinedReason" : "• The overall business value / social benefits of the proposal must be more than the actual costs of the projects, • If the projects are to concern property owners (municipality, land owners, etc), prior approvals must be obtained from these stakeholders before proposal submission",
     "read": false,
     "costs": 450,
     "duration": 21,
