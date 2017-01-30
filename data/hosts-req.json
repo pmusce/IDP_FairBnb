@@ -27,15 +27,15 @@
 			"cleaning": 5.00
 		},
 		"description": {
-			"text": "This text is just an example",
+			"text": "There’s a worldly edge to North Orleans which is where this apartment is located. Like the rest of Amsterdam, it pulls in people from all over. Professional, like-minded folk who work in a vast array of sectors. We’ll be organising get together’s every now and then to help create an arena for residents to socialise, network and exchange their Amsterdam adventures. Of course, there’s no obligation to attend. If you’re a happy hermit, that’s cool too. But the lure of local brewed craft beer on tap might twist your arm.",
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
@@ -68,15 +68,15 @@
 			"cleaning": 5.00
 		},
 		"description": {
-			"text": "This text is just an example",
+			"text": "There’s a worldly edge to North Orleans which is where this apartment is located. Like the rest of Amsterdam, it pulls in people from all over. Professional, like-minded folk who work in a vast array of sectors. We’ll be organising get together’s every now and then to help create an arena for residents to socialise, network and exchange their Amsterdam adventures. Of course, there’s no obligation to attend. If you’re a happy hermit, that’s cool too. But the lure of local brewed craft beer on tap might twist your arm.",
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
@@ -113,11 +113,11 @@
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
@@ -154,11 +154,11 @@
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
@@ -195,11 +195,11 @@
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
@@ -236,11 +236,11 @@
 			"images": [
 		        {
 		            "id": 0,
-		            "src": "img/tree1.jpg"
+		            "src": "img/apt1.jpg"
 		        },
 		        {
 		            "id": 1,
-		            "src": "img/tree2.jpg"
+		            "src": "img/apt2.jpg"
 		        }
 		    ]
 		}
