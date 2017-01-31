@@ -13,6 +13,10 @@
     font-style: italic;
 }
 
+<<<<<<< HEAD
+li.active {
+    pointer-events: none;
+=======
 .modal {
   text-align: center;
 }
@@ -30,10 +34,7 @@
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-}
-
-li.active {
-    pointer-events: none;
+>>>>>>> d462a946e269ddbcb24b63167ea09670194f7fa6
 }
 
 .page-header {

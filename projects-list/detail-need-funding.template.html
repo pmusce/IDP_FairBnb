@@ -113,21 +113,19 @@
 
                     <div class="input-group">
                         <span class="input-group-addon">€</span>
-                        <input type="text" ng-value="{{user.funds}}" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                         <span class="input-group-addon">.00</span>
                     </div>
 
                 </div>
                 <div class="col-md-6">
-                    <b>Your contribution will have a nice impact!</b><br><br>
+                    <b>You are adding <span class="label label-success"></span> to this project!</b><br><br>
                     <div class="progress">
                         <div>
 
                             <uib-progressbar class="progress-striped" max="project.costs" value="project.totdonated" type="success">
                                 <i>
-                                    <b>{{project.totdonated+user.funds}} € (+{{user.funds}})
-                                        -
-                                        Targeted : {{project.costs}} €</b>
+                                    <b>{{project.totdonated}} of {{project.costs}} €</b>
                                 </i>
                             </uib-progressbar>
                         </div>
