@@ -42,11 +42,11 @@
                     </a>
                     <ul class="dropdown-menu notification">
                         <li>
-                            <a ng-class="{newmsg: notification}" ng-click="notification=false" ui-sref="home">You received a message</a>
+                            <a ng-class="{newmsg: notification}" ng-click="notification=false" ng-href="#!/myproj/detail/2">Your project has been declined</a>
                         </li>
                         <li role="separator" class="divider"></li>
                         <li>
-                            <a ui-sref="home">Your project has been accepted</a>
+                            <a ng-href="#!/myproj/detail/5">Your project has been accepted</a>
                         </li>
                     </ul>
 
@@ -60,7 +60,7 @@
                     <ul class="dropdown-menu">
                       <li class="dropdown-header">{{user.role}} : {{user.name}}</li>
                         <li>
-                            <a ui-sref="home">Update Profile</a>
+                            <a ui-sref=".">Update Profile</a>
                         </li>
                         <li role="separator" class="divider"></li>
 
