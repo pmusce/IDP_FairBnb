@@ -6,14 +6,14 @@
     </form>
 
     <ul class="media-list liste">
-        <li class="media clickable" ng-click="openNews(new)" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:['date']">
+        <li class="media clickable" ng-click="openNews(new)" ng-repeat="new in $ctrl.news | filter:{type: $ctrl.query} | orderBy:'id':true">
             <div class="media-left">
                 <img ng-src="{{new.image}}" style="height: 50; width: 70px;">
             </div>
             <div class="media-body">
-                Date:
-                {{new.realdate}}<br>
-                Title:
+                
+                <span class="text-muted">{{new.realdate}}</span><br>
+                
                 <b>{{new.title}}</b>
             </div>
         </li>

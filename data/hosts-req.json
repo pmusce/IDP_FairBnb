@@ -1,9 +1,9 @@
 [
 	{
 		"id": 1,
-		"username": "pasquale",
-		"image": "img/sito.png",
-		"name": "Pasquale Muscettola",
+		"username": "James",
+		"image": "img/new-host-james.jpg",
+		"name": "James",
 		"status": "needs",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
 		"space": {
@@ -43,8 +43,8 @@
 	{
 		"id": 2,
 		"username": "pauline",
-		"image": "img/sito.png",
-		"name": "Pauline Sia",
+		"image": "img/new-host-venod.jpg",
+		"name": "Venod",
 		"status": "waiting",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
 		"space": {
@@ -84,8 +84,8 @@
 	{
 		"id": 3,
 		"username": "willem",
-		"name": "Willem Duijvelshoff",
-		"image": "img/sito.png",
+		"name": "Franka",
+		"image": "img/new-host-franka.jpg",
 		"status": "declined",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
 		"space": {
@@ -125,8 +125,8 @@
 	{
 		"id": 4,
 		"username": "cindy",
-		"image": "img/sito.png",
-		"name": "Cindy Van Den Berg",
+		"image": "img/new-host-adam.jpg",
+		"name": "Adam",
 		"status": "approved",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
 		"space": {
@@ -166,8 +166,8 @@
 	{
 		"id": 5,
 		"username": "admin",
-		"image": "img/sito.png",
-		"name": "Axel De Jong",
+		"image": "img/new-host-adil.jpg",
+		"name": "Adil",
 		"status": "needs",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
 		"space": {
@@ -207,7 +207,7 @@
 	{
 		"id": 6,
 		"username": "alessandro",
-		"name": "Alessandro Latella",
+		"name": "Alessandra",
 		"image": "img/frank.png",
 		"status": "needs",
 		"address": "Strackéstraat 121, 1067 KV Amsterdam",
