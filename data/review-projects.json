@@ -1,38 +1,43 @@
 [{
     "image": "img/land.jpg",
-    "date": "20/01/2017",
-    "location": "Utrecht",
-    "title": "Tourists Land Tour",
-    "author": "Pasquale Muscettola",
+    "date": "30/01/2017",
+    "location": "Amsterdam",
+    "title": "Rebuilding Orphanage Amsterdam",
+    "author": "James",
     "description": "The project aims to let tourists and newcomers in The Netherlands to discover the nature of The Netherlands",
-    "body": "We aim at allowing tourists to discover the nature of the Netherlands, and avoid typical tourist city-tours. We believe in sustainable tourism and we want to help the tourist the way out of the busy city",
+    "body": "A cult building in the 1960s, Van Eyck's orphanage brought to the surface an idiosyncratic interpretation of modern architectural ideas enriched by pattern and forms and by balancing repetitive pavilions. Constructed in reinforced concrete panels and glass bricks, it has undoubtedly worn badly. This project aim to restore of parts of the 57 year-old building in Amsterdam as orphanage. We have drawn a new architecture plan to restore this historical building.",
     "status": "needs",
-    "costs": 900,
+    "costs": 100000,
     "votes": 3,
     "breakdown": [
       {
-        "amount": 2000,
-        "description": "Labour (planting tree seeds"
+        "amount": 50000,
+        "description": "Labour"
       },
       {
-        "amount": 2300,
-        "description": "Building Materials (Wood, ropes)"
-      }],
+        "amount": 30000,
+        "description": "Building Materials"
+      },
+      {
+        "amount": 20000,
+        "description": "Roof tiles"
+      }
+    ],
     "duration": 12,
     "read": false,
     "id": 1,
     "comments": [
       {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "I think this project needs to be funded. It would allow tourists to have more options than staying in the city",
+        "author": "Michael Heng",
+        "img": "img/michaelheng.jpg",
+        "body": "This project is too expensive for the cooperative. It will take too long to raise enough funds.",
         "time": "3 Days Ago"
       },
       {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "We need more funding for this project before we can actually start. How long does it take to have a project funded?",
-        "time": "3 Days Ago"
+        "author": "Dorothy",
+        "img": "img/staff-dorothy.jpg",
+        "body": "Yes, eventhough the idea is good and for a good cause, we cannot take a big project like this.",
+        "time": "2 Days Ago"
       }
     ],
     "pictures": [
@@ -52,30 +57,41 @@
 }, {
     "type": "need-funding",
     "image": "img/planting.jpg",
-    "date": 2016,
+    "date": "22/01/2017",
     "location": "Amsterdam",
-    "title": "Planting Trees in Botheram",
-    "initiator": "Bamberoo",
+    "title": "Save our old bridge",
+    "initiator": "Elin van Ginkel",
     "description": "We want to plant new trees in the Botheram region",
     "body": "Restoration of parts of the 500 year-old bridge near Zuidpark in Amsterdam. There are about 399 bricks need to be replaced to make it safe again to pedestrians. This has over 900 pedestrians crossing daily and each of them has 11% chance of tripping over a loose brick and fall. Over the last year, over 99 reported cases of people tripping over this unsafe bridge. Currently, it has been closed until it is made safe again. If no one comes forward to help, this bridge will remain close and create inconvenience to pedestrians travelling from Zuidpark towards city center.",
     "status": "pending",
-    "costs": 350,
+    "costs": 8000,
+    "votes": 3,
     "totdonated": 290,
     "duration": 8,
     "read": true,
     "id": 2,
+    "breakdown": [
+      {
+        "amount": 5000,
+        "description": "Labour"
+      },
+      {
+        "amount": 3000,
+        "description": "Materials"
+      }
+    ],
     "comments": [
       {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "This is a GREAT idea, the budget is low, the impact is high, the amount of people involved is a lot. Why not expanding this in other areas? Anyone?",
+        "author": "Michael Heng",
+        "img": "img/michaelheng.jpg",
+        "body": "I know that old bridge near Zuipark, it definately needs repair.",
         "time": "1 Days Ago"
 
       },
       {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "More text",
+        "author": "Dorothy",
+        "img": "img/staff-dorothy.jpg",
+        "body": "Yes, this is good proposal.",
         "time": "3 Days Ago"
       }
     ],
@@ -93,36 +109,47 @@
             "src": "img/home.jpg"
         }
     ],
-    "author": "Pasquale Muscettola",
+    "author": "Elin van Ginkel",
     "supporters": 10
 }, {
     "type": "need-funding",
     "image": "img/proj4.jpg",
-    "date": 2015,
+    "date": "11/01/2017",
     "location": "Vondelarea",
-    "title": "New hanging bridge for kids in Vondelpark",
-    "initiator": "Ron Van Eijsel",
+    "title": "Renewable Energy Houses",
+    "initiator": "Judy",
     "description": "Why not having a nice new open-air space in Vondelpark area?",
-    "body": "Vondelpark has beautiful parkland, wonderful wooden play equipment, rope bridges, zip wires, an open-air theatre, huge paddling pool, skate hire, a Picasso sculpture and a cracking café, too. Families can grab coffee and pancakes from the Groot Melkhuis, this is the place to relax and let kids run wild. There is a large lake in the middle of the lake which we feel needs a hanging bridge so that children can walk across and enjoy the lovely green lush of fresh water views, plants, birds and other reptiles. They can enjoy a nice nature walk across this bridge.",
+    "body": "This project will sponsor our hosts to contribute to clean and renewable energy. Our target is to provide clean solar panels for 100 eligible households in Amsterdam area. All of Fairbed hosts will be invited to join and benefit from this sponsored projects.",
     "status": "pending",
-    "costs": 4300,
+    "costs": 22000,
+    "votes": 3,
     "totdonated": 3700,
     "duration": 1,
     "read": false,
     "id": 3,
+    "breakdown": [
+      {
+        "amount": 5000,
+        "description": "Labour"
+      },
+      {
+        "amount": 17000,
+        "description": "Solar panels"
+      }
+    ],
     "comments": [
       {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "Some text here",
+        "author": "Michael Heng",
+        "img": "img/michaelheng.jpg",
+        "body": "I am not sure about this as the costs is high",
         "time": "3 Days Ago"
 
       },
       {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "More text",
-        "time": "3 Days Ago"
+        "author": "Dorothy",
+        "img": "img/staff-dorothy.jpg",
+        "body": " Maybe not this time?",
+        "time": "2 Days Ago"
       }
     ],
     "pictures": [
@@ -139,324 +166,7 @@
             "src": "img/home.jpg"
         }
     ],
-    "author": "Pasquale Muscettola",
+    "author": "Judy",
     "supporters": 10
-}, {
-    "type": "need-funding",
-    "image": "img/proj5.jpg",
-    "date": 2015,
-    "location": "Oud-West (Amsterdam)",
-    "title": "Youths hang out area at Oud-West",
-    "initiator": "Karine van Effretikon",
-    "description": "We need a new hangout are for our kids! Tourist have a bad influence on them",
-    "body": "There are over 844,000 inhabitants in Amsterdam and 45% of them are below 21.  These youths need a safe and relaxing place to hangout and take a break during their school holidays. These kids have nowhere to go and we would like to create a safe place for them. We have identified a house owner who is willing to offer the place during weekends for this hangout place. We just need to perform paintings, purchase new games, equipments and furniture to make this place conducive to hangout.",
-    "status": "pending",
-    "costs": 5300,
-    "totdonated": 5200,
-    "duration": 1,
-    "read": false,
-    "id": 4,
-    "comments": [
-      {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "It is of outmost importance in my opinion, why not having this funded?",
-        "time": "3 Days Ago"
-    },
-      {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "We could use some funding, yes!",
-        "time": "3 Days Ago"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/ams2.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/ams.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ],
-    "author": "Pasquale Muscettola",
-    "supporters": 10
-}, {
-    "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "comments": [
-      {
-        "author": "Frank Nack",
-        "img": "img/frank.png",
-        "body": "It is of outmost importance in my opinion, why not having this funded?",
-        "time": "3 Days Ago"
-      },
-      {
-        "author": "Sito Veracruz",
-        "img": "img/sito.png",
-        "body": "We could use some funding, yes!",
-        "time": "3 Days Ago"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/***.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/***.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/***.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/waag1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/Graffiti_2.jpg",
-    "location": "Einsteinsweg",
-    "date": 2017,
-    "title": "Graffiti removal in Einsteinsweg",
-    "initiator": "Neighborood Einsteinsweg",
-    "description": "The project aims to remove graffiti in Einsteinsweg",
-    "body": "Over the years, a lot of vandals have sprayed graffiti on various buildings in Amsterdam West, most notable in the Einsteinweg. With this project, we would like to remove all the graffiti from the buildings, so the whole area will have a clean look again",
-    "status": "approved",
-    "read": false,
-    "author": "Neighborood Einsteinsweg",
-    "supporters": 5,
-    "costs": 200,
-    "totdonated": 200,
-    "funding": 5,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Einsteinsweg"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/Graffiti_1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/Graffiti_2.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/Pop_podium.jpg",
-    "location": "Amsterdam Zuid",
-    "date": 2017,
-    "title": "Converting an old warehouse to a Pop Podium",
-    "initiator": "Amsterdam Zuid Neighborood",
-    "description": "We want to convert the old ware house in Amsterdam Zuid to a pop podium",
-    "body": "In Amsterdam Zuid there is an old warehouse that has not been used for years and crackers have found their way in. At the same time, the youth in the area have expressed a desire to have a pop podium were they can display their talents and listen to what the local scene has to offer. That’s why we want to convert the old ware house in Amsterdam Zuid to a pop podium, so that these two problems will be solved at the same time.",
-    "status": "approved",
-    "read": false,
-    "author": "Amsterdam Zuid Neighborood",
-    "supporters": 30,
-    "costs": 3000,
-    "totdonated": 3000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/Pop_podium.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/Pop_podium2.jpg"
-        }
-    ]
-}, {
-    "type": "funded",
-    "image": "img/ams2.jpg",
-    "location": "Whole Amsterdam",
-    "date": 2017,
-    "title": "Activities for the elderly people",
-    "initiator": "Nienke Stoijpers",
-    "description": "will organize an activity for elderly every month, so they will have an opportunity to socialize with other people.",
-    "body": "There are a lot of elderly people in Amsterdam who are very lonely. Out of 4.1 million people in the Netherlands who are 55 years or older, 1 million of them are reported to have feelings of loneliness. The same relative numbers can be applied to Amsterdam. To make this situation a little better, a comity has been put up that will organize an activity for elderly every month, so they will have an opportunity to socialize with other people.",
-    "status": "approved",
-    "read": false,
-    "author": "Nienke Stoijpers",
-    "supporters": 30,
-    "costs": 1000,
-    "totdonated": 1000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Amsterdam"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/Older_People.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/elderpeeps.png"
-        }
-    ]
-}, {
-    "type": "declined",
-    "image": "img/ams2.jpg",
-    "location": "Brasterdijk",
-    "date": 2017,
-    "title": "Fairbed Project",
-    "initiator": "Fikke & Fokke",
-    "description": "The project aims to rebuild Van Eyck's orphanage in Brasterdijk",
-    "body": "fairbed aims at providing solutions to the growing challenges that massive tourism has on several aspects of urban life. Being developed with a partnership between the Waag Society and civil society members, the current pursued model is platform cooperativism in which the digital platform empowers people participating in the project, at any stage of involvement through activities that aims at enlarging the impact of cooperativism in the tourism industry",
-    "status": "approved",
-    "read": false,
-    "author": "Fikke & Fokkei",
-    "supporters": 30,
-    "costs": 6000,
-    "totdonated": 6000,
-    "funding": 80,
-    "updates": [
-        {
-            "date": "Jan-10",
-            "body": "Project Funded on Fairbed"
-        },
-        {
-            "date": "Jan-15",
-            "body": "Received Bank Wire"
-        },
-        {
-            "date": "Jan-18",
-            "body": "Contacted initial stakeholders"
-        },
-      {
-        "date": "Jan-25",
-        "body": "First Meeting in Brasterdijk"
-      }
-    ],
-    "pictures": [
-        {
-            "id": 0,
-            "src": "img/waag1.jpg"
-        },
-        {
-            "id": 1,
-            "src": "img/waag2.jpg"
-        },
-        {
-            "id": 2,
-            "src": "img/home.jpg"
-        }
-    ]
 }
 ]

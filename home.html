@@ -1,18 +1,17 @@
-<div class="gray-bg">
-  <div class="container">
-    <ul class="nav nav-tabs">
-      <li role="presentation" ui-sref-active="active"><a ui-sref="home.projects">Projects</a></li>
-      <li role="presentation" ui-sref-active="active"><a ui-sref="home.discussions">Discussions</a></li>
-      <li role="presentation" ui-sref-active="active">
-        <a ui-sref="home.news">
-          News <span class="badge" ng-if='news.unread'>{{news.unread}}</span>
-        </a>
-      </li>
-      <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewproj">Review Projects</a></li>
-      <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewhosts">Review Hosts</a></li>
-      <li role="presentation" ui-sref-active="active"><a ui-sref="home.myproj">My Projects</a></li>
-    </ul>
+<div class="gray-bg"></div>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li role="presentation" ui-sref-active="active"><a ui-sref="home.projects">Projects</a></li>
+    <li role="presentation" ui-sref-active="active"><a ui-sref="home.discussions">Discussions</a></li>
+    <li role="presentation" ui-sref-active="active">
+      <a ui-sref="home.news">
+        News <span class="badge" ng-if='news.unread'>{{news.unread}}</span>
+      </a>
+    </li>
+    <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewproj">Review Projects</a></li>
+    <li ng-if="user.isAdmin()" role="presentation" ui-sref-active="active"><a ui-sref="home.reviewhosts">Review Hosts</a></li>
+    <li role="presentation" ui-sref-active="active"><a ui-sref="home.myproj">My Projects</a></li>
+  </ul>
 
-    <div ui-view class="tab-content"></div>
-  </div>
+  <div ui-view class="tab-content"></div>
 </div>

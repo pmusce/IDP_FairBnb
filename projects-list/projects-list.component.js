@@ -151,6 +151,7 @@ module('projectsList')
 	})
 	.state('home.projects.list', {
 		component: 'projects',
+		url: '^/projects',
 		resolve: {
 		    projects: function(ProjectsService, $transition$) {
 		      	return ProjectsService.getAllProjects();
