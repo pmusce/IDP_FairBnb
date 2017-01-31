@@ -13,6 +13,10 @@
     font-style: italic;
 }
 
+li.active {
+    pointer-events: none;
+}
+
 .page-header {
   margin: 40px 0 0;
 }
@@ -81,11 +85,14 @@ div.col-lg-4 {
     left: 10px;
     z-index: 1;
     cursor: pointer;
-    padding: 5px 5px;
+    padding: 7px 10px;
     border-radius: 18px;
     font-weight: bold;
     background: white;
     right: inherit;
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
 }
 
 .home projects form {
