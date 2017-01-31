@@ -32,19 +32,35 @@
 		"funds": 10.30
 	},
 	{
-		"username": "admin",
-		"password": "password",
-		"image": "img/sito.png",
-		"name": "Axel De Jong",
-		"role": "host",
-		"funds": 10.30
-	},
-	{
 		"username": "Julie",
 		"password": "password",
-		"name": "Julie De Kwak",
+		"name": "Alessandro Latella",
 		"image": "img/frank.png",
 		"role": "host",
+		"funds": 48.88
+	},
+	{
+		"username": "guest",
+		"password": "password",
+		"name": "Mary Chiang",
+		"image": "img/frank.png",
+		"role": "guest",
+		"funds": 48.88
+	},
+	{
+		"username": "host",
+		"password": "password",
+		"name": "Elin van Naarsen",
+		"image": "img/frank.png",
+		"role": "host",
+		"funds": 48.88
+	},
+	{
+		"username": "admin",
+		"password": "password",
+		"name": "Michael Heng",
+		"image": "img/frank.png",
+		"role": "admin",
 		"funds": 48.88
 	}
 ]

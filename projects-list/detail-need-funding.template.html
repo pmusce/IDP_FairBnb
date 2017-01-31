@@ -22,7 +22,7 @@
             </div>
             <div class="col-sm-4">
               <p>
-                <button type="button" ng-click="support(project)" class="btn btn-xs btn-primary pull-right">
+                <button type="button" ng-click="support(project)" class="btn btn-primary pull-right">
                   <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
                   Support
                 </button>
@@ -42,7 +42,7 @@
         <tbody>
             <tr  ng-repeat="breakdow in project.breakdown">
                 <td>€ {{breakdow.amount}}</td>
-                <td>€ {{breakdow.description}}</td>
+                <td>{{breakdow.description}}</td>
             </tr>
         </tbody>
     </table>
@@ -139,7 +139,7 @@
         <!-- row -->
     </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-sm btn-success">
+    <button type="button" ng-click="cancel()" class="btn btn-sm btn-success">
         <b>Support</b>
     </button>
 </div>
