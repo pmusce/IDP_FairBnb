@@ -2,5 +2,4 @@
 
 Please add your name here below if you are a contributor:
 
-Pasquale Muscettola
-Alessandro Latella
+Pasquale Muscettola, Alessandro Latella
